@@ -29,6 +29,7 @@ import { fallbackToSimpleBots, isBot } from "./Bot.js";
 import { MTGDraftBotParameters } from "./bots/ExternalBotInterface.js";
 import { computeHashes } from "./DeckHashes.js";
 import { SpecialLandSlots } from "./LandSlot.js";
+import axios from "axios";
 import {
 	BoosterFactory,
 	SetSpecificFactories,
@@ -96,7 +97,6 @@ import { sendDraftLogToCubeCobra } from "./cubeCobraIntegration.js";
 import { isSilentAuctionDraftState, SilentAuctionDraftState } from "./SilentAuctionDraft.js";
 import { Tiebreaker } from "./SilentAuctionDraftTiebreakers.js";
 import { CardPool, SlotedCardPool } from "./CardPool.js";
-import axios from "axios";
 
 // Tournament timer depending on the number of remaining cards in a pack.
 const TournamentTimer = [
@@ -2912,7 +2912,38 @@ export class Session implements IIndexable {
 
 			this.emitToConnectedUsers("endDraft");
 			console.log(`Session ${this.id} draft ended.`);
+			this.notifyKookBot(); // 通知 KOOK 机器人
 		});
+	}
+
+	async notifyKookBot() {
+		// 只通知 KOOK- 开头的 session
+		if (!this.id.startsWith("KOOK-")) {
+			return;
+		}
+
+		try {
+			const players = Array.from(this.users.values()).map((u) => ({
+				id: u.userID,
+				userName: u.userName,
+			}));
+
+			await axios.post(
+				"http://localhost:8080/webhook/draft-ended",
+				{
+					session_id: this.id,
+					players: players,
+					ended_at: new Date().toISOString(),
+				},
+				{
+					timeout: 5000,
+				}
+			);
+
+			console.log(`✅ 已通知 KOOK 机器人: ${this.id}`);
+		} catch (error) {
+			console.error(`❌ 通知 KOOK 机器人失败: ${error.message}`);
+		}
 	}
 
 	stopDraft() {
