@@ -363,7 +363,19 @@
     "copyBracketLink": "复制此对阵表只读版本的链接到剪贴板。",
     "ownerOnlyResults": "若启用，仅房主可录入结果。",
     "addBlockSets": "添加此环境的所有系列",
-    "removeBlockSets": "移除此环境的所有系列"
+    "removeBlockSets": "移除此环境的所有系列",
+    "mythicUpgradeDesc": "若启用（默认），稀有可以以 1/8 的概率提升为秘稀。",
+    "disabledCustom": "对自定义卡表禁用。",
+    "boosterContentNotes": "注意：<ul><li>零是有效值（例如适用于贫民或工匠赛制）。</li><li>某些系列会自动添加一个地牌位。</li><li>从自定义卡表抽取时不使用：请参阅高级卡表语法以模拟它。</li></ul>",
+    "uploadBoosters": "上传你自己的补充包。",
+    "cardsPerPickDesc": "每包选取的卡牌数。例如适用于指挥官传奇（每包 2 张）。",
+    "defaultIs1": "默认为 1。",
+    "firstPickOnly": "仅首次选择：自定义值仅用于每包的第一次选择,之后恢复为 1。例如,对于双倍大师系列,你应该勾选此项并设置为 2。",
+    "burnedCardsDesc": "除了选择一张牌外,你还将从同一包中移除此数量的牌。这通常与较高的每人补充包数一起使用,用于 2-4 名玩家的轮抽。销毁轮抽或一瞥轮抽通常是每人 9 包,每次选择额外销毁 2 张牌。",
+    "defaultIs0": "默认为 0。",
+    "uploadCardList": "从你的电脑上传任意卡表。",
+    "cubeCobra": "你可以使用 Cube Cobra 等服务来查找 Cube 或制作你自己的列表并导出为 .txt。",
+    "cardsPerBoosterCustom": "使用自定义卡表时每包的卡牌数,使用自定义卡表页时忽略；默认为 15。"
   },
   "misc": {
     "all": "全部",

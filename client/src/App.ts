@@ -4155,6 +4155,28 @@ export default defineComponent({
 			if (this.useCustomCardList) return this.customCardList?.settings?.cardTitleHeightFactor ?? 1.0;
 			return 1.0;
 		},
+		// Tooltip HTML content with i18n
+		tooltipMythicUpgrade(): string {
+			return `<p>${this.$t("tooltips.mythicUpgradeDesc")}</p><p>${this.$t("tooltips.disabledCustom")}</p>`;
+		},
+		tooltipBoosterContent(): string {
+			return `<p>${this.$t("tooltips.boosterContentNotes")}</p>`;
+		},
+		tooltipCustomBoosters(): string {
+			return `<p>${this.$t("tooltips.uploadBoosters")}</p>`;
+		},
+		tooltipCardsPerPick(): string {
+			return `<p>${this.$t("tooltips.cardsPerPickDesc")}</p><p>${this.$t("tooltips.defaultIs1")}</p><p>${this.$t("tooltips.firstPickOnly")}</p>`;
+		},
+		tooltipBurnedCards(): string {
+			return `<p>${this.$t("tooltips.burnedCardsDesc")}</p><p>${this.$t("tooltips.defaultIs0")}</p>`;
+		},
+		tooltipCustomCardList(): string {
+			return `<p>${this.$t("tooltips.uploadCardList")}</p><p>${this.$t("tooltips.cubeCobra")}</p>`;
+		},
+		tooltipCardsPerBooster(): string {
+			return `<p>${this.$t("tooltips.cardsPerBoosterCustom")}</p>`;
+		},
 	},
 	async mounted() {
 		try {

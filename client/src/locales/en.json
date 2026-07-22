@@ -363,7 +363,19 @@
     "copyBracketLink": "Copy link to a read-only version of this bracket to the clipboard.",
     "ownerOnlyResults": "If set, only the owner will be able to enter results.",
     "addBlockSets": "Add all sets from this block",
-    "removeBlockSets": "Remove all sets from this block"
+    "removeBlockSets": "Remove all sets from this block",
+    "mythicUpgradeDesc": "If enabled (default) Rares can be promoted to a Mythic at a 1/8 rate.",
+    "disabledCustom": "Disabled for Custom Card Lists.",
+    "boosterContentNotes": "Notes:<ul><li>Zero is a valid value (useful for Pauper or Artisan for example).</li><li>A land slot will be automatically added for some sets.</li><li>Unused when drawing from a custom card list: See the advanced card list syntax to mimic it.</li></ul>",
+    "uploadBoosters": "Upload your own boosters.",
+    "cardsPerPickDesc": "Number of cards to pick from each booster. Useful for Commander Legends for example (2 cards per booster).",
+    "defaultIs1": "Default is 1.",
+    "firstPickOnly": "First Pick Only: The custom value will only be used for the first pick of each booster, then revert to 1. For example, you should check this with a value of 2 for Double Masters sets.",
+    "burnedCardsDesc": "In addition to picking a card, you will also remove this number of cards from the same booster. This is typically used in conjunction with a higher count of boosters per player for drafting with 2 to 4 players. Burn or Glimpse Draft is generally 9 boosters per player with 2 cards being burned in addition to a pick.",
+    "defaultIs0": "Default is 0.",
+    "uploadCardList": "Upload any card list from your computer.",
+    "cubeCobra": "You can use services like Cube Cobra to find cubes or craft your own list and export it to .txt.",
+    "cardsPerBoosterCustom": "Cards per Booster when using a Custom Card List, ignored when using custom sheets; Default is 15."
   },
   "misc": {
     "all": "All",
