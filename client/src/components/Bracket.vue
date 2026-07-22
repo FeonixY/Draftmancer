@@ -1,11 +1,11 @@
 <template>
 	<div v-if="bracket">
 		<div v-if="displayControls" class="controls">
-			<button @click="copyLink" v-tooltip="'Copy link to a read-only version of this bracket to the clipboard.'">
+			<button @click="copyLink" v-tooltip="$t('tooltips.copyBracketLink')">
 				<font-awesome-icon icon="fa-solid fa-clipboard" /> Copy Link to Clipboard
 			</button>
 			<template v-if="fullcontrol">
-				<span v-tooltip="'If set, only the owner will be able to enter results.'">
+				<span v-tooltip="$t('tooltips.ownerOnlyResults')">
 					<input type="checkbox" id="lock" :checked="locked" @change="lock($event)" />
 					<label for="lock"> <font-awesome-icon icon="fa-solid fa-lock" /> Lock </label>
 				</span>
@@ -21,16 +21,17 @@
 				</span>
 				<div style="flex-grow: 1"></div>
 				<template v-if="teamDraft">
-					<span>Team Draft</span><span>{{ teamRecords[0] }} - {{ teamRecords[1] }}</span>
+					<span>{{ $t("modes.teamDraft") }}</span
+					><span>{{ teamRecords[0] }} - {{ teamRecords[1] }}</span>
 				</template>
 				<template v-else>
 					<select v-model="typeToGenerate">
-						<option value="Single">Single Elimination</option>
-						<option value="Double">Double Elimination</option>
+						<option value="Single">{{ $t("bracket.singleElim") }}</option>
+						<option value="Double">{{ $t("bracket.doubleElim") }}</option>
 						<option value="Swiss">3-Round Swiss</option>
 					</select>
 				</template>
-				<button @click="regenerate">Re-Generate</button>
+				<button @click="regenerate">{{ $t("bracket.regenerate") }}</button>
 			</template>
 			<template v-else>
 				<span v-if="locked">
@@ -43,13 +44,13 @@
 					<template v-if="isTeamBracket">
 						Team Draft <span>{{ teamRecords[0] }} - {{ teamRecords[1] }}</span>
 					</template>
-					<template v-else-if="isDoubleBracket">Double Elimination</template>
+					<template v-else-if="isDoubleBracket">{{ $t("bracket.doubleElim") }}</template>
 					<template v-else-if="isSwissBracket">3-Round Swiss</template>
-					<template v-else>Single Elimination</template>
+					<template v-else>{{ $t("bracket.singleElim") }}</template>
 				</span>
 			</template>
 		</div>
-		<h2 v-if="isDoubleBracket">Upper Bracket</h2>
+		<h2 v-if="isDoubleBracket">{{ $t("bracket.upperBracket") }}</h2>
 		<div
 			class="bracket-columns"
 			:style="`--column-count: ${isDoubleBracket ? bracket.bracket.length + 1 : bracket.bracket.length}`"
@@ -102,7 +103,7 @@
 				/>
 			</div>
 		</div>
-		<h2 v-if="isDoubleBracket">Lower Bracket</h2>
+		<h2 v-if="isDoubleBracket">{{ $t("bracket.lowerBracket") }}</h2>
 		<div class="bracket-columns" v-if="isDoubleBracket" :style="`--column-count: ${lowerBracket!.length}`">
 			<div class="bracket-column" v-for="(col, colIndex) in lowerBracket" :key="colIndex">
 				<BracketMatch
@@ -128,7 +129,7 @@
 			/>
 		</div>
 	</div>
-	<div v-else>No valid bracket.</div>
+	<div v-else>{{ $t("bracket.noValid") }}</div>
 </template>
 
 <script lang="ts">

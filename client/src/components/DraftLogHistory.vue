@@ -15,10 +15,13 @@
 			accept=".txt"
 		/>
 		<div class="controls">
-			<button onclick="document.querySelector('#log-input').click()" v-tooltip="'Import a saved game log.'">
+			<button onclick="document.querySelector('#log-input').click()" v-tooltip="$t('tooltips.importSavedLog')">
 				Import Game Log
 			</button>
-			<button onclick="document.querySelector('#mtgo-log-input').click()" v-tooltip="'Import a MTGO draft log.'">
+			<button
+				onclick="document.querySelector('#mtgo-log-input').click()"
+				v-tooltip="$t('tooltips.importMtgoLog')"
+			>
 				Import MTGO Log
 			</button>
 			<span>({{ draftLogs.length }} / 25 logs)</span>
@@ -70,7 +73,7 @@
 					</button>
 					<dropdown v-if="!draftLog.delayed" :class="{ disabled: !hasDecks(draftLog) }">
 						<template v-slot:handle>
-							<span>Download all decks</span>
+							<span>{{ $t("draftlog.downloadAllDecks") }}</span>
 						</template>
 						<template v-slot:dropdown>
 							<div class="more-dropdown">
@@ -82,13 +85,13 @@
 										align-items: center;
 									"
 								>
-									<label for="deck-export-format">Format:</label>
+									<label for="deck-export-format">{{ $t("misc.format") }}</label>
 									<select id="deck-export-format" v-model="deckExportFormat">
 										<option value=".dek">MTGO (.dek)</option>
 										<option value="MTGA">MTGA</option>
-										<option value="card names">Card Names</option>
+										<option value="card names">{{ $t("draftlog.cardNames") }}</option>
 									</select>
-									<label for="deck-export-with-lands">Basics:</label>
+									<label for="deck-export-with-lands">{{ $t("draftlog.basics") }}</label>
 									<input type="checkbox" id="deck-export-with-lands" v-model="deckExportWithBasics" />
 								</div>
 								<button

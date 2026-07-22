@@ -23,10 +23,10 @@
 				</div>
 			</div>
 			<div>
-				<button @click="end()" v-if="ended">Close</button>
-				<button @click="nextRound()" v-else-if="results">Next Pack</button>
-				<div v-else-if="bidCast">Waiting for other players...</div>
-				<button @click="confirmBids()" :disabled="!bidsAreValid" v-else>Confirm Bids</button>
+				<button @click="end()" v-if="ended">{{ $t("common.close") }}</button>
+				<button @click="nextRound()" v-else-if="results">{{ $t("draft.nextPack") }}</button>
+				<div v-else-if="bidCast">{{ $t("draft.waitingOthers") }}</div>
+				<button @click="confirmBids()" :disabled="!bidsAreValid" v-else>{{ $t("draft.confirmBids") }}</button>
 			</div>
 		</div>
 		<div v-if="state.currentPack" class="card-container pack">

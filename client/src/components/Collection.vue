@@ -23,11 +23,11 @@
 					@change="updateDisplayCollectionStatus"
 					:checked="displaycollectionstatus"
 					id="display-collection-status"
-				/><label for="display-collection-status">Highlight required wildcards in games</label>
+				/><label for="display-collection-status">{{ $t("collection.highlightWildcards") }}</label>
 			</div>
 		</div>
 		<div class="resources">
-			<h3>Resources</h3>
+			<h3>{{ $t("collection.resources") }}</h3>
 			<table style="margin: auto">
 				<tbody>
 					<tr v-for="(value, rarity) in collectionInfos.wildcards" :key="rarity">
@@ -62,13 +62,13 @@
 					</caption>
 					<tbody>
 						<tr>
-							<th>Rarity</th>
-							<th>Unique</th>
-							<th>Total</th>
-							<th>Total Missing</th>
-							<th>Unique (Booster)</th>
-							<th>Total (Booster)</th>
-							<th>Missing From Boosters</th>
+							<th>{{ $t("collection.rarity") }}</th>
+							<th>{{ $t("collection.unique") }}</th>
+							<th>{{ $t("stats.total") }}</th>
+							<th>{{ $t("collection.totalMissing") }}</th>
+							<th>{{ $t("collection.uniqueBooster") }}</th>
+							<th>{{ $t("collection.totalBooster") }}</th>
+							<th>{{ $t("collection.missingFromBoosters") }}</th>
 						</tr>
 						<tr v-for="r in ['common', 'uncommon', 'rare', 'mythic', 'all']" :key="r">
 							<td style="text-transform: capitalize">{{ r }}</td>
@@ -85,13 +85,13 @@
 				<h3>
 					Missing
 					<select v-model="missingCardsRarity">
-						<option value="common">Commons</option>
-						<option value="uncommon">Uncommons</option>
-						<option value="rare">Rares</option>
-						<option value="mythic">Mythics</option>
+						<option value="common">{{ $t("collection.commons") }}</option>
+						<option value="uncommon">{{ $t("collection.uncommons") }}</option>
+						<option value="rare">{{ $t("collection.rares") }}</option>
+						<option value="mythic">{{ $t("collection.mythics") }}</option>
 					</select>
 					<input type="checkbox" id="show-non-booster" v-model="showNonBooster" />
-					<label for="show-non-booster">Show non-booster cards</label>
+					<label for="show-non-booster">{{ $t("collection.showNonBooster") }}</label>
 				</h3>
 				<div class="card-container">
 					<missing-card
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 	</div>
-	<div v-else>Collection statistics not available.</div>
+	<div v-else>{{ $t("collection.statsUnavailable") }}</div>
 </template>
 
 <script lang="ts">

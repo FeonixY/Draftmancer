@@ -3,8 +3,8 @@
 		<div class="toolbar">
 			<div>Hand: {{ hand.length }}</div>
 			<div>Deck: {{ library.length }}</div>
-			<button @click="newHand">New Hand</button>
-			<button @click="drawCard" :disabled="library.length < 1">Draw Card</button>
+			<button @click="newHand">{{ $t("stats.newHand") }}</button>
+			<button @click="drawCard" :disabled="library.length < 1">{{ $t("stats.drawCard") }}</button>
 		</div>
 		<div class="hand">
 			<card v-for="card in hand" :card="card" :language="language" :key="card.uniqueID"></card>

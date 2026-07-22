@@ -2,7 +2,7 @@
 	<div class="draft-queue">
 		<div class="upper-control">
 			<a href="/"><font-awesome-icon icon="fa-solid fa-arrow-left" /> Back</a>
-			<h1>Draftmancer / Draft Queue</h1>
+			<h1>{{ $t("nav.draftQueueTitle") }}</h1>
 			<div v-if="queueStatus">Playing: {{ queueStatus.playing }}</div>
 			<div v-else><LoadingComponent /></div>
 		</div>
@@ -21,7 +21,7 @@
 					>
 						<template v-if="inQueue === set.id">
 							<LoadingComponent size="3x" />
-							<button class="stop" @click="unregister()">Cancel</button>
+							<button class="stop" @click="unregister()">{{ $t("common.cancel") }}</button>
 						</template>
 
 						<div class="set-name">
@@ -95,7 +95,8 @@
 		<p>To reduce wait times during slow periods, some bots might join after a while.</p>
 		<p>
 			Want to organize your own customized drafts? Check out the
-			<a href="/">full application</a>!
+			<a href="/">{{ $t("misc.fullApp") }}</a
+			>!
 		</p>
 	</div>
 </template>

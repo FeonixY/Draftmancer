@@ -8,7 +8,7 @@
 			</span>
 			<template v-if="!inTransition">
 				<template v-if="userID === state.currentPlayer">
-					<span>Your turn to exchange a card!</span>
+					<span>{{ $t("draft.housmanYourTurn") }}</span>
 					<span>
 						<button @click="confirmExchange" class="blue housman-confirm" :disabled="!selectionIsValid">
 							Confirm
@@ -37,7 +37,7 @@
 		<div class="container">
 			<transition name="revealed-cards" mode="out-in">
 				<div class="housman-revealed-cards card-container" :key="`revealed-cards-${state.roundNum}`">
-					<div class="zone-name">Common Cards</div>
+					<div class="zone-name">{{ $t("draft.commonCards") }}</div>
 					<div v-for="(card, index) in state.revealedCards" :key="index" class="revealed-card-container">
 						<transition
 							:name="isCurrentPlayer ? 'current-player-revealed-card' : 'revealed-card'"
@@ -58,7 +58,7 @@
 		<div class="container hand-and-last-exchanges">
 			<transition name="hand-cards" mode="out-in">
 				<div class="housman-hand card-container" :key="`hand-cards-${state.roundNum}`">
-					<div class="zone-name">Your Hand</div>
+					<div class="zone-name">{{ $t("draft.yourHand") }}</div>
 					<div v-for="(card, index) in state.hand" :key="index" class="hand-card-container">
 						<transition name="hand-card" mode="out-in">
 							<card
@@ -73,7 +73,7 @@
 				</div>
 			</transition>
 			<div class="last-picks-container card-container">
-				<span class="last-picks-title">Last Exchanges</span>
+				<span class="last-picks-title">{{ $t("draft.lastExchanges") }}</span>
 				<transition-group tag="div" name="vertical-queue" class="vertical-queue last-picks">
 					<div
 						v-for="p in state.lastPicks"

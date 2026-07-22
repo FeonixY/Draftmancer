@@ -48,7 +48,7 @@
 					@input="updateLands($event, c)"
 					min="0"
 					max="999"
-					onclick="this.select();"
+					onclick="this.select()"
 				/>
 				<font-awesome-icon icon="fa-solid fa-plus" size="lg" class="clickable" @click="add(c)" />
 			</div>
@@ -61,7 +61,7 @@
 				Remove other basics from deck
 			</button>
 			<div>
-				<label for="deck-size">Deck Size</label>
+				<label for="deck-size">{{ $t("land.deckSize") }}</label>
 				<input
 					class="small-number-input"
 					type="number"
@@ -73,7 +73,7 @@
 				/>
 			</div>
 			<div>
-				<label for="sideboard-basics">Side. Basics</label>
+				<label for="sideboard-basics">{{ $t("land.sideboardBasics") }}</label>
 				<input
 					class="small-number-input"
 					type="number"
@@ -85,7 +85,7 @@
 				/>
 			</div>
 			<div>
-				<label for="preferred-basics">Basics Set</label>
+				<label for="preferred-basics">{{ $t("land.basicsSet") }}</label>
 				<input
 					class="small-input"
 					type="text"

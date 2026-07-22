@@ -28,7 +28,7 @@
 			</ol>
 		</div>
 	</div>
-	<div v-else>No picks.</div>
+	<div v-else>{{ $t("draft.noPicks") }}</div>
 </template>
 
 <script setup lang="ts">

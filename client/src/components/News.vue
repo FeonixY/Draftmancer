@@ -38,7 +38,7 @@
 		<div class="news">
 			<em>November 21, 2025</em>
 			<p>Improved Cube Cobra integration to better support Custom Cards.</p>
-			<p>Experimental support for Cube Cobra custom draft formats.</p>
+			<p>{{ $t("news.cubeCobraSupport") }}</p>
 		</div>
 		<div class="news">
 			<em>November 8, 2025</em>

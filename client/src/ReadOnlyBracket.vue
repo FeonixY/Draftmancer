@@ -6,10 +6,11 @@
 				<h1>
 					Bracket for Session '{{ sessionID }}'
 					<span v-if="bracket" style="font-size: 0.8em; font-weight: 1">
-						(<template v-if="isTeamBracket">Team Draft</template>
-						<template v-else-if="isDoubleBracket">Double Elimination</template>
+						(<template v-if="isTeamBracket">{{ $t("modes.teamDraft") }}</template>
+						<template v-else-if="isDoubleBracket">{{ $t("bracket.doubleElim") }}</template>
 						<template v-else-if="isSwissBracket">3-Round Swiss</template>
-						<template v-else>Single Elimination</template>)
+						<template v-else>{{ $t("bracket.singleElim") }}</template
+						>)
 					</span>
 				</h1>
 				<Bracket
@@ -20,7 +21,7 @@
 				></Bracket>
 			</div>
 			<div class="error" v-else>
-				<h1>Error</h1>
+				<h1>{{ $t("common.error") }}</h1>
 				<p>{{ error }}</p>
 				<span v-if="response" class="small-error">{{ response.statusText }}</span>
 			</div>

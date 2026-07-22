@@ -18,7 +18,7 @@
 					</div>
 
 					<div class="modal-body">
-						<slot name="body">Loading...</slot>
+						<slot name="body">{{ $t("common.loading") }}</slot>
 					</div>
 
 					<div class="modal-footer">

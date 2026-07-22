@@ -50,12 +50,12 @@
 			/>
 		</div>
 		<div v-if="'randomCard' in winstonDraftPick">
-			<h3>Drawn Card:</h3>
+			<h3>{{ $t("draftlog.drawnCard") }}</h3>
 			<CardComponent :card="getUnique(winstonDraftPick.randomCard)" :language="language" />
 		</div>
 	</div>
 	<div class="housman-pick" v-else-if="type === 'Housman Draft'">
-		<h2 style="margin: 0">Revealed Cards</h2>
+		<h2 style="margin: 0">{{ $t("draft.revealedCards") }}</h2>
 		<div class="card-container">
 			<CardComponent
 				v-for="(cid, cidx) in housmanDraftPick.revealedCards"
@@ -66,7 +66,7 @@
 				:lazyLoad="true"
 			/>
 		</div>
-		<h2 style="margin: 0">Hand</h2>
+		<h2 style="margin: 0">{{ $t("draftlog.hand") }}</h2>
 		<div class="card-container">
 			<CardComponent
 				v-for="(cid, cidx) in housmanDraftPick.hand"
@@ -78,7 +78,7 @@
 			/>
 		</div>
 	</div>
-	<div class="card-container" v-else>Not Implemented</div>
+	<div class="card-container" v-else>{{ $t("misc.notImplemented") }}</div>
 </template>
 
 <script setup lang="ts">

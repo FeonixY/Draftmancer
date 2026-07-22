@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Minesweeper Draft</h2>
+			<h2>{{ $t("modes.minesweeperDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -10,7 +10,7 @@
 					revealed card grid, discovering neighboring cards after each pick.
 				</p>
 				<div class="dialog-settings">
-					<label for="grid-count">Grid Count</label>
+					<label for="grid-count">{{ $t("draft.gridCount") }}</label>
 					<div>
 						<input
 							id="grid-count"
@@ -24,7 +24,7 @@
 						/>
 						<ResetButton v-model="gridCount" :default-value="defaults.gridCount" />
 					</div>
-					<label>Grid Size</label>
+					<label>{{ $t("draft.gridSize") }}</label>
 					<div>
 						<input
 							type="number"
@@ -56,7 +56,7 @@
 							v-tooltip.right="`Reset to default value (${defaults.gridWidth}x${defaults.gridHeight})`"
 						/>
 					</div>
-					<label for="picks-input">Picks per Player, per Grid</label>
+					<label for="picks-input">{{ $t("draft.picksPerPlayerGrid") }}</label>
 					<div>
 						<input
 							id="picks-input"
@@ -70,19 +70,19 @@
 						/>
 						<ResetButton v-model="picksPerPlayerPerGrid" :default-value="defaults.picksPerPlayerPerGrid" />
 					</div>
-					<label for="reveal-center-input">Reveal center</label>
+					<label for="reveal-center-input">{{ $t("draft.revealCenter") }}</label>
 					<input type="checkbox" id="reveal-center-input" v-model="revealCenter" />
-					<label for="reveal-corners-input">Reveal corners</label>
+					<label for="reveal-corners-input">{{ $t("draft.revealCorners") }}</label>
 					<input type="checkbox" id="reveal-corners-input" v-model="revealCorners" />
-					<label for="reveal-border-input">Reveal borders (except corners)</label>
+					<label for="reveal-border-input">{{ $t("draft.revealBorders") }}</label>
 					<input type="checkbox" id="reveal-border-input" v-model="revealBorders" />
 				</div>
 			</div>
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Minesweeper Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startMinesweeper") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

@@ -13,7 +13,7 @@
 			Draftmancer Discord:
 			<a href="https://discord.gg/XscXXNw">https://discord.gg/XscXXNw</a>
 		</p>
-		<h3>Patch Notes</h3>
+		<h3>{{ $t("menu.patchNotes") }}</h3>
 		<patch-notes></patch-notes>
 		<span style="font-size: 0.8em">
 			(detailed changes can be found on
@@ -23,7 +23,7 @@
 			</a>
 			)
 		</span>
-		<h3>Notice</h3>
+		<h3>{{ $t("about.notice") }}</h3>
 		<p>
 			Draftmancer is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by
 			Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.

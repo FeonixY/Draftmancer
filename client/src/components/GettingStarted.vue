@@ -36,7 +36,7 @@
 				<font-awesome-icon icon="fa-solid fa-crown" class="subtle-gold" />), by default the first connected
 				player.
 				<ol>
-					<li>Session owner chooses an arbitrary Session ID.</li>
+					<li>{{ $t("help.ownerChoosesId") }}</li>
 					<li>
 						Other players join the session by entering its ID or by following the
 						<a @click="sessionURLToClipboard">

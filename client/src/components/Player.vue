@@ -11,19 +11,19 @@
 			size="xs"
 			class="passing-order-repeat"
 			v-if="passingOrder === PassingOrder.Repeat"
-			v-tooltip="'Passing order'"
+			v-tooltip="$t('tooltips.passingOrder')"
 		/>
 		<font-awesome-icon
 			icon="fa-solid fa-angle-double-left"
 			class="passing-order-left"
 			v-else-if="passingOrder === PassingOrder.Left"
-			v-tooltip="'Passing order'"
+			v-tooltip="$t('tooltips.passingOrder')"
 		/>
 		<font-awesome-icon
 			icon="fa-solid fa-angle-double-right"
 			class="passing-order-right"
 			v-else-if="passingOrder === PassingOrder.Right"
-			v-tooltip="'Passing order'"
+			v-tooltip="$t('tooltips.passingOrder')"
 		/>
 
 		<div class="player-name" v-tooltip="user.userName">{{ user.userName }}</div>

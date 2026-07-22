@@ -7,7 +7,7 @@
 			<div class="sealed-dialog">
 				<div class="sealed-dialog-settings">
 					<div class="teams-selector" v-if="teamSealed">
-						<h3>Assign players to a team:</h3>
+						<h3>{{ $t("draft.assignTeams") }}</h3>
 						<div class="teams">
 							<div v-for="(team, idx) in teams" :key="idx" class="team">
 								<div>Team #{{ idx + 1 }}</div>
@@ -46,7 +46,7 @@
 					<div>
 						<h3>
 							<input id="input-useCustomizedBoosters" type="checkbox" v-model="useCustomizedBoosters" />
-							<label for="input-useCustomizedBoosters">Customize the set of each booster</label>
+							<label for="input-useCustomizedBoosters">{{ $t("draft.customizeBoosterSets") }}</label>
 						</h3>
 						<transition name="expand">
 							<div class="input-customBoosters" v-if="useCustomizedBoosters">
@@ -58,7 +58,7 @@
 									v-model="customBoosters[idx]"
 								>
 									<option value="">(Default)</option>
-									<option value="random">Random set from Card Pool</option>
+									<option value="random">{{ $t("draft.randomSetFromPool") }}</option>
 									<option value="" class="option-separator" disabled>————————————————</option>
 									<option v-for="s in MTGASets" :key="s.code" :value="s.code" v-once>
 										{{ s.fullName }}
@@ -76,8 +76,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="distribute">Distribute Boosters</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="distribute">{{ $t("draft.distributeBoosters") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

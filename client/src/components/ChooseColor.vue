@@ -1,6 +1,6 @@
 <template>
 	<TimedSidePopup :timer="30" @timeout="emit('selectColor', undefined)" ref="popup">
-		<h1>Choose a color</h1>
+		<h1>{{ $t("draft.chooseColor") }}</h1>
 		<div style="margin-left: 1em; margin-right: 1em">For {{ userName }}'s '{{ card.name }}'</div>
 		<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5em">
 			<img v-for="c in availableChoices" :key="c" @click="select(c)" class="choice" :src="`img/mana/${c}.svg`" />

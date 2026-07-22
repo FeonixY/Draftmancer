@@ -1,6 +1,6 @@
 <template>
 	<TimedSidePopup :timer="30" @timeout="emit('choose', undefined)" ref="popup">
-		<h1>Choose a player</h1>
+		<h1>{{ $t("draft.choosePlayer") }}</h1>
 		<div style="margin-left: 1em; margin-right: 1em">{{ reason }}</div>
 		<div style="display: flex; flex-direction: column; justify-content: center; gap: 0.5em">
 			<div v-for="uid in users" :key="uid" @click="choose(uid)" class="choice">

@@ -6,19 +6,19 @@
 					icon="fa-solid fa-exclamation-triangle"
 					class="green"
 					v-if="missingCard[card.id] === 'Equivalent'"
-					v-tooltip="'Exact card is missing from your collection, but you own a copy from another set.'"
+					v-tooltip="$t('tooltips.exactMissing')"
 				/>
 				<font-awesome-icon
 					icon="fa-solid fa-exclamation-triangle"
 					class="yellow"
 					v-else-if="missingCard[card.id] === 'Missing'"
-					v-tooltip="'You do not own this card in MTGA.'"
+					v-tooltip="$t('tooltips.notOwnedMtga')"
 				/>
 				<font-awesome-icon
 					icon="fa-solid fa-exclamation-triangle"
 					class="red"
 					v-else-if="missingCard[card.id] === 'NonExistent'"
-					v-tooltip="'This card is not available on MTGA.'"
+					v-tooltip="$t('tooltips.notOnMtga')"
 				/>
 			</div>
 			<div v-if="card.count && card.count > 1" class="card-count">{{ card.count }} x</div>

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="section-title">
-			<h2>Minesweeper Draft</h2>
+			<h2>{{ $t("modes.minesweeperDraft") }}</h2>
 			<div class="controls" style="flex-grow: 1">
 				<span>
 					Grid #{{ state.gridNumber + 1 }}/{{ state.gridCount }}, Pick #{{ state.pickNumber + 1 }}/{{
@@ -16,7 +16,7 @@
 						<template v-if="state.gridNumber >= state.gridCount">
 							This was the last grid! Let me cleanup this cards off the table...
 						</template>
-						<template v-else>Advancing to the next grid...</template>
+						<template v-else>{{ $t("draft.advancingGrid") }}</template>
 					</template>
 					<template v-else>
 						<font-awesome-icon icon="fa-solid fa-spinner" spin />

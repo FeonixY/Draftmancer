@@ -5,7 +5,7 @@
 			<font-awesome-icon icon="fa-solid fa-exclamation-triangle" class="yellow" />
 			{{ missing.total }} are missing from your collection ({{ missingText }})
 		</span>
-		<button @click="downloadList">Download List</button>
+		<button @click="downloadList">{{ $t("cards.downloadList") }}</button>
 		<template v-if="defaultLayout">
 			<div v-for="(row, rowIndex) in rows" :key="'row' + rowIndex" class="category-wrapper">
 				<CardListColumn
@@ -20,7 +20,7 @@
 		</template>
 		<template v-else>
 			<div v-if="cardlist.layouts">
-				<h2>Layouts</h2>
+				<h2>{{ $t("cards.layouts") }}</h2>
 				<div class="layouts">
 					<div v-for="(value, name) in cardlist.layouts" :key="name">
 						<h3>{{ name }} ({{ value.weight }})</h3>
@@ -29,9 +29,9 @@
 				</div>
 			</div>
 			<div style="display: flex; justify-content: space-between; align-items: center">
-				<h2>Sheets</h2>
-				<div v-tooltip="'Display cards in a 2D grid following their collation when applicable'">
-					<label for="sheetDisplay">Full Sheet Display</label>
+				<h2>{{ $t("cards.sheets") }}</h2>
+				<div v-tooltip="$t('tooltips.fullSheet')">
+					<label for="sheetDisplay">{{ $t("cards.fullSheetDisplay") }}</label>
 					<input type="checkbox" v-model="sheetDisplay" id="sheetDisplay" />
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 			</div>
 		</template>
 	</div>
-	<div v-else>No card list loaded.</div>
+	<div v-else>{{ $t("cards.noCardListLoaded") }}</div>
 </template>
 
 <script setup lang="ts">

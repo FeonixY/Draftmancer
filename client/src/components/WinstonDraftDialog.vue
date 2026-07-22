@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Winston Draft</h2>
+			<h2>{{ $t("modes.winstonDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -17,7 +17,7 @@
 					players. The game ends when all the cards of the main stack have been picked.
 				</p>
 				<div class="dialog-settings">
-					<label for="booster-count-input">Boosters in the main stack</label>
+					<label for="booster-count-input">{{ $t("draft.boostersMainStack") }}</label>
 					<div>
 						<input
 							id="booster-count-input"
@@ -30,7 +30,7 @@
 						/>
 						<ResetButton v-model="boosterCount" :default-value="defaultBoosterCount" />
 					</div>
-					<label for="piles-count-input">Number of piles</label>
+					<label for="piles-count-input">{{ $t("draft.numberOfPiles") }}</label>
 					<div>
 						<input
 							id="piles-count-input"
@@ -44,15 +44,15 @@
 						/>
 						<ResetButton v-model="pileCount" :default-value="defaultPileCount" />
 					</div>
-					<label for="remove-basic-lands-input">Remove Basic Lands</label>
+					<label for="remove-basic-lands-input">{{ $t("draft.removeBasics") }}</label>
 					<input type="checkbox" id="remove-basic-lands-input" v-model="removeBasicLands" />
 				</div>
 			</div>
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Winston Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startWinston") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

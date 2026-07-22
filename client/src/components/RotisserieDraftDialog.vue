@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Rotisserie Draft</h2>
+			<h2>{{ $t("modes.rotisserieDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -13,13 +13,13 @@
 					In both cases most session settings still apply.
 				</p>
 				<div class="dialog-settings">
-					<label for="collation-type">Collation Type</label>
+					<label for="collation-type">{{ $t("draft.collationType") }}</label>
 					<select class="swal2-input" v-model="collationType">
-						<option value="singleton">Singleton</option>
-						<option value="standard">Standard</option>
+						<option value="singleton">{{ $t("draft.singleton") }}</option>
+						<option value="standard">{{ $t("misc.standard") }}</option>
 					</select>
 					<template v-if="collationType === 'singleton'">
-						<label for="cards-per-player">Cards per Player</label>
+						<label for="cards-per-player">{{ $t("draft.cardsPerPlayer") }}</label>
 						<div>
 							<input
 								type="number"
@@ -60,8 +60,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Rotisserie Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startRotisserie") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

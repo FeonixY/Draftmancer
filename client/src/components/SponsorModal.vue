@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div style="max-width: 50vw">
-			<p>Hello there!</p>
+			<p>{{ $t("sponsor.hello") }}</p>
 			<p>
 				If you're here I guess you've been enjoing the site! I'm committed to continuously improving the site by
 				adding support for new cards and draft formats as they come out, and generally improving the user
@@ -9,7 +9,7 @@
 				making a donation to help cover hosting costs and keep me motivated and caffeinated through
 				<a href="https://github.com/sponsors/Senryoku" target="_blank">
 					<font-awesome-icon icon="fa-brands fa-github" />
-					<em>GitHub Sponsor</em>
+					<em>{{ $t("misc.sponsor") }}</em>
 				</a>
 				or
 				<a href="https://www.paypal.com/donate/?hosted_button_id=6L2CUS6DH82DL" target="_blank">
@@ -43,7 +43,7 @@
 					/>
 				</form>
 			</div>
-			<p>Thank you very much!</p>
+			<p>{{ $t("sponsor.thanks") }}</p>
 			<p>Sen</p>
 		</div>
 	</div>

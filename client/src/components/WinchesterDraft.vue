@@ -1,7 +1,7 @@
 <template>
 	<div class="winchester-draft">
 		<div class="section-title">
-			<h2>Winchester Draft</h2>
+			<h2>{{ $t("modes.winchesterDraft") }}</h2>
 			<div class="controls">
 				<span>
 					<template v-if="userID === winchesterDraftState.currentPlayer">

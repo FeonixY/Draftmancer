@@ -2,7 +2,7 @@
 	<div v-if="draftlog.version === '2.0' || draftlog.version === '2.1'">
 		<div v-if="!draftlog.delayed && draftlog.type === 'Silent Auction Draft' && draftlog.silentAuction">
 			<div class="section-title">
-				<h2>Auction Results</h2>
+				<h2>{{ $t("draft.auctionResults") }}</h2>
 				<div class="controls">
 					<font-awesome-icon
 						:class="{ disabled: displayOptions.pack <= 0 }"
@@ -56,7 +56,7 @@
 			v-if="!draftlog.delayed"
 			style="display: flex; justify-content: space-between; align-items: center; margin: 0.5em 1em"
 		>
-			<div>Click on a player to display more information.</div>
+			<div>{{ $t("draftlog.clickPlayerInfo") }}</div>
 			<div>
 				<button
 					@click="reloadBoosters"
@@ -64,14 +64,14 @@
 				>
 					<font-awesome-icon :icon="['fas', 'rotate-left']" /> Reload Boosters
 				</button>
-				<button type="button" @click="exportBoosters" v-tooltip="'Export boosters to clipboard.'">
+				<button type="button" @click="exportBoosters" v-tooltip="$t('tooltips.exportBoosters')">
 					<font-awesome-icon icon="fa-solid fa-clipboard-check" /> Export Boosters
 				</button>
 				<button
 					v-if="isFleshAndBloodDraft"
 					type="button"
 					@click="submitToFablazing"
-					v-tooltip="'Open draft log on Fablazing for detailed analysis'"
+					v-tooltip="$t('tooltips.openFablazing')"
 				>
 					<img
 						src="../assets/img/fablazing-logo.svg"
@@ -149,8 +149,8 @@
 							v-model="displayOptions.category"
 							@change="displayOptions.pack = displayOptions.pick = 0"
 						>
-							<option>Cards</option>
-							<option v-if="picksPerPack.length > 0">Picks</option>
+							<option>{{ $t("cards.cards") }}</option>
+							<option v-if="picksPerPack.length > 0">{{ $t("draftlog.picks") }}</option>
 							<option
 								v-if="
 									picksPerPack.length > 0 &&
@@ -282,7 +282,9 @@
 							</div>
 						</div>
 					</template>
-					<template v-else><div class="log-container">No picks.</div></template>
+					<template v-else
+						><div class="log-container">{{ $t("draft.noPicks") }}</div></template
+					>
 				</template>
 				<template v-else-if="displayOptions.category === 'Cards'">
 					<div class="log-container">
@@ -340,7 +342,7 @@
 		</div>
 	</div>
 	<div v-else>
-		<h2>Incompatible draft log version</h2>
+		<h2>{{ $t("draftlog.incompatibleVersion") }}</h2>
 	</div>
 </template>
 

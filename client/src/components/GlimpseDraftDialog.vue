@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Glimpse Draft</h2>
+			<h2>{{ $t("modes.glimpseDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -27,7 +27,7 @@
 						/>
 						<ResetButton v-model="boostersPerPlayer" :default-value="9" />
 					</div>
-					<label for="burn-count-input">Burned cards per pick</label>
+					<label for="burn-count-input">{{ $t("draft.burnedPerPick") }}</label>
 					<div>
 						<input
 							id="burn-count-input"
@@ -45,8 +45,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Glimpse Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startGlimpse") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

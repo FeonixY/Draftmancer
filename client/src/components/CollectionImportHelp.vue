@@ -2,8 +2,9 @@
 	<div style="font-size: 1.1em" class="collection-import-help">
 		<p>
 			Each player can import their MTGA collection to restrict the card pool to cards they own.
-			<strong>Note</strong>: the session setting 'Restrict card pool to Player Collections' must be enabled, or
-			player collections will be ignored by default.
+			<strong>{{ $t("misc.note") }}</strong
+			>: the session setting 'Restrict card pool to Player Collections' must be enabled, or player collections
+			will be ignored by default.
 		</p>
 		<p>
 			With the August 2021 update, WotC disabled native collection export via their logs, requiring the use of an
@@ -18,7 +19,7 @@
 			</a>
 			if you want this to change.
 		</p>
-		<h3>Supported File Formats</h3>
+		<h3>{{ $t("collection.supportedFormats") }}</h3>
 		<ul>
 			<li>
 				Player.log MTGA log file
@@ -58,7 +59,7 @@
 				<em>Options > Account > Detailed Logs (Plugin Support)</em>.
 			</li>
 			<li>
-				<a @click="$emit('uploadlogs')">Upload</a>
+				<a @click="$emit('uploadlogs')">{{ $t("common.upload") }}</a>
 				your MTGA log file "Player.log". Its location is OS-specific: (Note on hidden system folders in
 				<a
 					href="https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files"
@@ -88,7 +89,7 @@
 									'Default log path copied to clipboard! (Windows)'
 								)
 							"
-							v-tooltip="'Copy Windows path to clipboard'"
+							v-tooltip="$t('tooltips.copyWinPath')"
 						>
 							C:\Users\%username%\AppData\LocalLow\Wizards Of The Coast\MTGA\</tt
 						>
@@ -104,7 +105,7 @@
 									'Default log path copied to clipboard! (macOS)'
 								)
 							"
-							v-tooltip="'Copy macOS path to clipboard'"
+							v-tooltip="$t('tooltips.copyMacPath')"
 						>
 							Home/Library/Logs/Wizards Of The Coast/MTGA/
 						</tt>

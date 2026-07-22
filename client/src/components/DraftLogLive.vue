@@ -95,7 +95,7 @@
 					</div>
 				</template>
 			</div>
-			<p class="draft-log-live-instructions" v-else>Click on a player to inspect their picks!</p>
+			<p class="draft-log-live-instructions" v-else>{{ $t("draftlog.clickPlayerPicks") }}</p>
 		</template>
 		<template v-else>
 			<p class="draft-log-live-instructions">

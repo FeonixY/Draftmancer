@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Solomon Draft</h2>
+			<h2>{{ $t("modes.solomonDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -13,7 +13,7 @@
 					the remaining pile.
 				</p>
 				<div class="dialog-settings">
-					<label for="card-input">Card Count</label>
+					<label for="card-input">{{ $t("draft.cardCount") }}</label>
 					<div>
 						<input
 							id="card-input"
@@ -28,7 +28,7 @@
 						<ResetButton v-model="cardCount" :default-value="8" />
 					</div>
 
-					<label for="rounds-input">Rounds</label>
+					<label for="rounds-input">{{ $t("draft.rounds") }}</label>
 					<div>
 						<input
 							id="rounds-input"
@@ -42,15 +42,15 @@
 						/>
 						<ResetButton v-model="roundCount" :default-value="10" />
 					</div>
-					<label for="remove-basic-lands-input">Remove Basic Lands</label>
+					<label for="remove-basic-lands-input">{{ $t("draft.removeBasics") }}</label>
 					<input type="checkbox" id="remove-basic-lands-input" v-model.number="removeBasicLands" />
 				</div>
 			</div>
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Solomon Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startSolomon") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<div class="section-title">
-			<h2>Winston Draft</h2>
+			<h2>{{ $t("modes.winstonDraft") }}</h2>
 			<div class="controls">
 				<span>
-					<template v-if="userID === winstonDraftState.currentPlayer"
-						>Your turn to pick a pile of cards!</template
-					>
+					<template v-if="userID === winstonDraftState.currentPlayer">{{
+						$t("draft.winstonYourTurn")
+					}}</template>
 					<template v-else>
 						Waiting for
 						{{
@@ -56,10 +56,10 @@
 				</transition>
 				<template v-if="index === winstonDraftState.currentPile">
 					<div class="winston-current-pile-options" v-if="userID === winstonDraftState.currentPlayer">
-						<button class="confirm" @click="take">Take Pile</button>
+						<button class="confirm" @click="take">{{ $t("draft.takePile") }}</button>
 						<button class="stop" @click="skip" v-if="winstonCanSkipPile">
 							Skip Pile
-							<span v-show="index === winstonDraftState.piles.length - 1">and Draw</span>
+							<span v-show="index === winstonDraftState.piles.length - 1">{{ $t("draft.andDraw") }}</span>
 						</button>
 					</div>
 					<div class="winston-pile-status" v-else>

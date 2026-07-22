@@ -17,7 +17,7 @@
 						<img v-for="v in modelValue" class="set-icon" :src="SetsInfos[v].icon" :key="v" />
 					</TransitionGroup>
 				</span>
-				<span class="selected-sets placeholder" v-else key="placeholder">All Cards</span>
+				<span class="selected-sets placeholder" v-else key="placeholder">{{ $t("misc.allCards") }}</span>
 			</slot>
 		</div>
 		<div class="options">

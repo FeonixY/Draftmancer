@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Housman Draft</h2>
+			<h2>{{ $t("modes.housmanDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -15,7 +15,7 @@
 					<strong>{{ roundCount }}</strong> rounds.
 				</p>
 				<div class="dialog-settings">
-					<label for="hand-input">Hand Size</label>
+					<label for="hand-input">{{ $t("draft.handSize") }}</label>
 					<div>
 						<input
 							id="hand-input"
@@ -29,7 +29,7 @@
 						/>
 						<ResetButton v-model="handSize" :default-value="5" />
 					</div>
-					<label for="revealed-input">Revealed Cards</label>
+					<label for="revealed-input">{{ $t("draft.revealedCards") }}</label>
 					<div>
 						<input
 							id="revealed-input"
@@ -43,7 +43,7 @@
 						/>
 						<ResetButton v-model="revealedCardsCount" :default-value="9" />
 					</div>
-					<label for="exchanges-input">Exchanges</label>
+					<label for="exchanges-input">{{ $t("draft.exchanges") }}</label>
 					<div>
 						<input
 							id="exchanges-input"
@@ -57,7 +57,7 @@
 						/>
 						<ResetButton v-model="exchangeCount" :default-value="3" />
 					</div>
-					<label for="rounds-input">Rounds</label>
+					<label for="rounds-input">{{ $t("draft.rounds") }}</label>
 					<div>
 						<input
 							id="rounds-input"
@@ -71,23 +71,23 @@
 						/>
 						<ResetButton v-model="roundCount" :default-value="9" />
 					</div>
-					<label for="turn-order-input">Turn Order</label>
+					<label for="turn-order-input">{{ $t("draft.turnOrder") }}</label>
 					<div>
 						<select id="turn-order-input" v-model.number="turnOrder">
-							<option value="classic">Classic</option>
-							<option value="snake">Snaking</option>
+							<option value="classic">{{ $t("misc.classic") }}</option>
+							<option value="snake">{{ $t("draft.snaking") }}</option>
 						</select>
 						<ResetButton v-model="turnOrder" :default-value="'classic'" />
 					</div>
-					<label for="remove-basic-lands-input">Remove Basic Lands</label>
+					<label for="remove-basic-lands-input">{{ $t("draft.removeBasics") }}</label>
 					<input type="checkbox" id="remove-basic-lands-input" v-model="removeBasicLands" />
 				</div>
 			</div>
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Housman Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startHousman") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

@@ -25,8 +25,10 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button v-if="currentBooster < boosters.length - 1" class="confirm" @click="next">Next</button>
-				<button v-else class="confirm" @click="close">Build!</button>
+				<button v-if="currentBooster < boosters.length - 1" class="confirm" @click="next">
+					{{ $t("common.next") }}
+				</button>
+				<button v-else class="confirm" @click="close">{{ $t("draft.build") }}</button>
 			</div>
 		</template>
 	</modal>

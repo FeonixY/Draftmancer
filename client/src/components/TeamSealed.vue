@@ -2,7 +2,7 @@
 	<div class="team-sealed-container player-colors" :style="cssVariables">
 		<div class="team-sealed-infos">
 			<div class="team">
-				<div>Your Team:</div>
+				<div>{{ $t("draft.yourTeam") }}</div>
 				<div v-for="user in teamDisplay" :key="user.idx" :class="`player player-${user.idx}`">
 					<span>{{ user.userName }}</span>
 					<span class="color-list" v-if="user.colors">

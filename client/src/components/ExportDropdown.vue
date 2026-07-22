@@ -1,72 +1,51 @@
 <template>
 	<Dropdown>
-		<template v-slot:handle>Export</template>
+		<template v-slot:handle>{{ $t("export.export") }}</template>
 		<template v-slot:dropdown>
 			<div class="row">
-				<button @click="clipboardMTGA(true)" v-tooltip.top="'Export deck and sideboard for Arena to clipboard'">
+				<button @click="clipboardMTGA(true)" v-tooltip.top="$t('tooltips.exArena')">
 					<img class="set-icon button-icon" src="../assets/img/mtga-icon.png" />MTGA
 				</button>
-				<button @click="downloadMTGA(true)" v-tooltip.right="'Download deck and sideboard for Arena'">
+				<button @click="downloadMTGA(true)" v-tooltip.right="$t('tooltips.dlArena')">
 					<font-awesome-icon icon="fa-solid fa-file-download" class="button-icon" />
 				</button>
 			</div>
 			<div class="row">
-				<button
-					@click="clipboardMTGA(false)"
-					v-tooltip.top="'Export deck and sideboard without set information to clipboard'"
-				>
+				<button @click="clipboardMTGA(false)" v-tooltip.top="$t('tooltips.exNoSet')">
 					<font-awesome-icon icon="fa-solid fa-clipboard" class="button-icon" />Card Names
 				</button>
-				<button
-					@click="downloadMTGA(false)"
-					v-tooltip.right="'Download deck and sideboard without set information'"
-				>
+				<button @click="downloadMTGA(false)" v-tooltip.right="$t('tooltips.dlNoSet')">
 					<font-awesome-icon icon="fa-solid fa-file-download" class="button-icon" />
 				</button>
 			</div>
-			<button @click="exportDeckMTGO()" v-tooltip.right="'Download .deck file for MTGO'">
+			<button @click="exportDeckMTGO()" v-tooltip.right="$t('tooltips.dlMtgo')">
 				<img class="set-icon button-icon" src="../assets/img/mtgo-icon.webp" /> MTGO .dek
 			</button>
 			<div class="row">
-				<button @click="clipboardCollectorNumber()" v-tooltip.top="'Export collector number list'">
+				<button @click="clipboardCollectorNumber()" v-tooltip.top="$t('tooltips.exCollector')">
 					<font-awesome-icon icon="fa-solid fa-clipboard" class="button-icon" />
 					Collector #
 				</button>
-				<button @click="downloadCollectorNumber()" v-tooltip.right="'Download collector number list'">
+				<button @click="downloadCollectorNumber()" v-tooltip.right="$t('tooltips.dlCollector')">
 					<font-awesome-icon icon="fa-solid fa-file-download" class="button-icon" />
 				</button>
 			</div>
 			<template v-if="hasCustomCards">
-				<div class="header">External services</div>
-				<button
-					@click="exportDeckToFaBrary()"
-					v-tooltip.right="'Export directly to FaBrary, the Flesh and Blood library.'"
-				>
+				<div class="header">{{ $t("export.externalServices") }}</div>
+				<button @click="exportDeckToFaBrary()" v-tooltip.right="$t('tooltips.exFabrary')">
 					<font-awesome-icon icon="fa-solid fa-external-link-alt" class="button-icon" />FaBrary
 				</button>
 				<div class="header">Cubecana</div>
-				<button
-					@click="exportToCubecana('lorcanito')"
-					v-tooltip.right="'Export directly to Lorcanito via Cubecana.'"
-				>
+				<button @click="exportToCubecana('lorcanito')" v-tooltip.right="$t('tooltips.exLorcanito')">
 					<font-awesome-icon icon="fa-solid fa-external-link-alt" class="button-icon" />Lorcanito
 				</button>
-				<button
-					@click="exportToCubecana('inktable')"
-					v-tooltip.right="'Export directly to Inktable  via Cubecana.'"
-				>
+				<button @click="exportToCubecana('inktable')" v-tooltip.right="$t('tooltips.exInktable')">
 					<font-awesome-icon icon="fa-solid fa-external-link-alt" class="button-icon" />Inktable
 				</button>
-				<button
-					@click="exportToCubecana('tts')"
-					v-tooltip.right="'Export directly to Tabletop Simulator via Cubecana.'"
-				>
+				<button @click="exportToCubecana('tts')" v-tooltip.right="$t('tooltips.exTts')">
 					<font-awesome-icon icon="fa-solid fa-external-link-alt" class="button-icon" />TTS
 				</button>
-				<button
-					@click="exportToCubecana('duelsink')"
-					v-tooltip.right="'Export directly to Duels.ink via Cubecana.'"
-				>
+				<button @click="exportToCubecana('duelsink')" v-tooltip.right="$t('tooltips.exDuelsink')">
 					<font-awesome-icon icon="fa-solid fa-external-link-alt" class="button-icon" />Duels.ink
 				</button>
 			</template>

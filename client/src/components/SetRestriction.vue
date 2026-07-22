@@ -10,7 +10,7 @@
 				Deselect All
 			</button>
 			Current Selection:
-			<span v-if="modelValue.length === 0">No set restriction (All cards)</span>
+			<span v-if="modelValue.length === 0">{{ $t("misc.noSetRestriction") }}</span>
 			<span v-else-if="modelValue.length === 1">
 				<img
 					class="set-icon"
@@ -43,14 +43,14 @@
 						<span
 							@click="add(block.sets.map((s) => s.code))"
 							class="clickable"
-							v-tooltip="'Add all sets from this block'"
+							v-tooltip="$t('tooltips.addBlockSets')"
 						>
 							<font-awesome-icon icon="fa-solid fa-plus-square" />
 						</span>
 						<span
 							@click="remove(block.sets.map((s) => s.code))"
 							class="clickable"
-							v-tooltip="'Remove all sets from this block'"
+							v-tooltip="$t('tooltips.removeBlockSets')"
 						>
 							<font-awesome-icon icon="fa-solid fa-minus-square" />
 						</span>

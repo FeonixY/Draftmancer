@@ -34,7 +34,7 @@
 				</span>
 			</li>
 		</ol>
-		<template v-else>No messages in chat history.</template>
+		<template v-else>{{ $t("chat.noMessages") }}</template>
 	</div>
 </template>
 

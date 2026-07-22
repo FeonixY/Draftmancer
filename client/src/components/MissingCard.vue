@@ -1,6 +1,6 @@
 <template>
 	<Card :card="uniqueCard" :language="language" :lazyLoad="true">
-		<div class="not-booster" v-if="!card.in_booster">Can't be obtained in boosters.</div>
+		<div class="not-booster" v-if="!card.in_booster">{{ $t("cards.notInBoosters") }}</div>
 		<div class="card-count" v-if="card.count < 4">x{{ 4 - card.count }}</div>
 	</Card>
 </template>

@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Grid Draft</h2>
+			<h2>{{ $t("modes.grid") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -22,7 +22,7 @@
 					<div>
 						<input type="checkbox" id="two-picks-input" v-model="twoPicksPerGrid" />
 					</div>
-					<label for="booster-count-input">Grid count</label>
+					<label for="booster-count-input">{{ $t("draft.gridCount") }}</label>
 					<div>
 						<input
 							id="booster-count-input"
@@ -40,7 +40,7 @@
 					<div>
 						<select id="booster-type" v-model="regularBoosters">
 							<option :value="true">Regular</option>
-							<option :value="false">Grid Sized</option>
+							<option :value="false">{{ $t("draft.gridSize") }}</option>
 						</select>
 					</div>
 
@@ -55,8 +55,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Grid Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startGrid") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

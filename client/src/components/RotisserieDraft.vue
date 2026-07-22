@@ -16,7 +16,9 @@
 					<template #popper>
 						<div class="last-picks-container">
 							<div class="last-picks">
-								<div v-if="!state.lastPicks || state.lastPicks.length === 0">No picks yet.</div>
+								<div v-if="!state.lastPicks || state.lastPicks.length === 0">
+									{{ $t("draft.noPicksYet") }}
+								</div>
 								<div v-for="card in lastPicks" :key="card.uniqueID">
 									<h2>
 										{{ users.find((u) => u.userID === card.owner)?.userName ?? "Disconnected" }}
@@ -27,7 +29,7 @@
 						</div>
 					</template>
 				</VDropdown>
-				<div v-if="userID === state.currentPlayer">Your turn! Pick a card:</div>
+				<div v-if="userID === state.currentPlayer">{{ $t("draft.yourTurnPick") }}</div>
 				<div v-else>Waiting for {{ currentPlayerName }} to pick a card...</div>
 				<button v-if="userID === state.currentPlayer" @click="onConfirmPick" :disabled="selectedCard === null">
 					Confirm Pick

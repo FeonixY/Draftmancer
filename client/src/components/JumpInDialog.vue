@@ -5,14 +5,14 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<div>Select one or multiple sets:</div>
+				<div>{{ $t("draft.selectSets") }}</div>
 				<div style="display: flex; justify-content: space-evenly">
 					<button @click="all">All</button>
-					<button @click="current">Current</button>
+					<button @click="current">{{ $t("misc.current") }}</button>
 					<button @click="jumpIntoMiddleEarth">Jump into Middle-Earth</button>
-					<button @click="firstRotation">First Rotation</button>
-					<button @click="initial">Initial</button>
-					<button @click="none">None</button>
+					<button @click="firstRotation">{{ $t("draft.firstRotation") }}</button>
+					<button @click="initial">{{ $t("misc.initial") }}</button>
+					<button @click="none">{{ $t("misc.none") }}</button>
 				</div>
 				<div class="sets">
 					<div v-for="set in Sets" :key="set" class="set">
@@ -33,7 +33,7 @@
 		<template v-slot:footer>
 			<div class="actions">
 				<button class="confirm" @click="start" :disabled="sets.length === 0">Start</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

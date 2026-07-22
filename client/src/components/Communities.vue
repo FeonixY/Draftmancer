@@ -293,7 +293,7 @@ const explain = () => {
 		icon: "info",
 		title: "Featured Communities",
 		html: `<p>These communities are focused around diverse aspects of Limited Magic and are known to organize tournaments and events using Draftmancer.</p>
-		<p>Do you want your own community to be featured here?<br />
+		<p>{{ $t("communities.feature") }}<br />
 		You can submit it by contacting me (Senryoku) via <a href="mailto:dev@draftmancer.com">email</a> or the <a href="https://discord.gg/XscXXNw">Draftmancer Discord</a></p>`,
 	});
 };

@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<div>Choose a set</div>
+				<div>{{ $t("draft.chooseSet") }}</div>
 				<div class="set-list">
 					<button @click="start('tla')">
 						<img src="../../public/img/sets/tle.svg" class="set-icon" alt="TLE" />
@@ -33,7 +33,7 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

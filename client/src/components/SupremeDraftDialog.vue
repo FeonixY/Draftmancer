@@ -1,14 +1,14 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Supreme Draft</h2>
+			<h2>{{ $t("modes.supremeDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Supreme Draft is a solo draft variant.</p>
+				<p>{{ $t("draft.supremeDesc") }}</p>
 				<p>Pick {{ pickedCardsPerRound }} cards in each booster and discard the rest!</p>
 				<div class="dialog-settings">
-					<label for="booster-count-input">Booster count</label>
+					<label for="booster-count-input">{{ $t("draft.boosterCount") }}</label>
 					<div>
 						<input
 							id="booster-count-input"
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="dialog-settings">
-					<label for="pick-count-input">Picks per booster</label>
+					<label for="pick-count-input">{{ $t("draft.picksPerBooster") }}</label>
 					<div>
 						<input
 							id="pick-count-input"
@@ -43,8 +43,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Supreme Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startSupreme") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

@@ -1,7 +1,7 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Silent Auction Draft</h2>
+			<h2>{{ $t("modes.silentAuctionDraft") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
@@ -10,7 +10,7 @@
 					funds). Once all bids are in, they are resolved from left to right.
 				</p>
 				<div class="dialog-settings">
-					<label for="booster-count-input">Pack count</label>
+					<label for="booster-count-input">{{ $t("draft.packCount") }}</label>
 					<div>
 						<input
 							id="booster-count-input"
@@ -23,7 +23,7 @@
 						/>
 						<ResetButton v-model="boosterCount" :default-value="defaultBoosterCount" />
 					</div>
-					<label for="starting-funds-input">Starting Funds</label>
+					<label for="starting-funds-input">{{ $t("draft.startingFunds") }}</label>
 					<div>
 						<input
 							id="starting-funds-input"
@@ -35,7 +35,7 @@
 						/>
 						<ResetButton v-model="startingFunds" :default-value="defaultStartingFunds" />
 					</div>
-					<label for="reserve-price-input">Reserve Price</label>
+					<label for="reserve-price-input">{{ $t("draft.reservePrice") }}</label>
 					<div>
 						<input
 							id="reserve-price-input"
@@ -51,11 +51,11 @@
 						Minimum amount for a bid to be valid. Anything higher than 0 means that some cards might be
 						discarded.
 					</div>
-					<label for="price-paid-input">Price Paid</label>
+					<label for="price-paid-input">{{ $t("draft.pricePaid") }}</label>
 					<div>
 						<select id="price-paid-input" v-model="pricePaid">
-							<option value="first">First</option>
-							<option value="second">Second</option>
+							<option value="first">{{ $t("misc.first") }}</option>
+							<option value="second">{{ $t("misc.second") }}</option>
 						</select>
 						<ResetButton v-model="pricePaid" :default-value="'first'" />
 					</div>
@@ -64,7 +64,7 @@
 						with the second-price option.
 					</div>
 					<div class="tiebreakers">
-						<label>Tiebreakers</label>
+						<label>{{ $t("draft.tiebreakers") }}</label>
 						<Sortable
 							:list="tiebreakers"
 							item-key="property"
@@ -91,8 +91,8 @@
 										</option>
 									</select>
 									<select v-model="element.winner">
-										<option value="higher">Higher</option>
-										<option value="lower">Lower</option>
+										<option value="higher">{{ $t("misc.higher") }}</option>
+										<option value="lower">{{ $t("misc.lower") }}</option>
 									</select>
 									<font-awesome-icon
 										icon="fa-solid fa-trash"
@@ -102,7 +102,9 @@
 								</div>
 							</template>
 						</Sortable>
-						<div v-if="availableTiebreakers.length > 0"><button @click="addTiebreaker">Add</button></div>
+						<div v-if="availableTiebreakers.length > 0">
+							<button @click="addTiebreaker">{{ $t("common.add") }}</button>
+						</div>
 					</div>
 					<div class="help">
 						Tiebreakers can be re-ordered. If everything is equal, winner will be chosen randomly.
@@ -112,8 +114,8 @@
 		</template>
 		<template v-slot:footer>
 			<div class="actions">
-				<button class="confirm" @click="start">Start Silent Auction Draft</button>
-				<button class="cancel" @click="cancel">Cancel</button>
+				<button class="confirm" @click="start">{{ $t("draft.startSilentAuction") }}</button>
+				<button class="cancel" @click="cancel">{{ $t("common.cancel") }}</button>
 			</div>
 		</template>
 	</modal>

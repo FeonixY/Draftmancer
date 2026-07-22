@@ -1,7 +1,7 @@
 <template>
 	<div class="charts">
 		<div>
-			<h2>Mana Curve</h2>
+			<h2>{{ $t("stats.manaCurve") }}</h2>
 			<Bar
 				:data="cmcChartData"
 				:options="{
@@ -15,10 +15,10 @@
 			<table class="type-table">
 				<tbody>
 					<tr>
-						<th>CMC</th>
-						<th>Creature</th>
-						<th>Non-Creature</th>
-						<th>Total</th>
+						<th>{{ $t("stats.cmc") }}</th>
+						<th>{{ $t("cards.creature") }}</th>
+						<th>{{ $t("cards.nonCreature") }}</th>
+						<th>{{ $t("stats.total") }}</th>
 					</tr>
 					<tr v-for="(data, cmc) in manacurve" :key="cmc">
 						<td class="table-number">
@@ -32,13 +32,13 @@
 			</table>
 		</div>
 		<div>
-			<h2>Colors in Mana Cost</h2>
+			<h2>{{ $t("stats.colorsInCost") }}</h2>
 			<Pie :data="colorsChartData" />
 			<table class="type-table">
 				<tbody>
 					<tr>
-						<th>Mana Color</th>
-						<th>Count in Cost</th>
+						<th>{{ $t("stats.manaColor") }}</th>
+						<th>{{ $t("stats.countInCost") }}</th>
 					</tr>
 					<tr v-for="(count, color) in colors" :key="color">
 						<td>{{ color }}</td>
@@ -48,13 +48,13 @@
 			</table>
 		</div>
 		<div>
-			<h2>Types</h2>
+			<h2>{{ $t("cards.types") }}</h2>
 			<Pie :data="cardTypeChartData" />
 			<table class="type-table">
 				<tbody>
 					<tr>
-						<th>Type</th>
-						<th>Count</th>
+						<th>{{ $t("cards.type") }}</th>
+						<th>{{ $t("stats.count") }}</th>
 						<th>%</th>
 					</tr>
 					<tr v-for="(val, key) in types" :key="key">
@@ -63,7 +63,7 @@
 						<td class="table-number">{{ (100 * (val / (cards.length + addedbasics))).toPrecision(3) }}%</td>
 					</tr>
 					<tr>
-						<td>Total</td>
+						<td>{{ $t("stats.total") }}</td>
 						<td class="table-number">{{ cards.length + addedbasics }}</td>
 						<td class="table-number">-</td>
 					</tr>

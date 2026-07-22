@@ -36,14 +36,14 @@
 					</template>
 					<template v-slot:dropdown>
 						<div class="section">
-							<div class="header">Columns</div>
+							<div class="header">{{ $t("cards.columns") }}</div>
 							<div style="display: flex; justify-content: space-evenly">
 								<font-awesome-icon
 									icon="fa-solid fa-minus"
 									size="lg"
 									class="clickable"
 									@click="remColumn(undefined)"
-									v-tooltip="'Remove the last column'"
+									v-tooltip="$t('tooltips.removeColumn')"
 									:class="{ disabled: rows[0].length <= 1 }"
 								/>
 								{{ rows[0].length }}
@@ -52,7 +52,7 @@
 									size="lg"
 									class="clickable"
 									@click="addColumn"
-									v-tooltip="'Add a column'"
+									v-tooltip="$t('tooltips.addColumn')"
 								/>
 							</div>
 						</div>
@@ -69,13 +69,13 @@
 							/>
 						</div>
 						<div class="section">
-							<div class="header">Sort</div>
+							<div class="header">{{ $t("cards.sort") }}</div>
 							<div style="display: grid; grid-template-columns: auto auto; margin: auto">
 								<div
 									@click="sortByCMC"
 									class="sort-button clickable"
 									:class="{ 'selected-sort': options.sort === 'cmc' }"
-									v-tooltip.left="'Sort cards by CMC'"
+									v-tooltip.left="$t('tooltips.sortByCmc')"
 								>
 									<font-awesome-icon icon="fa-solid fa-sort-amount-up" size="2x" />
 								</div>
@@ -83,7 +83,7 @@
 									@click="sortByColor"
 									class="sort-button clickable"
 									:class="{ 'selected-sort': options.sort === 'color' }"
-									v-tooltip.right="'Sort cards by color'"
+									v-tooltip.right="$t('tooltips.sortByColor')"
 								>
 									<img src="../assets/img/sort-color.svg" />
 								</div>
@@ -91,7 +91,7 @@
 									@click="sortByRarity"
 									class="sort-button clickable"
 									:class="{ 'selected-sort': options.sort === 'rarity' }"
-									v-tooltip.left="'Sort cards by rarity'"
+									v-tooltip.left="$t('tooltips.sortByRarity')"
 								>
 									<img src="../assets/img/sort-rarity.svg" />
 								</div>
@@ -99,7 +99,7 @@
 									@click="sortByType"
 									class="sort-button clickable"
 									:class="{ 'selected-sort': options.sort === 'type' }"
-									v-tooltip.right="'Sort cards by type'"
+									v-tooltip.right="$t('tooltips.sortByType')"
 								>
 									<img src="../assets/img/sort-type.svg" />
 								</div>
@@ -115,7 +115,7 @@
 		<div class="card-pool" ref="cardcolumns" :key="poolKey">
 			<div class="empty-warning" v-if="cards.length == 0">
 				<slot name="empty">
-					<h3>This card pool is currently empty!</h3>
+					<h3>{{ $t("cards.poolEmpty") }}</h3>
 				</slot>
 			</div>
 			<div class="column-headers" v-show="options.displayHeaders">

@@ -10,7 +10,7 @@
 		>
 			<template v-slot:title>Mainboard ({{ list.main.length }})</template>
 			<template v-slot:controls>
-				<span v-if="landcount > 0">Added basics:</span>
+				<span v-if="landcount > 0">{{ $t("deck.addedBasics") }}</span>
 				<span v-for="(value, color) in lands" :key="color">
 					<img :src="`img/mana/${color}.svg`" class="mana-icon" style="vertical-align: text-bottom" />
 					{{ value }}
@@ -33,13 +33,10 @@
 					}"
 				/>
 				<template v-if="list.hashes">
-					<span
-						@click="copyHash(hashes.cockatrice)"
-						class="clickable"
-						v-tooltip.top="'Copy hash to clipboard.'"
+					<span @click="copyHash(hashes.cockatrice)" class="clickable" v-tooltip.top="$t('tooltips.copyHash')"
 						>Cockatrice: {{ hashes.cockatrice }}</span
 					>
-					<span @click="copyHash(hashes.mws)" class="clickable" v-tooltip.top="'Copy hash to clipboard.'"
+					<span @click="copyHash(hashes.mws)" class="clickable" v-tooltip.top="$t('tooltips.copyHash')"
 						>MWS: {{ hashes.mws }}</span
 					>
 				</template>
@@ -74,14 +71,14 @@
 					<td
 						@click="copyHash(hashes.cockatrice)"
 						class="clickable"
-						v-tooltip.right="'Copy hash to clipboard.'"
+						v-tooltip.right="$t('tooltips.copyHash')"
 					>
 						<code>{{ hashes.cockatrice }}</code>
 					</td>
 				</tr>
 				<tr>
 					<td>MWS</td>
-					<td @click="copyHash(hashes.mws)" class="clickable" v-tooltip.right="'Copy hash to clipboard.'">
+					<td @click="copyHash(hashes.mws)" class="clickable" v-tooltip.right="$t('tooltips.copyHash')">
 						<code>{{ hashes.mws }}</code>
 					</td>
 				</tr>

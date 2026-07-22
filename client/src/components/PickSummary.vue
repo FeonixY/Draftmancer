@@ -1,6 +1,6 @@
 <template>
 	<div class="last-picks" v-if="picks && picks.length > 0">
-		<span class="last-picks-title">Last Picks</span>
+		<span class="last-picks-title">{{ $t("draft.lastPicks") }}</span>
 		<transition-group tag="div" name="vertical-queue" class="vertical-queue" mode="">
 			<div v-for="p in picks" class="pick-remainder vertical-queue-item" :key="p.round">
 				{{ p.userName }}

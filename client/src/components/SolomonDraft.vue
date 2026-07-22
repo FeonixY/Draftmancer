@@ -46,7 +46,7 @@
 					<template #popper>
 						<div class="last-picks-container">
 							<div class="last-picks">
-								<div v-if="state.lastPicks.length === 0">No picks yet.</div>
+								<div v-if="state.lastPicks.length === 0">{{ $t("draft.noPicksYet") }}</div>
 								<div v-for="round in state.lastPicks" :key="round.round">
 									<h2>Round {{ round.round + 1 }}</h2>
 									<div style="display: flex; gap: 1em">
