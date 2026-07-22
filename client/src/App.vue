@@ -11,7 +11,7 @@
 		<!-- Personal Options -->
 		<div id="view-controls" class="main-controls">
 			<span>
-				<label for="user-name">User Name</label>
+				<label for="user-name">{{ $t("session.userName") }}</label>
 				<delayed-input
 					id="user-name"
 					v-model="userName"
@@ -21,8 +21,8 @@
 					style="margin-right: 0.25em"
 				/>
 			</span>
-			<div class="inline" v-tooltip="'Controls the display language of cards.'">
-				<label for="select-language" id="select-language-label">Card Language</label>
+			<div class="inline" v-tooltip="$t('tooltips.cardLanguage')">
+				<label for="select-language" id="select-language-label">{{ $t("cards.cardLanguage") }}</label>
 				<select v-model="language" id="select-language">
 					<option
 						v-for="lang in languages"
@@ -69,7 +69,7 @@
 						icon="fa-solid fa-question-circle"
 						class="clickable"
 						@click="displayedModal = 'collectionHelp'"
-						v-tooltip="'Collection Import Help'"
+						v-tooltip="$t('tooltips.collectionImportHelp')"
 					/>
 					<input
 						type="file"
@@ -78,14 +78,14 @@
 						style="display: none"
 						accept=".txt,.csv,.log"
 					/>
-					<span v-tooltip="'Import your collection by uploading your Player.log file.'">
+					<span v-tooltip="$t('tooltips.importCollection')">
 						<font-awesome-icon @click="uploadMTGALogs" icon="fa-solid fa-file-upload" class="clickable" />
 					</span>
 					<font-awesome-icon
 						icon="fa-solid fa-chart-bar"
 						class="clickable"
 						v-if="hasCollection"
-						v-tooltip="'Collection Statistics'"
+						v-tooltip="$t('tooltips.collectionStats')"
 						@click="displayedModal = 'collection'"
 					/>
 					<div
@@ -104,17 +104,13 @@
 						}"
 					>
 						<input type="checkbox" v-model="useCollection" id="useCollection" />
-						<label for="useCollection">Restrict to Collection</label>
+						<label for="useCollection">{{ $t("cards.restrictToCollection") }}</label>
 					</div>
 				</span>
 			</span>
 			<div>
-				<button
-					@click="displayedModal = 'draftLogs'"
-					class="flat"
-					v-tooltip="'Displays logs of your previous drafts and sealed'"
-				>
-					<font-awesome-icon icon="fa-solid fa-list" /> Game Logs
+				<button @click="displayedModal = 'draftLogs'" class="flat" v-tooltip="$t('tooltips.gameLogs')">
+					<font-awesome-icon icon="fa-solid fa-list" /> {{ $t("menu.gameLogs") }}
 				</button>
 			</div>
 			<span class="personal-settings">
@@ -246,14 +242,14 @@
 							class="fa-regular clickable"
 							:icon="'fa-regular ' + (hideSessionID ? 'fa-eye' : 'fa-eye-slash')"
 							@click="hideSessionID = !hideSessionID"
-							v-tooltip="'Show/Hide your session ID.'"
+							v-tooltip="$t('tooltips.toggleSessionId')"
 							fixed-width
 						/>
 
 						<font-awesome-icon
 							class="clickable"
 							icon="fa-solid fa-share-from-square"
-							v-tooltip="'Copy session link for sharing.'"
+							v-tooltip="$t('tooltips.copySessionLink')"
 							@click="sessionURLToClipboard"
 							fixed-width
 						/>
@@ -264,7 +260,7 @@
 							icon="fa-solid fa-trophy"
 							v-if="sessionOwner === userID && !bracket"
 							@click="generateBracket(teamDraft ? BracketType.Team : BracketType.Single)"
-							v-tooltip="'Generate tournament bracket.'"
+							v-tooltip="$t('tooltips.generateBracket')"
 						/>
 						<font-awesome-icon
 							id="bracket-button"
@@ -272,7 +268,7 @@
 							icon="fa-solid fa-trophy"
 							v-else-if="bracket"
 							@click="displayedModal = 'bracket'"
-							v-tooltip="'Display tournament bracket.'"
+							v-tooltip="$t('tooltips.displayBracket')"
 						/>
 
 						<font-awesome-icon
@@ -293,7 +289,7 @@
 						accept=".txt"
 					/>
 
-					<strong class="remove-below-1400">Card Pool: </strong>
+					<strong class="remove-below-1400">{{ $t("cards.cardPoolLabel") }}</strong>
 					<template v-if="useCustomCardList && customCardList">
 						<span class="inline-cube-name" style="vertical-align: text-top">{{
 							customCardList.name ?? "Custom Card List"
@@ -305,15 +301,15 @@
 									icon="fa-solid fa-file-alt"
 									class="clickable blue"
 									@click="displayedModal = 'cardList'"
-									v-tooltip="'Review the card list'"
+									v-tooltip="$t('tooltips.reviewCardList')"
 								/>
 							</div>
-							<div v-else>No list loaded</div>
+							<div v-else>{{ $t("cards.noListLoaded") }}</div>
 							<div class="clickable" onclick="document.querySelector('#card-list-input-main').click()">
 								<font-awesome-icon
 									style="padding: 0.25em"
 									icon="fa-solid fa-file-upload"
-									v-tooltip="'Upload a Custom Card List'"
+									v-tooltip="$t('tooltips.uploadCustomList')"
 									v-if="sessionOwner === userID"
 								/>
 							</div>
@@ -321,7 +317,7 @@
 								<font-awesome-icon
 									style="padding: 0.25em"
 									icon="fa-solid fa-times"
-									v-tooltip="'Return to official sets.'"
+									v-tooltip="$t('tooltips.returnToSets')"
 									v-if="sessionOwner === userID"
 								/>
 							</div>
@@ -363,7 +359,7 @@
 								class="inline clickable"
 								style="padding: 0.4em 0.6em"
 								@click="displayedModal = 'setRestriction'"
-								v-tooltip="'More sets'"
+								v-tooltip="$t('tooltips.moreSets')"
 							>
 								<font-awesome-icon icon="fa-solid fa-ellipsis-v" />
 							</div>
@@ -386,11 +382,7 @@
 				</div>
 				<span class="generic-container" :class="{ disabled: sessionOwner != userID }">
 					<strong>Draft:</strong>
-					<div
-						class="inline"
-						:class="{ disabled: teamDraft }"
-						v-tooltip="'Bots. Use them to draft alone or fill your pod.'"
-					>
+					<div class="inline" :class="{ disabled: teamDraft }" v-tooltip="$t('tooltips.bots')">
 						<label for="bots"><font-awesome-icon icon="fa-solid fa-robot" /></label>
 						<input
 							type="number"
@@ -402,11 +394,7 @@
 							v-model.number="bots"
 						/>
 					</div>
-					<div
-						class="inline"
-						v-tooltip="'Pick Timer (sec.). Zero means no timer.'"
-						:class="{ disabled: tournamentTimer }"
-					>
+					<div class="inline" v-tooltip="$t('tooltips.pickTimer')" :class="{ disabled: tournamentTimer }">
 						<label for="timer">
 							<font-awesome-icon icon="fa-solid fa-stopwatch" size="lg" />
 						</label>
@@ -420,8 +408,10 @@
 							v-model.number="maxTimer"
 						/>
 					</div>
-					<span v-tooltip="'Starts a Draft Session.'">
-						<button @click="startDraft" v-show="userID === sessionOwner" class="blue">Start</button>
+					<span v-tooltip="$t('tooltips.startDraft')">
+						<button @click="startDraft" v-show="userID === sessionOwner" class="blue">
+							{{ $t("common.start") }}
+						</button>
 					</span>
 				</span>
 				<span v-show="userID === sessionOwner">
@@ -435,87 +425,87 @@
 										'Starts a Winston Draft. This is a draft variant intended for two players, but playable at any number.'
 									"
 								>
-									<button @click="startWinstonDraft()">Winston</button>
+									<button @click="startWinstonDraft()">{{ $t("modes.winston") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Starts a Winchester Draft. This is a draft variant similar to Winston and Rochester draft.'
 									"
 								>
-									<button @click="startWinchesterDraft()">Winchester</button>
+									<button @click="startWinchesterDraft()">{{ $t("modes.winchester") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Housman Draft.'">
-									<button @click="startHousmanDraft()">Housman</button>
+								<div v-tooltip.left="$t('tooltips.startHousman')">
+									<button @click="startHousmanDraft()">{{ $t("modes.housman") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Solomon Draft.'">
-									<button @click="startSolomonDraft()">Solomon (2p.)</button>
+								<div v-tooltip.left="$t('tooltips.startSolomon')">
+									<button @click="startSolomonDraft()">{{ $t("modes.solomonPlayers") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Starts a Grid Draft. This is a draft variant for two to four players.'
 									"
 								>
-									<button @click="startGridDraft()">Grid (2-4p.)</button>
+									<button @click="startGridDraft()">{{ $t("modes.gridPlayers") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Starts a Glimpse Draft. Players also remove cards from the draft each pick.'
 									"
 								>
-									<button @click="startGlimpseDraft()">Glimpse/Burn</button>
+									<button @click="startGlimpseDraft()">{{ $t("modes.glimpseBurn") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Starts a Rochester Draft. Every players pick from a single booster.'
 									"
 								>
-									<button @click="startRochesterDraft()">Rochester</button>
+									<button @click="startRochesterDraft()">{{ $t("modes.rochester") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Starts a Rotisserie Draft. Each player picks from a single card pool one after the other.'
 									"
 								>
-									<button @click="startRotisserieDraft()">Rotisserie</button>
+									<button @click="startRotisserieDraft()">{{ $t("modes.rotisserie") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Minesweeper Draft.'">
-									<button @click="startMinesweeperDraft()">Minesweeper</button>
+								<div v-tooltip.left="$t('tooltips.startMinesweeper')">
+									<button @click="startMinesweeperDraft()">{{ $t("modes.minesweeper") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Solo Supreme Draft.'">
-									<button @click="startSupremeDraft()">Supreme (1p.)</button>
+								<div v-tooltip.left="$t('tooltips.startSupreme')">
+									<button @click="startSupremeDraft()">{{ $t("modes.supremePlayers") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Silent Auction Draft.'">
-									<button @click="startSilentAuctionDraft()">Silent Auction</button>
+								<div v-tooltip.left="$t('tooltips.startSilentAuction')">
+									<button @click="startSilentAuctionDraft()">{{ $t("modes.silentAuction") }}</button>
 								</div>
 							</div>
 							<div class="game-modes-cat">
-								<span class="game-modes-cat-title">Sealed</span>
-								<div v-tooltip.left="'Distributes boosters to everyone for a sealed session.'">
-									<button @click="sealedDialog(false)">Sealed</button>
+								<span class="game-modes-cat-title">{{ $t("modes.sealed") }}</span>
+								<div v-tooltip.left="$t('tooltips.startSealed')">
+									<button @click="sealedDialog(false)">{{ $t("modes.sealed") }}</button>
 								</div>
-								<div v-tooltip.left="'Starts a Team Sealed.'">
-									<button @click="sealedDialog(true)">Team Sealed</button>
+								<div v-tooltip.left="$t('tooltips.startTeamSealed')">
+									<button @click="sealedDialog(true)">{{ $t("modes.teamSealed") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Distributes two Jumpstart boosters to everyone. Multiple sets are available.'
 									"
 								>
-									<button @click="jumpstartDialog">Jumpstart</button>
+									<button @click="jumpstartDialog">{{ $t("modes.jumpstart") }}</button>
 								</div>
 								<div
 									v-tooltip.left="
 										'Distributes two Jump In! boosters to everyone. Multiple sets are available.'
 									"
 								>
-									<button @click="startJumpIn">Jump In!</button>
+									<button @click="startJumpIn">{{ $t("modes.jumpIn") }}</button>
 								</div>
 							</div>
 						</template>
 					</dropdown>
 				</span>
 				<button
-					v-tooltip="'More session settings'"
+					v-tooltip="$t('tooltips.moreSessionSettings')"
 					@click="displayedModal = 'sessionOptions'"
 					class="setting-button flat"
 				>
@@ -581,7 +571,7 @@
 					<div class="chat-bubble" :id="'chat-bubble-' + sessionOwner"></div>
 				</div>
 				<div
-					v-tooltip="'Maximum players can be adjusted in session settings.'"
+					v-tooltip="$t('tooltips.maxPlayersHint')"
 					style="flex: 0 3 auto; text-align: center; font-size: 0.8em; margin-right: 0.5em"
 				>
 					Players
@@ -622,7 +612,7 @@
 					</span>
 					<Transition>
 						<div class="spectators-dropdown" v-if="displaySpectatorsList" @click.stop>
-							<div class="game-modes-cat-title">Spectators</div>
+							<div class="game-modes-cat-title">{{ $t("session.spectators") }}</div>
 							<div class="spectator-list">
 								<div
 									class="spectator-name"
@@ -639,7 +629,7 @@
 									/>
 									<span class="spectator-username">{{ spectator.userName }}</span>
 								</div>
-								<div v-if="sessionSpectators.length === 0">No spectators</div>
+								<div v-if="sessionSpectators.length === 0">{{ $t("session.noSpectators") }}</div>
 							</div>
 							<div class="spectator-controls" v-if="userID === sessionOwner">
 								<hr />
@@ -650,7 +640,7 @@
 								</button>
 								<button
 									class="stop"
-									v-tooltip="'Removes every spectator and invalidates the link'"
+									v-tooltip="$t('tooltips.removeSpectators')"
 									@click="disableSpectating"
 								>
 									<font-awesome-icon icon="fa-regular fa-eye-slash" /> Disable
@@ -739,7 +729,7 @@
 					class="clickable"
 					icon="fa-regular fa-comments"
 					@click="displayChatHistory = !displayChatHistory"
-					v-tooltip="'Display chat history.'"
+					v-tooltip="$t('tooltips.chatHistory')"
 				/>
 				<ChatHistory
 					v-if="displayChatHistory"
@@ -768,11 +758,11 @@
 					>
 						<div v-if="gameState === GameState.Watching" key="draft-watching" class="draft-watching">
 							<div class="draft-watching-state">
-								<h1 v-if="!drafting">Draft Completed</h1>
-								<h1 v-else-if="!draftPaused">Players are drafting...</h1>
-								<h1 v-else>Draft Paused</h1>
+								<h1 v-if="!drafting">{{ $t("draft.completed") }}</h1>
+								<h1 v-else-if="!draftPaused">{{ $t("draft.playersDrafting") }}</h1>
+								<h1 v-else>{{ $t("draft.paused") }}</h1>
 								<div v-if="drafting">Pack #{{ draftState.boosterNumber + 1 }}</div>
-								<div v-else>Players are now finalizing their decks</div>
+								<div v-else>{{ $t("draft.finalizingDecks") }}</div>
 							</div>
 							<div
 								v-if="draftLogLive && draftLogLive.sessionID === sessionID"
@@ -817,7 +807,7 @@
 									</span>
 									<template v-if="gameState == GameState.Picking">
 										<template v-if="draftState.skipPick">
-											<button @click="passBooster">Pass Booster</button>
+											<button @click="passBooster">{{ $t("draft.passBooster") }}</button>
 										</template>
 										<template v-else>
 											<input
@@ -830,7 +820,7 @@
 												"
 											/>
 											<span v-else>
-												<span v-if="cardsToPick === 1">Pick a card</span>
+												<span v-if="cardsToPick === 1">{{ $t("draft.pickACard") }}</span>
 												<span v-else>
 													Pick {{ cardsToPick }} cards ({{ selectedCards.length }}/{{
 														cardsToPick
@@ -956,7 +946,7 @@
 					</transition>
 
 					<div v-if="gameState === GameState.Reviewing" style="text-align: center">
-						<h1>Review Phase</h1>
+						<h1>{{ $t("draft.reviewPhase") }}</h1>
 						<span class="chrono">
 							<div
 								class="timer-icon"
@@ -1043,7 +1033,7 @@
 					"
 				>
 					<div class="section-title">
-						<h2>Grid Draft</h2>
+						<h2>{{ $t("modes.grid") }}</h2>
 						<div class="controls">
 							<span>
 								Pack #{{
@@ -1067,7 +1057,7 @@
 									>
 										This was the last booster! Let me push these booster wrappers off the table...
 									</template>
-									<template v-else>Advancing to the next booster...</template>
+									<template v-else>{{ $t("draft.advancingBooster") }}</template>
 								</template>
 								<template v-else>
 									<font-awesome-icon icon="fa-solid fa-spinner" spin />
@@ -1098,7 +1088,7 @@
 				>
 					<div style="flex-grow: 1">
 						<div class="section-title controls">
-							<h2>Rochester Draft</h2>
+							<h2>{{ $t("modes.rochesterDraft") }}</h2>
 							<div class="controls" style="flex-grow: 2">
 								<span>
 									Pack #{{ rochesterDraftState.boosterNumber + 1 }}/{{
@@ -1178,7 +1168,7 @@
 							<div class="swal2-icon swal2-warning swal2-icon-show" style="display: flex">
 								<div class="swal2-icon-content">!</div>
 							</div>
-							<h1>Draft Paused</h1>
+							<h1>{{ $t("draft.paused") }}</h1>
 							<template v-if="userID === sessionOwner">
 								<div style="margin-top: 1em">
 									<button class="confirm" @click="resumeDraft">
@@ -1230,7 +1220,7 @@
 							<div class="swal2-icon swal2-warning swal2-icon-show" style="display: flex">
 								<div class="swal2-icon-content">!</div>
 							</div>
-							<h1>Player(s) disconnected</h1>
+							<h1>{{ $t("session.playersDisconnected") }}</h1>
 
 							<div
 								v-if="
@@ -1329,7 +1319,7 @@
 									Deck ({{ deck.length
 									}}<span
 										v-show="gameState == GameState.Brewing && totalLands > 0"
-										v-tooltip="'Added basics on export (Not shown in decklist below).'"
+										v-tooltip="$t('tooltips.addedBasics')"
 									>
 										+ {{ totalLands }}</span
 									>)
@@ -1350,7 +1340,7 @@
 										class="clickable"
 										style="display: flex"
 										@click="displayedModal = 'sampleHand'"
-										v-tooltip="'Draw a Sample Hand'"
+										v-tooltip="$t('tooltips.drawSampleHand')"
 									>
 										<img src="./assets/img/cards.svg" width="24px" height="24px" />
 									</div>
@@ -1360,11 +1350,11 @@
 											size="lg"
 											v-tooltip.top="'Deck Statistics'"
 										/>
-										<div class="deck-stat" v-tooltip="'Creatures in deck'">
+										<div class="deck-stat" v-tooltip="$t('tooltips.creaturesInDeck')">
 											{{ deckCreatureCount }}
 											<img src="./assets/img/Creature.svg" />
 										</div>
-										<div class="deck-stat" v-tooltip="'Lands in deck'">
+										<div class="deck-stat" v-tooltip="$t('tooltips.landsInDeck')">
 											{{ deckLandCount }}
 											<img src="./assets/img/Land_symbol_white.svg" />
 										</div>
@@ -1477,7 +1467,7 @@
 										<font-awesome-icon
 											icon="fa-solid fa-arrow-right-arrow-left"
 											class="clickable"
-											v-tooltip="'Swap deck and sideboard'"
+											v-tooltip="$t('tooltips.swapDeckSideboard')"
 											@click="swapDeckAndSideboard"
 										/>
 										<font-awesome-icon
@@ -1485,20 +1475,20 @@
 											class="clickable"
 											:class="{ disabled: sideboard.length === 0 }"
 											flip="horizontal"
-											v-tooltip="'Move all cards from sideboard to deck'"
+											v-tooltip="$t('tooltips.sideboardToDeck')"
 											@click="moveAllToDeck"
 										/>
 										<font-awesome-icon
 											icon="fa-solid fa-arrow-right-from-bracket"
 											class="clickable"
 											:class="{ disabled: deck.length === 0 }"
-											v-tooltip="'Move all cards from deck to sideboard'"
+											v-tooltip="$t('tooltips.deckToSideboard')"
 											@click="moveAllToSideboard"
 										/>
 									</div>
 								</template>
 								<template v-slot:empty>
-									<h3>Your deck is currently empty!</h3>
+									<h3>{{ $t("cards.deckEmpty") }}</h3>
 									<p>Click on cards in your sideboard to move them here.</p>
 								</template>
 							</card-pool>
@@ -1522,7 +1512,7 @@
 										class="clickable"
 										icon="fa-regular fa-window-maximize"
 										@click="collapseSideboard = false"
-										v-tooltip="'Maximize sideboard'"
+										v-tooltip="$t('tooltips.maximizeSideboard')"
 									/>
 								</div>
 							</div>
@@ -1592,11 +1582,11 @@
 									icon="fa-solid fa-columns"
 									class="clickable"
 									@click="collapseSideboard = true"
-									v-tooltip="'Minimize sideboard'"
+									v-tooltip="$t('tooltips.minimizeSideboard')"
 								/>
 							</template>
 							<template v-slot:empty>
-								<h3>Your sideboard is currently empty!</h3>
+								<h3>{{ $t("cards.sideboardEmpty") }}</h3>
 								<p>Click on cards in your deck to move them here.</p>
 							</template>
 						</card-pool>
@@ -1617,7 +1607,7 @@
 					>
 						<font-awesome-icon :icon="['fas', 'rotate-left']" /> Reload last deck
 					</button>
-					<h1>Welcome to Draftmancer.com!</h1>
+					<h1>{{ $t("misc.welcome") }}</h1>
 					<p class="important">
 						Draft with other players and export your resulting deck to Magic: The Gathering Arena to play
 						with them, in pod!
@@ -1636,14 +1626,14 @@
 							</a>
 							<!--
 							<div class="section-title">
-								<h2>Quick Start</h2>
+								<h2>{{ $t("misc.quickStart") }}</h2>
 							</div>
 							<div class="welcome-section welcome-alt">
 								There are multiple ways to get started with Draftmancer:
 								<ul class="quick-start-list">
 									<li>
 										Pratice the latest sets with other players in the
-										<a href="/draftqueue">Draft Queue</a>!
+										<a href="/draftqueue">{{ $t("menu.draftQueue") }}</a>!
 									</li>
 									<li>
 										Draft with bots by selecting a set and clicking "<span
@@ -1670,7 +1660,7 @@
 						</div>
 						<div class="container" style="grid-area: Help">
 							<div class="section-title">
-								<h2>Help</h2>
+								<h2>{{ $t("menu.help") }}</h2>
 							</div>
 							<div class="welcome-section welcome-alt">
 								<div style="display: flex; justify-content: space-between">
@@ -1723,7 +1713,7 @@
 										<div style="position: relative">
 											<a href="https://github.com/sponsors/Senryoku" target="_blank">
 												<font-awesome-icon icon="fa-brands fa-github" size="2x" />
-												<div>GitHub Sponsor</div>
+												<div>{{ $t("misc.sponsor") }}</div>
 											</a>
 											<div
 												style="
@@ -1785,7 +1775,7 @@
 					</div>
 					<div class="container" style="grid-area: PublicSessions">
 						<div class="section-title">
-							<h2>Public Sessions</h2>
+							<h2>{{ $t("session.publicSessions") }}</h2>
 						</div>
 						<div class="welcome-section">
 							<div v-if="userID === sessionOwner" style="display: flex">
@@ -1801,12 +1791,14 @@
 								/>
 							</div>
 
-							<p v-if="publicSessions.length === 0" style="text-align: center">No public sessions</p>
+							<p v-if="publicSessions.length === 0" style="text-align: center">
+								{{ $t("session.noPublicSessions") }}
+							</p>
 							<table v-else class="public-sessions">
 								<thead>
 									<tr>
 										<th>ID</th>
-										<th>Set(s)</th>
+										<th>{{ $t("misc.sets") }}</th>
 										<th>Players</th>
 										<th>Description</th>
 										<th>Join</th>
@@ -1834,7 +1826,9 @@
 										<td>{{ s.players }} / {{ s.maxPlayers }}</td>
 										<td class="desc">{{ s.description }}</td>
 										<td>
-											<button v-if="s.id !== sessionID" @click="sessionID = s.id">Join</button>
+											<button v-if="s.id !== sessionID" @click="sessionID = s.id">
+												{{ $t("common.join") }}
+											</button>
 											<font-awesome-icon
 												icon="fa-solid fa-check"
 												class="green"
@@ -1853,7 +1847,7 @@
 
 		<modal :displayed="displayedModal === 'help'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Help</h2>
+				<h2>{{ $t("menu.help") }}</h2>
 			</template>
 			<template v-slot:body>
 				<help-modal @openSettings="displayedModal = 'sessionOptions'" />
@@ -1861,7 +1855,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'gettingStarted'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Getting Started</h2>
+				<h2>{{ $t("menu.gettingStarted") }}</h2>
 			</template>
 			<template v-slot:body>
 				<getting-started
@@ -1874,7 +1868,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'collectionHelp'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Collection Import Help</h2>
+				<h2>{{ $t("export.collectionImportHelp") }}</h2>
 			</template>
 			<template v-slot:body>
 				<CollectionImportHelp @uploadlogs="uploadMTGALogs" @clipboard="toClipboard" />
@@ -1882,7 +1876,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'importdeck'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Card List Importer</h2>
+				<h2>{{ $t("cards.cardListImporter") }}</h2>
 			</template>
 			<template v-slot:body>
 				<div>
@@ -1916,7 +1910,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'uploadBoosters'" @close="displayedModal = 'sessionOptions'">
 			<template v-slot:header>
-				<h2>Upload Boosters</h2>
+				<h2>{{ $t("booster.uploadBoosters") }}</h2>
 			</template>
 			<template v-slot:body>
 				<div>
@@ -1942,7 +1936,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'setRestriction'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Card Pool</h2>
+				<h2>{{ $t("cards.cardPool") }}</h2>
 			</template>
 			<template v-slot:body>
 				<set-restriction-component v-model="setRestriction"></set-restriction-component>
@@ -1950,7 +1944,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'draftLogs'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Game Logs</h2>
+				<h2>{{ $t("menu.gameLogs") }}</h2>
 			</template>
 			<template v-slot:body>
 				<draft-log-history
@@ -1968,7 +1962,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'collection'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Collection Statistics</h2>
+				<h2>{{ $t("stats.collectionStats") }}</h2>
 			</template>
 			<template v-slot:body>
 				<collection-component
@@ -1982,7 +1976,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'sessionOptions'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Additional Session Settings</h2>
+				<h2>{{ $t("session.additionalSessionSettings") }}</h2>
 			</template>
 			<template v-slot:contols>
 				<div>
@@ -1991,7 +1985,7 @@
 						class="clickable"
 						:class="{ disabled: userID !== sessionOwner }"
 						@click="resetSessionSettings"
-						v-tooltip="'Reset all session settings to their default value'"
+						v-tooltip="$t('tooltips.resetSettings')"
 					/>
 				</div>
 			</template>
@@ -2043,7 +2037,7 @@
 								html: true,
 							}"
 						>
-							<label for="is-owner-player">Spectate as Session Owner</label>
+							<label for="is-owner-player">{{ $t("session.spectateAsOwner") }}</label>
 							<div class="right">
 								<input
 									type="checkbox"
@@ -2064,7 +2058,7 @@
 								html: true,
 							}"
 						>
-							<label for="allow-spectators">Allow Spectators</label>
+							<label for="allow-spectators">{{ $t("settings.allowSpectators") }}</label>
 							<div class="right">
 								<input
 									type="checkbox"
@@ -2077,14 +2071,14 @@
 									class="clickable"
 									style="margin-left: 0.5em"
 									@click="spectatorLinkToClipboard"
-									v-tooltip="'Copy spectator link to clipboard'"
+									v-tooltip="$t('tooltips.copySpectatorLink')"
 								>
 									<font-awesome-icon icon="fa-solid fa-clipboard" />
 								</span>
 							</div>
 						</div>
 						<div class="line">
-							<label for="max-players">Maximum Players</label>
+							<label for="max-players">{{ $t("session.maxPlayers") }}</label>
 							<div class="right">
 								<input
 									class="small-number-input"
@@ -2096,7 +2090,7 @@
 								/>
 							</div>
 						</div>
-						<h4>Booster Generation</h4>
+						<h4>{{ $t("booster.generation") }}</h4>
 						<div
 							class="line"
 							v-tooltip.left="{
@@ -2107,7 +2101,7 @@
 							}"
 							:class="{ disabled: usePredeterminedBoosters }"
 						>
-							<label for="color-balance">Color Balance</label>
+							<label for="color-balance">{{ $t("cards.colorBalance") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="colorBalance" id="color-balance" />
 							</div>
@@ -2122,7 +2116,7 @@
 								html: true,
 							}"
 						>
-							<label for="mythic-promotion">Rare promotion to Mythic</label>
+							<label for="mythic-promotion">{{ $t("booster.rareToMythic") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="mythicPromotion" id="mythic-promotion" />
 							</div>
@@ -2154,7 +2148,7 @@
 								html: true,
 							}"
 						>
-							<label for="restrict-to-collections">Restrict card pool to Collections</label>
+							<label for="restrict-to-collections">{{ $t("session.restrictPoolToCollections") }}</label>
 							<div class="right">
 								<input
 									type="checkbox"
@@ -2186,7 +2180,7 @@
 						>
 							<div class="option-column-title">
 								<input type="checkbox" v-model="useBoosterContent" id="edit-booster-content" />
-								<label for="edit-booster-content">Edit Booster Content</label>
+								<label for="edit-booster-content">{{ $t("booster.editContent") }}</label>
 							</div>
 							<template v-if="useBoosterContent">
 								<div class="line" v-for="r in ['common', 'uncommon', 'rare', 'bonus']" :key="r">
@@ -2225,7 +2219,7 @@
 									:checked="maxDuplicates !== null"
 									@click="toggleLimitDuplicates"
 									id="max-duplicate-title"
-								/><label for="max-duplicate-title">Limit duplicates</label>
+								/><label for="max-duplicate-title">{{ $t("cards.limitDuplicates") }}</label>
 							</div>
 							<template v-if="maxDuplicates !== null">
 								<div class="line" v-for="r in Object.keys(maxDuplicates)" :key="r">
@@ -2256,7 +2250,7 @@
 								html: true,
 							}"
 						>
-							<label for="use-predetermined-boosters">Use Pre-Determined Boosters</label>
+							<label for="use-predetermined-boosters">{{ $t("booster.usePredetermined") }}</label>
 							<div class="right">
 								<input
 									type="checkbox"
@@ -2268,13 +2262,13 @@
 								</button>
 								<button
 									@click="shuffleUploadedBoosters"
-									v-tooltip="'Shuffle the boosters before distributing them.'"
+									v-tooltip="$t('tooltips.shuffleBeforeDistribute')"
 								>
 									Shuffle
 								</button>
 							</div>
 						</div>
-						<h4>Game Logs</h4>
+						<h4>{{ $t("menu.gameLogs") }}</h4>
 						<div
 							class="line"
 							v-tooltip.left="{
@@ -2284,7 +2278,7 @@
 								html: true,
 							}"
 						>
-							<label for="option-personal-logs">Personal Logs</label>
+							<label for="option-personal-logs">{{ $t("menu.personalLogs") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="personalLogs" id="option-personal-logs" />
 							</div>
@@ -2298,13 +2292,13 @@
 								html: true,
 							}"
 						>
-							<label for="draft-log-recipients">Send full game logs to</label>
+							<label for="draft-log-recipients">{{ $t("session.sendLogsTo") }}</label>
 							<div class="right">
 								<select v-model="draftLogRecipients" id="draft-log-recipients">
-									<option value="everyone">Everyone</option>
-									<option value="delayed">Everyone, on owner approval</option>
-									<option value="owner">Owner only</option>
-									<option value="none">No-one</option>
+									<option value="everyone">{{ $t("misc.everyone") }}</option>
+									<option value="delayed">{{ $t("misc.everyoneOnApproval") }}</option>
+									<option value="owner">{{ $t("misc.ownerOnly") }}</option>
+									<option value="none">{{ $t("misc.noOne") }}</option>
 								</select>
 							</div>
 						</div>
@@ -2318,7 +2312,7 @@
 								html: true,
 							}"
 						>
-							<label for="draft-log-unlock-timer">Automatic Logs Unlock Timer</label>
+							<label for="draft-log-unlock-timer">{{ $t("settings.autoUnlockTimer") }}</label>
 							<div class="right">
 								<select v-model="draftLogUnlockTimer" id="draft-log-unlock-timer">
 									<option :value="0">Never</option>
@@ -2330,7 +2324,7 @@
 						</div>
 					</div>
 					<div class="option-column option-column-right">
-						<h4>Draft Specific Settings</h4>
+						<h4>{{ $t("draft.specificSettings") }}</h4>
 						<div
 							class="line"
 							v-tooltip.right="{
@@ -2340,7 +2334,7 @@
 								html: true,
 							}"
 						>
-							<label for="team-draft">Team Draft</label>
+							<label for="team-draft">{{ $t("modes.teamDraft") }}</label>
 							<div class="right">
 								<input type="checkbox" id="team-draft" v-model="teamDraft" />
 							</div>
@@ -2353,7 +2347,7 @@
 								html: true,
 							}"
 						>
-							<label for="boosters-per-player">Boosters per Player</label>
+							<label for="boosters-per-player">{{ $t("draft.boostersPerPlayer") }}</label>
 							<div class="right">
 								<delayed-input
 									type="number"
@@ -2372,7 +2366,7 @@
 							class="option-section"
 							v-bind:class="{ disabled: usePredeterminedBoosters || useCustomCardList }"
 						>
-							<div class="option-column-title">Individual Booster Set</div>
+							<div class="option-column-title">{{ $t("booster.individualSet") }}</div>
 							<div
 								class="line"
 								v-tooltip.right="{
@@ -2382,17 +2376,19 @@
 									html: true,
 								}"
 							>
-								<label for="distribution-mode">Distribution Mode</label>
+								<label for="distribution-mode">{{ $t("booster.distributionMode") }}</label>
 								<select
 									class="right"
 									v-model="distributionMode"
 									name="distributionMode"
 									id="distribution-mode"
 								>
-									<option value="regular">Regular</option>
-									<option value="shufflePlayerBoosters">Shuffle Player Boosters</option>
-									<option value="shuffleBoosterPool">Shuffle Booster Pool</option>
-									<option value="staggered">Staggered</option>
+									<option value="regular">{{ $t("booster.regular") }}</option>
+									<option value="shufflePlayerBoosters">
+										{{ $t("booster.shufflePlayerBoosters") }}
+									</option>
+									<option value="shuffleBoosterPool">{{ $t("booster.shufflePool") }}</option>
+									<option value="staggered">{{ $t("booster.staggered") }}</option>
 								</select>
 							</div>
 							<hr style="margin: 0.4em 1em; color: #555" />
@@ -2409,8 +2405,8 @@
 									<label for="customized-booster">Booster #{{ index + 1 }}</label>
 									<select class="right" v-model="customBoosters[index]">
 										<option value>(Default)</option>
-										<option value="random">Random Set from Card Pool</option>
-										<option value="randomShared">Random Set from Card Pool (Shared)</option>
+										<option value="random">{{ $t("booster.randomSet") }}</option>
+										<option value="randomShared">{{ $t("booster.randomSetShared") }}</option>
 										<option style="color: #888" disabled>————————————————</option>
 										<option v-for="code in sets.slice().reverse()" :value="code" :key="code">
 											{{ setsInfos[code].fullName }}
@@ -2441,7 +2437,7 @@
 									html: true,
 								}"
 							>
-								<label for="picked-cards-per-round">Picked cards per booster</label>
+								<label for="picked-cards-per-round">{{ $t("draft.pickedPerBooster") }}</label>
 								<div class="right">
 									<input
 										type="number"
@@ -2452,7 +2448,7 @@
 										v-model.number="pickedCardsPerRound"
 										@change="if (pickedCardsPerRound < 1) pickedCardsPerRound = 1;"
 									/>
-									<label for="doubleMastersMode">First Pick Only</label
+									<label for="doubleMastersMode">{{ $t("draft.firstPickOnly") }}</label
 									><input type="checkbox" id="doubleMastersMode" v-model="doubleMastersMode" />
 								</div>
 							</div>
@@ -2465,7 +2461,7 @@
 									html: true,
 								}"
 							>
-								<label for="burned-cards-per-round">Burned cards per booster</label>
+								<label for="burned-cards-per-round">{{ $t("draft.burnedCards") }}</label>
 								<div class="right">
 									<input
 										type="number"
@@ -2488,7 +2484,7 @@
 								html: true,
 							}"
 						>
-							<label for="discard-remaining-cards">Discard the remaining</label>
+							<label for="discard-remaining-cards">{{ $t("booster.discardRemaining") }}</label>
 							<div class="right">
 								<input
 									type="number"
@@ -2517,12 +2513,12 @@
 								html: true,
 							}"
 						>
-							<label for="disable-bot-suggestions">Disable Bot Suggestions</label>
+							<label for="disable-bot-suggestions">{{ $t("settings.disableBotSuggestions") }}</label>
 							<div class="right">
 								<input type="checkbox" id="disable-bot-suggestions" v-model="disableBotSuggestions" />
 							</div>
 						</div>
-						<h4>Tournament Settings</h4>
+						<h4>{{ $t("session.tournamentSettings") }}</h4>
 						<div
 							class="line"
 							v-tooltip.right="{
@@ -2531,7 +2527,7 @@
 								html: true,
 							}"
 						>
-							<label for="tournament-timer">Tournament Timer</label>
+							<label for="tournament-timer">{{ $t("session.tournamentTimer") }}</label>
 							<div class="right">
 								<input type="checkbox" id="tournament-timer" v-model="tournamentTimer" />
 							</div>
@@ -2545,7 +2541,7 @@
 								html: true,
 							}"
 						>
-							<label for="review-timer">Review Timer</label>
+							<label for="review-timer">{{ $t("draft.reviewTimer") }}</label>
 							<div class="right">
 								<input
 									type="number"
@@ -2565,7 +2561,7 @@
 								html: true,
 							}"
 						>
-							<label for="hide-picks">Hide Picks</label>
+							<label for="hide-picks">{{ $t("draft.hidePicks") }}</label>
 							<div class="right">
 								<input type="checkbox" id="hide-picks" v-model="hidePicks" />
 							</div>
@@ -2595,7 +2591,7 @@
 											useCustomCardList && customCardList && customCardList.layouts,
 									}"
 								>
-									<label for="cards-per-booster">Cards per Booster</label>
+									<label for="cards-per-booster">{{ $t("draft.cardsPerBooster") }}</label>
 									<input
 										type="number"
 										id="cards-per-booster"
@@ -2619,7 +2615,9 @@
 										v-model="customCardListWithReplacement"
 										id="custom-card-list-with-replacement"
 									/>
-									<label for="custom-card-list-with-replacement">With Replacement</label>
+									<label for="custom-card-list-with-replacement">{{
+										$t("booster.withReplacement")
+									}}</label>
 								</div>
 								<div
 									v-tooltip.up="{
@@ -2636,7 +2634,9 @@
 										id="custom-card-list-refill-when-empty"
 										@change="updateCCLRefillWhenEmpty"
 									/>
-									<label for="custom-card-list-refill-when-empty">Refill when empty</label>
+									<label for="custom-card-list-refill-when-empty">{{
+										$t("booster.refillWhenEmpty")
+									}}</label>
 								</div>
 								<div
 									v-tooltip.up="{
@@ -2651,7 +2651,9 @@
 										v-model="customCardListDuplicateProtection"
 										id="custom-card-list-duplicate-protection"
 									/>
-									<label for="custom-card-list-duplicate-protection">Duplicate Protection</label>
+									<label for="custom-card-list-duplicate-protection">{{
+										$t("cards.duplicateProtection")
+									}}</label>
 								</div>
 							</div>
 							<div
@@ -2662,13 +2664,13 @@
 									icon="fa-solid fa-check"
 									class="green"
 									v-if="useCustomCardList"
-									v-tooltip="'Card list successfully loaded!'"
+									v-tooltip="$t('tooltips.cardListLoaded')"
 								/>
 								<font-awesome-icon
 									icon="fa-solid fa-exclamation-triangle"
 									class="yellow"
 									v-else
-									v-tooltip="'Card list successfully loaded, but not used.'"
+									v-tooltip="$t('tooltips.cardListLoadedUnused')"
 								/>
 								<div v-if="customCardList.name">
 									Loaded '<span class="inline-cube-name" style="vertical-align: bottom">{{
@@ -2676,7 +2678,7 @@
 									}}</span
 									>'.
 								</div>
-								<div v-else>Unamed list loaded.</div>
+								<div v-else>{{ $t("cards.unnamedListLoaded") }}</div>
 								<button @click="displayedModal = 'cardList'">
 									<font-awesome-icon icon="fa-solid fa-file-lines" />
 									Review.
@@ -2734,7 +2736,7 @@
 								html: true,
 							}"
 						>
-							<label for="curated-cubes">Load a Pre-Build Cube:</label>
+							<label for="curated-cubes">{{ $t("session.loadPrebuiltCube") }}</label>
 							<select name="featured-cubes" id="curated-cubes" v-model="selectedCube">
 								<option v-for="cube in cubeLists" :key="cube.filename" :value="cube">
 									{{ cube.name }}
@@ -2802,7 +2804,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'sampleHand'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Sample Hand Generator</h2>
+				<h2>{{ $t("stats.sampleHandGenerator") }}</h2>
 			</template>
 			<template v-slot:body>
 				<sample-hand-generator :language="language" :deck="deck" :lands="lands" />
@@ -2810,7 +2812,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'deckStats'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Deck Statistics</h2>
+				<h2>{{ $t("stats.deckStats") }}</h2>
 			</template>
 			<template v-slot:body>
 				<card-stats :cards="deck" :addedbasics="totalLands"></card-stats>
@@ -2818,7 +2820,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'cardList'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Custom Card List Review</h2>
+				<h2>{{ $t("cards.customListReview") }}</h2>
 			</template>
 			<template v-slot:body>
 				<card-list :cardlist="customCardList" :language="language" :collection="collection"></card-list>
@@ -2826,7 +2828,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'About'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>About</h2>
+				<h2>{{ $t("menu.about") }}</h2>
 			</template>
 			<template v-slot:body>
 				<About />
@@ -2834,7 +2836,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'donation'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Support Draftmancer</h2>
+				<h2>{{ $t("misc.support") }}</h2>
 			</template>
 			<template v-slot:body>
 				<sponsor-modal />
@@ -2843,7 +2845,7 @@
 		<CardPopup :language="language" :customCards="customCardList?.customCards" ref="cardPopup" />
 		<footer>
 			<span @click="displayedModal = 'About'" class="clickable">
-				<span class="link">About</span>
+				<span class="link">{{ $t("menu.about") }}</span>
 			</span>
 			<span>
 				Made by
