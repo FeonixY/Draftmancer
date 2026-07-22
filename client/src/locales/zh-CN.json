@@ -471,7 +471,7 @@
     "cubeCobraSupport": "实验性支持 Cube Cobra 自定义轮抽赛制。"
   },
   "communities": {
-    "feature": "想让你自己的社区展示在这里吗？"
+    "title": "推荐社区"
   },
   "sponsor": {
     "hello": "你好！",

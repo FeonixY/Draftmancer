@@ -2,7 +2,7 @@
 	<div>
 		<div class="section-title">
 			<h2>
-				Featured Communities
+				{{ $t("communities.title") }}
 				<font-awesome-icon class="clickable" @click="explain" :icon="['fas', 'question-circle']" size="sm" />
 			</h2>
 		</div>
@@ -19,32 +19,8 @@
 						<h2 class="name">{{ c.name }}</h2>
 						<div class="description" v-html="c.brief"></div>
 						<div class="links">
-							<a v-if="c.links.discord" :href="c.links.discord" target="_blank">
-								<font-awesome-icon :icon="['brands', 'discord']" /><span class="link-label">
-									Discord server
-								</span>
-								<span v-if="c.discord_member_count"> ({{ c.discord_member_count }} members)</span>
-							</a>
-							<a v-if="c.links.twitter" :href="c.links.twitter" target="_blank">
-								<font-awesome-icon :icon="['brands', 'twitter']" /><span class="link-label">
-									Twitter
-								</span>
-							</a>
-							<a v-if="c.links.youtube" :href="c.links.youtube" target="_blank">
-								<font-awesome-icon :icon="['brands', 'youtube']" /><span class="link-label">
-									Youtube
-								</span>
-							</a>
-							<a v-if="c.links.twitch" :href="c.links.twitch" target="_blank">
-								<font-awesome-icon :icon="['brands', 'twitch']" /><span class="link-label">
-									Twitch
-								</span>
-							</a>
 							<a v-if="c.links.website" :href="c.links.website" target="_blank">
-								<font-awesome-icon :icon="['fas', 'globe']" /><span class="link-label"> Website</span>
-							</a>
-							<a v-if="c.links.cube" :href="c.links.cube" target="_blank">
-								<font-awesome-icon :icon="['fas', 'cube']" /><span class="link-label"> Cube</span>
+								<font-awesome-icon :icon="['fas', 'globe']" /><span class="link-label"> 网站</span>
 							</a>
 						</div>
 						<div class="tags">
@@ -110,134 +86,12 @@ onMounted(() => {
 
 const communities = ref([
 	{
-		name: "MTG Cube Talk",
-		brief: "A friendly server to discuss Cube design, organize online limited events, and talk with over 2,500 other Cube and Magic enthusiasts about the best game in the world!",
-		icon: "mtg_cube_talk.webp",
-		tags: ["Cube", "Cockatrice", "Design", "Discussion"],
-		links: { discord: "https://discord.gg/mtg-cube-talk-263828508126609420" },
-		discord_member_count: undefined,
-	},
-	{
-		name: "Arena Pod Draft",
-		brief: "Community for frequent and new limited players. Great place to ask for assistance and start a new pod with active members.",
-		icon: "arena_pod_draft.webp",
-		tags: ["Pod Draft", "Cube", "Chaos", "MTGA", "Duelist", "EU", "NA"],
-		links: { discord: "https://discord.gg/wg8dcfD4j3" },
-	},
-	{
-		name: "Arena Gauntlet League",
-		brief: "We are a Limited Magic Community on Discord that runs a unique 6-week sealed-deck-type tournament called Gauntlet, with games played out on Arena for fun and prizes.",
-		description:
-			"We are a Limited Magic Community on Discord running regular tournaments played out on Arena. Each tournament uses the Gauntlet format (of our own creation) as a base: a six-week tournament where you make a 60-card sealed deck from 6 packs, play 5 matches a week against different players, and add a “punishment pack” to your pool after each loss. The Top 8 then compete in a 3-round 6-pack Megadraft for the coveted title of League Champion. We also run weekly Side-Quests which are one-time events usually run via Draftmancer trying out all kinds of different draft types.",
-		icon: "gauntlet_league_logo.webp",
-		tags: ["Sealed", "Draft", "Tournament", "Event", "MTGA"],
-		links: { discord: "https://discord.gg/7TuJqSAhX9", website: "https://f2fleague.wordpress.com/" },
-	},
-	{
-		name: "XMage Draft Historical Society",
-		brief: "Come experience the history of Limited Magic with the XDHS!<br />We host six drafts each week, open to all, with a chronological progression plus a variety of bonus formats. Matches are played out as a 3-round Swiss tourney on XMage with a full rules engine, all for free!",
-		description:
-			"Come experience the history of Limited Magic with the XDHS!<br />We host six drafts each week, open to all, with a chronological progression plus a variety of bonus formats. Matches are played out as a 3-round Swiss tourney on XMage with a full rules engine, all for free!",
-		icon: "xdhs.webp",
-		tags: ["XMage", "Chrono", "Historical", "Swiss"],
-		links: { discord: "https://discord.gg/7xWaCvWyq8" },
-	},
-	{
-		name: "Custom Magic",
-		brief: "A Custom Magic community primarily focused on custom set design and development.",
-		icon: "custom_magic.webp",
-		tags: ["Custom ", "Cockatrice"],
-		links: { discord: "https://discord.gg/custommagic" },
-	},
-	{
-		name: "Jank Diver Gaming",
-		brief: "A community dedicated to the Cube format, specifically for Magic: Arena play.",
-		icon: "jank_diver_gaming.webp",
-		tags: ["Cube", "MTGA", "Social"],
-		links: {
-			youtube: "https://www.youtube.com/@JankDiverGaming",
-			discord: "https://discord.gg/G7ucDuK3v9",
-			twitter: "https://twitter.com/JankDiverGaming",
-		},
-	},
-	{
-		name: "Limited Perspective",
-		brief: "Join for Limited Magic using Draftmancer and Tabletop Simulator, stay for the friendly banter and unforgettable moments. Hosting drafts every Saturday night at 6:30 EST.",
-		icon: "limited_perspective.webp",
-		tags: ["Draft", "Cube", "Progression Series", "TTS"],
-		links: {
-			discord: "https://discord.gg/f5UYPauRQz",
-		},
-	},
-	{
-		name: "The Cube Draft Gathering Place",
-		brief: "Community-focused server running Cubes Monday to Friday on Tabletop Simulator. We are open to cubes of any kind or type.",
+		name: "轮抽社区",
+		brief: "中文 MTG 轮抽与 Cube 社区。提供 Draftmancer 轮抽服务、XMage 对局平台，以及丰富的卡表资源与活动。",
 		icon: "cube_gathering.webp",
-		tags: ["Draft", "Cube", "Social", "TTS"],
+		tags: ["中文", "轮抽", "Cube", "XMage", "Draftmancer"],
 		links: {
-			discord: "https://discord.gg/wRXzJFeRtz",
-		},
-	},
-	{
-		name: "Remastering Magic",
-		brief: "We at REMA are taking Limited to the next level, by combining the creativity of cubes with the balancing nature of the rarity system - made possible by Draftmancer! We run multiple remastered set drafts per week and play out the matches on XMage. Come and join, whether you want to take part in the remastering yourself, or just draft some cool sets!",
-		icon: "REMA.webp",
-		tags: ["Remastered", "Set design", "Cubes with rarity", "XMage"],
-		links: {
-			discord: "https://discord.gg/PnkqwGu6sf",
-		},
-	},
-	{
-		name: "Magic Set Editor Modern",
-		brief: "<span><strong>Magic Set Editor Modern</strong> (MSEM) is a non-rotating custom Magic the Gathering format consisting of over 70 player-designed sets launched in 2017. We have monthly competitive Grand Prix tournament events, continuous open Constructed League, and weekly Draft Night events! As of January 2025 we also have twice-weekly free to play Cube League events with fun digital prizes to win!</span>",
-		icon: "MSEM.webp",
-		tags: ["Constructed", "Limited", "Cube", "Custom", "Cockatrice"],
-		links: {
-			discord: "https://discord.gg/KUd2PvFn2V",
-			website: "https://lackeybot.com/msem/gps",
-			cube: "https://timespiraled.github.io/",
-		},
-	},
-	{
-		name: "NoPain Discord",
-		brief: "Italian (and International) Community driven by the passion for Limited MTG.<br />We organize free-to-play Cube Tournaments on a regular basis, mostly drafting NoPainNoGame_'s Unfair Cube (which is a cube designed to be Vintage-Cube-like, but on MTGA), and we also stream them on Twitch!",
-		icon: "no_pain.webp",
-		tags: ["Limited", "Cube", "MTGA", "Tournament", "ITA", "ENG"],
-		links: {
-			discord: "https://discord.gg/dRu4vwNea9",
-			twitch: "https://www.twitch.tv/NoPainNoGame_ ",
-			cube: "https://www.cubecobra.com/cube/list/UnfairCube",
-		},
-	},
-	{
-		name: "Arena Power Max",
-		brief: "Cube community dedicated to drafting the most busted cards on MTG Arena (including Alchemy), with scheduled and daily ad-hoc drafts in EU and NA time zones!",
-		icon: "arena_max.webp",
-		tags: ["Cube", "MTGA", "EU", "NA"],
-		links: {
-			discord: "https://discord.gg/yn2g64GMqC",
-			cube: "https://cubecobra.com/cube/about/arenamax?view=primer",
-		},
-	},
-	{
-		name: "Limited Level-Ups",
-		brief: "A community for players looking to improve at Limited Magic.<br />We run weekly pod drafts of the newest set, with draft recaps and standings recorded on our site.",
-		icon: "limited_level_ups.webp",
-		tags: ["Limited", "Pod Draft", "MTGA", "Podcast", "Leaderboard"],
-		links: {
-			discord: "https://discord.gg/XWNVT9mxvU",
-			website: "https://limitedlevelups.com",
-			youtube: "https://www.youtube.com/@limitedlevel-ups",
-		},
-	},
-	{
-		name: "Commander Cube'N",
-		brief: "A community hub for all things limited! We run weekly free-to-play Cube and booster drafts online using Untap.in, TTS, Cockatrice, and Draftmancer. Whether you're a competitive or casual player, all Brushwaggs are welcome!",
-		icon: "cuben.webp",
-		tags: ["Cube", "Commander", "Limited", "Draft", "Untap.in", "TTS"],
-		links: {
-			discord: "https://discord.gg/zSYuJvraJb",
-			cube: "https://cubecobra.com/cube/list/r14?view=Mainboard&display=spoiler",
+			website: "http://101.42.14.179:3000",
 		},
 	},
 ]);
@@ -269,32 +123,11 @@ const select = (idx: number) => {
 	resetTimeout();
 };
 
-function checkSelectedDiscordMembers() {
-	const c = communities.value[selected.value];
-	if (c.links.discord && !c.discord_member_count) {
-		fetch(
-			`https://discord.com/api/v9/invites/${c.links.discord.substring(
-				"https://discord.gg/".length
-			)}?with_counts=true`
-		)
-			.then((r) => r.json())
-			.then((r) => {
-				if (r && r.approximate_member_count) c.discord_member_count = r.approximate_member_count;
-			})
-			.catch((r) => console.error("Failed to fetch discord stats", r));
-	}
-}
-
-checkSelectedDiscordMembers();
-watch(selected, checkSelectedDiscordMembers);
-
 const explain = () => {
 	Alert.fire({
 		icon: "info",
-		title: "Featured Communities",
-		html: `<p>These communities are focused around diverse aspects of Limited Magic and are known to organize tournaments and events using Draftmancer.</p>
-		<p>{{ $t("communities.feature") }}<br />
-		You can submit it by contacting me (Senryoku) via <a href="mailto:dev@draftmancer.com">email</a> or the <a href="https://discord.gg/XscXXNw">Draftmancer Discord</a></p>`,
+		title: "推荐社区",
+		html: "<p>这里展示活跃的 MTG 轮抽与 Cube 社区。</p><p>想要添加你的社区？请联系服务器管理员！</p>",
 	});
 };
 </script>

@@ -471,7 +471,7 @@
     "cubeCobraSupport": "Experimental support for Cube Cobra custom draft formats."
   },
   "communities": {
-    "feature": "Do you want your own community to be featured here?"
+    "title": "Featured Communities"
   },
   "sponsor": {
     "hello": "Hello there!",
