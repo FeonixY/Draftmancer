@@ -1649,7 +1649,28 @@
 							</div>
 						-->
 						</div>
-						<Communities />
+						<div class="container" style="grid-area: Communities">
+							<div class="section-title">
+								<h2>加入 KOOK 频道</h2>
+							</div>
+							<div class="kook-channel-card">
+								<div class="kook-icon">
+									<font-awesome-icon :icon="['fas', 'comments']" size="3x" />
+								</div>
+								<h3>轮抽社区</h3>
+								<p>
+									中文 MTG 轮抽与 Cube 社区。提供 Draftmancer 轮抽服务、XMage
+									对局平台，以及丰富的卡表资源与活动。
+								</p>
+								<a
+									href="https://kook.top/placeholder"
+									target="_blank"
+									class="btn-primary kook-join-btn"
+								>
+									<font-awesome-icon :icon="['fas', 'external-link-alt']" /> 加入频道
+								</a>
+							</div>
+						</div>
 					</div>
 					<div class="welcome-sections">
 						<div class="container" style="grid-area: News">
@@ -2911,5 +2932,50 @@
 .collection-import-help ol li,
 .collection-import-help ul li {
 	margin: 0.2em 0;
+}
+
+.kook-channel-card {
+	padding: 2rem;
+	text-align: center;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 12px;
+	color: white;
+	margin: 1rem 0;
+}
+
+.kook-icon {
+	margin-bottom: 1rem;
+	color: #ffd700;
+}
+
+.kook-channel-card h3 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	color: white;
+}
+
+.kook-channel-card p {
+	margin: 1rem 0;
+	line-height: 1.6;
+	opacity: 0.95;
+}
+
+.kook-join-btn {
+	display: inline-block;
+	padding: 0.75rem 2rem;
+	background: white;
+	color: #667eea;
+	border-radius: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 1rem;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kook-join-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	background: #f8f9fa;
 }
 </style>
