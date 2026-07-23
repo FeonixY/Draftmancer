@@ -2923,26 +2923,17 @@ export class Session implements IIndexable {
 		}
 
 		try {
-			const players = Array.from(this.users.values()).map((u) => ({
-				id: u.userID,
-				userName: u.userName,
-			}));
-
 			await axios.post(
 				"http://localhost:8080/webhook/draft-ended",
 				{
 					session_id: this.id,
-					players: players,
 					ended_at: new Date().toISOString(),
 				},
-				{
-					timeout: 5000,
-				}
+				{ timeout: 5000 }
 			);
-
 			console.log(`✅ 已通知 KOOK 机器人: ${this.id}`);
 		} catch (error) {
-			console.error(`❌ 通知 KOOK 机器人失败: ${error.message}`);
+			console.error(`❌ 通知 KOOK 机器人失败: ${(error as Error).message}`);
 		}
 	}
 
