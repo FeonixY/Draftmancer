@@ -2111,29 +2111,7 @@ app.get("/mtgch/:set/:number", async (req, res) => {
 			} catch (e) {
 				/* ignore */
 			}
-			if (!url && name) {
-				try {
-					const r = await axios.get(
-						`https://mtgch.com/api/v1/result?q=${encodeURIComponent('"' + name + '"')}&page_size=100`,
-						{ timeout: 6000 }
-					);
-					const items = (r.data?.items ?? []) as Array<{
-						name?: string;
-						face_name?: string;
-						zhs_image_uris?: { normal?: string };
-					}>;
-					const low = name.toLowerCase();
-					const hit =
-						items.find(
-							(c) =>
-								((c.name ?? "").toLowerCase() === low || (c.face_name ?? "").toLowerCase() === low) &&
-								c.zhs_image_uris?.normal
-						) ?? items.find((c) => c.zhs_image_uris?.normal);
-					if (hit?.zhs_image_uris?.normal) url = hit.zhs_image_uris.normal;
-				} catch (e) {
-					/* ignore */
-				}
-			}
+			// (已移除卡名兜底：严格使用抽到的版本，避免换成别版画作)
 			if (!url) url = englishFromMtgch;
 			MTGCHImageCache.set(key, url);
 		}
