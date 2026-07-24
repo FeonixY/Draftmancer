@@ -2087,32 +2087,61 @@ function removeUserFromSession(sessionID: SessionID, userID: UserID) {
 
 // Endpoints (TODO: Should be cleaned up)
 
-// MTGCH 中文卡图代理：/mtgch/:set/:number → 302 到 MTGCH zhs 中文图（内存缓存，查不到回退 Scryfall）
+// MTGCH 中文卡图代理：/mtgch/:set/:number?name=... → 302 到中文图（精确版本→按名兜底→英文），内存缓存
 const MTGCHImageCache = new Map<string, string>();
 app.get("/mtgch/:set/:number", async (req, res) => {
 	const set = req.params.set;
 	const number = req.params.number;
-	const key = `${set}/${number}`;
-	const fallback = `https://api.scryfall.com/cards/${encodeURIComponent(set)}/${encodeURIComponent(number)}/zhs?format=image&version=border_crop`;
+	const name = typeof req.query.name === "string" ? req.query.name : "";
+	const key = `${set}/${number}/${name}`;
+	const scryfallFallback = `https://api.scryfall.com/cards/${encodeURIComponent(set)}/${encodeURIComponent(number)}/en?format=image&version=border_crop`;
 	try {
 		let url = MTGCHImageCache.get(key);
 		if (url === undefined) {
-			const r = await axios.get(
-				`https://mtgch.com/api/v1/card/${encodeURIComponent(set)}/${encodeURIComponent(number)}/`,
-				{ timeout: 6000 }
-			);
-			const c = r.data as {
-				zhs_image_uris?: { normal?: string; large?: string };
-				image_uris?: { normal?: string };
-			};
-			url = c?.zhs_image_uris?.normal ?? c?.zhs_image_uris?.large ?? c?.image_uris?.normal ?? "";
+			url = "";
+			let englishFromMtgch = "";
+			try {
+				const r = await axios.get(
+					`https://mtgch.com/api/v1/card/${encodeURIComponent(set)}/${encodeURIComponent(number)}/`,
+					{ timeout: 6000 }
+				);
+				const c = r.data as { zhs_image_uris?: { normal?: string }; image_uris?: { normal?: string } };
+				url = c?.zhs_image_uris?.normal ?? "";
+				englishFromMtgch = c?.image_uris?.normal ?? "";
+			} catch (e) {
+				/* ignore */
+			}
+			if (!url && name) {
+				try {
+					const r = await axios.get(
+						`https://mtgch.com/api/v1/result?q=${encodeURIComponent('"' + name + '"')}&page_size=100`,
+						{ timeout: 6000 }
+					);
+					const items = (r.data?.items ?? []) as Array<{
+						name?: string;
+						face_name?: string;
+						zhs_image_uris?: { normal?: string };
+					}>;
+					const low = name.toLowerCase();
+					const hit =
+						items.find(
+							(c) =>
+								((c.name ?? "").toLowerCase() === low || (c.face_name ?? "").toLowerCase() === low) &&
+								c.zhs_image_uris?.normal
+						) ?? items.find((c) => c.zhs_image_uris?.normal);
+					if (hit?.zhs_image_uris?.normal) url = hit.zhs_image_uris.normal;
+				} catch (e) {
+					/* ignore */
+				}
+			}
+			if (!url) url = englishFromMtgch;
 			MTGCHImageCache.set(key, url);
 		}
 		if (url) return res.redirect(302, url);
 	} catch (e) {
-		// 忽略，用回退
+		/* ignore */
 	}
-	return res.redirect(302, fallback);
+	return res.redirect(302, scryfallFallback);
 });
 
 app.get("/healthCheck", (req, res) => {
