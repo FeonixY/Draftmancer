@@ -172,18 +172,27 @@ const props = withDefaults(
 		renderCommonBackside: true,
 	}
 );
+function toMtgchImage(url: string): string {
+	// 选中文时，把 Scryfall 图片地址(含 set/编号)改写成本站 MTGCH 中文卡图代理
+	const m = url.match(/scryfall\.com\/cards\/([^/]+)\/([^/?]+)\//);
+	if (m) return `/mtgch/${m[1]}/${m[2]}`;
+	return url;
+}
 const imageURI = computed(() => {
-	if (props.language in props.card.image_uris) return props.card.image_uris[props.language];
-	return props.card.image_uris["en"];
+	const url =
+		props.language in props.card.image_uris ? props.card.image_uris[props.language] : props.card.image_uris["en"];
+	return props.language === "zhs" ? toMtgchImage(url) : url;
 });
 const hasBack = computed(() => {
 	return props.card.back !== null && props.card.back !== undefined;
 });
 const backImageURI = computed(() => {
 	if (!hasBack.value) return undefined;
-	return props.language in props.card.back!.image_uris
-		? props.card.back?.image_uris[props.language]
-		: props.card.back?.image_uris["en"];
+	const url =
+		props.language in props.card.back!.image_uris
+			? props.card.back!.image_uris[props.language]
+			: props.card.back!.image_uris["en"];
+	return props.language === "zhs" ? toMtgchImage(url) : url;
 });
 const cardAdditionalData = computed(() => {
 	if (!props.displayCardText) return false; // Don't send the requests automatically

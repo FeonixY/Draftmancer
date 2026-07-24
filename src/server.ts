@@ -2087,6 +2087,34 @@ function removeUserFromSession(sessionID: SessionID, userID: UserID) {
 
 // Endpoints (TODO: Should be cleaned up)
 
+// MTGCH 中文卡图代理：/mtgch/:set/:number → 302 到 MTGCH zhs 中文图（内存缓存，查不到回退 Scryfall）
+const MTGCHImageCache = new Map<string, string>();
+app.get("/mtgch/:set/:number", async (req, res) => {
+	const set = req.params.set;
+	const number = req.params.number;
+	const key = `${set}/${number}`;
+	const fallback = `https://api.scryfall.com/cards/${encodeURIComponent(set)}/${encodeURIComponent(number)}/zhs?format=image&version=border_crop`;
+	try {
+		let url = MTGCHImageCache.get(key);
+		if (url === undefined) {
+			const r = await axios.get(
+				`https://mtgch.com/api/v1/card/${encodeURIComponent(set)}/${encodeURIComponent(number)}/`,
+				{ timeout: 6000 }
+			);
+			const c = r.data as {
+				zhs_image_uris?: { normal?: string; large?: string };
+				image_uris?: { normal?: string };
+			};
+			url = c?.zhs_image_uris?.normal ?? c?.zhs_image_uris?.large ?? c?.image_uris?.normal ?? "";
+			MTGCHImageCache.set(key, url);
+		}
+		if (url) return res.redirect(302, url);
+	} catch (e) {
+		// 忽略，用回退
+	}
+	return res.redirect(302, fallback);
+});
+
 app.get("/healthCheck", (req, res) => {
 	res.sendStatus(200);
 });
