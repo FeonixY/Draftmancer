@@ -290,6 +290,26 @@ export default defineComponent({
 			//                                        The server will have the last word on the actually used ID (making sure we're in a fresh session).
 		}
 
+		// ===== KOOK 集成：从 URL 预设轮抽参数 =====
+		const kookSetParam = urlParams.get("set");
+		if (kookSetParam) {
+			storedSessionSettings.setRestriction = kookSetParam
+				.split(",")
+				.map((s) => s.trim().toLowerCase())
+				.filter((s) => s.length > 0);
+		}
+		const kookBoostersParam = urlParams.get("boosters");
+		if (kookBoostersParam) {
+			const _kookBoosters = kookBoostersParam
+				.split(",")
+				.map((s) => s.trim().toLowerCase())
+				.filter((s) => s.length > 0);
+			if (_kookBoosters.length > 0) {
+				storedSessionSettings.customBoosters = _kookBoosters;
+				storedSessionSettings.boostersPerPlayer = _kookBoosters.length;
+			}
+		}
+
 		const query: Record<string, string> = {
 			userID: userID,
 			userName: userName,

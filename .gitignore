@@ -72,3 +72,6 @@ tmp
 
 # Ignore built ts files
 dist/**/*
+
+# KOOK 补丁脚本的备份文件
+*.orig
