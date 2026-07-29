@@ -1,4292 +1,4292 @@
 {
     "10e": {
         "code": "10e",
-        "fullName": "Tenth Edition",
+        "fullName": "10E-第十版",
         "block": "Core Set",
         "icon": "img/sets/10e.svg"
     },
     "2ed": {
         "code": "2ed",
-        "fullName": "Unlimited Edition",
+        "fullName": "2ED-第二版",
         "block": "Core Set",
         "icon": "img/sets/2ed.svg"
     },
     "2x2": {
         "code": "2x2",
-        "fullName": "Double Masters 2022",
+        "fullName": "2X2-双星大师2022",
         "icon": "img/sets/2x2.svg"
     },
     "2xm": {
         "code": "2xm",
-        "fullName": "Double Masters",
+        "fullName": "2XM-双星大师",
         "icon": "img/sets/2xm.svg"
     },
     "30a": {
         "code": "30a",
-        "fullName": "30th Anniversary Edition",
+        "fullName": "30A-30周年版",
         "icon": "img/sets/30a.svg"
     },
     "3ed": {
         "code": "3ed",
-        "fullName": "Revised Edition",
+        "fullName": "3ED-第三版",
         "block": "Core Set",
         "icon": "img/sets/3ed.svg"
     },
     "40k": {
         "code": "40k",
-        "fullName": "Warhammer 40,000 Commander",
+        "fullName": "40K-战锤40000指挥官",
         "block": "Commander",
         "icon": "img/sets/40k.svg"
     },
     "4bb": {
         "code": "4bb",
-        "fullName": "Fourth Edition Foreign Black Border",
+        "fullName": "4BB-外文黑边第四版",
         "icon": "img/sets/4bb.svg"
     },
     "4ed": {
         "code": "4ed",
-        "fullName": "Fourth Edition",
+        "fullName": "4ED-第四版",
         "block": "Core Set",
         "icon": "img/sets/4ed.svg"
     },
     "5dn": {
         "code": "5dn",
-        "fullName": "Fifth Dawn",
+        "fullName": "5DN-五色曙光",
         "block": "Mirrodin",
         "icon": "img/sets/5dn.svg"
     },
     "5ed": {
         "code": "5ed",
-        "fullName": "Fifth Edition",
+        "fullName": "5ED-第五版",
         "block": "Core Set",
         "icon": "img/sets/5ed.svg"
     },
     "6ed": {
         "code": "6ed",
-        "fullName": "Classic Sixth Edition",
+        "fullName": "6ED-古典第六版",
         "block": "Core Set",
         "icon": "img/sets/6ed.svg"
     },
     "7ed": {
         "code": "7ed",
-        "fullName": "Seventh Edition",
+        "fullName": "7ED-第七版",
         "block": "Core Set",
         "icon": "img/sets/7ed.svg"
     },
     "8ed": {
         "code": "8ed",
-        "fullName": "Eighth Edition",
+        "fullName": "8ED-第八版",
         "block": "Core Set",
         "icon": "img/sets/8ed.svg"
     },
     "9ed": {
         "code": "9ed",
-        "fullName": "Ninth Edition",
+        "fullName": "9ED-第九版",
         "block": "Core Set",
         "icon": "img/sets/9ed.svg"
     },
     "a25": {
         "code": "a25",
-        "fullName": "Masters 25",
+        "fullName": "A25-大师25",
         "icon": "img/sets/a25.svg"
     },
     "aa1": {
         "code": "aa1",
-        "fullName": "Arena Anthology 1",
+        "fullName": "AA1-竞技场合集1",
         "icon": "img/sets/aa1.svg"
     },
     "aa2": {
         "code": "aa2",
-        "fullName": "Arena Anthology 2",
+        "fullName": "AA2-竞技场合集2",
         "icon": "img/sets/aa2.svg"
     },
     "aa3": {
         "code": "aa3",
-        "fullName": "Arena Anthology 3",
+        "fullName": "AA3-竞技场合集3",
         "icon": "img/sets/aa3.svg"
     },
     "aa4": {
         "code": "aa4",
-        "fullName": "Arena Anthology 4",
+        "fullName": "AA4-竞技场合集4",
         "icon": "img/sets/aa4.svg"
     },
     "acr": {
         "code": "acr",
-        "fullName": "Assassin's Creed",
+        "fullName": "ACR-刺客信条",
         "icon": "img/sets/acr.svg"
     },
     "aer": {
         "code": "aer",
-        "fullName": "Aether Revolt",
+        "fullName": "AER-乙太之乱",
         "block": "Kaladesh",
         "icon": "img/sets/aer.svg"
     },
     "afc": {
         "code": "afc",
-        "fullName": "Forgotten Realms Commander",
+        "fullName": "AFC-被遗忘国度战记指挥官",
         "block": "Commander",
         "icon": "img/sets/afc.svg"
     },
     "afr": {
         "code": "afr",
-        "fullName": "Adventures in the Forgotten Realms",
+        "fullName": "AFR-被遗忘国度战记",
         "icon": "img/sets/afr.svg"
     },
     "ajmp": {
         "code": "ajmp",
-        "fullName": "Jumpstart Arena Exclusives",
+        "fullName": "AJMP-速战（竞技场独占）",
         "icon": "img/sets/ajmp.svg"
     },
     "akh": {
         "code": "akh",
-        "fullName": "Amonkhet",
+        "fullName": "AKH-阿芒凯",
         "block": "Amonkhet",
         "icon": "img/sets/akh.svg"
     },
     "akr": {
         "code": "akr",
-        "fullName": "Amonkhet Remastered",
+        "fullName": "AKR-阿芒凯重制版",
         "icon": "img/sets/akr.svg"
     },
     "ala": {
         "code": "ala",
-        "fullName": "Shards of Alara",
+        "fullName": "ALA-阿拉若断片",
         "block": "Alara",
         "icon": "img/sets/ala.svg"
     },
     "all": {
         "code": "all",
-        "fullName": "Alliances",
+        "fullName": "ALL-同盟",
         "block": "Ice Age",
         "icon": "img/sets/all.svg"
     },
     "ana": {
         "code": "ana",
-        "fullName": "Arena New Player Experience",
+        "fullName": "ANA-竞技场新手教程",
         "icon": "img/sets/ana.svg"
     },
     "anb": {
         "code": "anb",
-        "fullName": "Arena Beginner Set",
+        "fullName": "ANB-竞技场初始系列",
         "icon": "img/sets/anb.svg"
     },
     "apc": {
         "code": "apc",
-        "fullName": "Apocalypse",
+        "fullName": "APC-启示录",
         "block": "Invasion",
         "icon": "img/sets/apc.svg"
     },
     "arb": {
         "code": "arb",
-        "fullName": "Alara Reborn",
+        "fullName": "ARB-阿拉若新生",
         "block": "Alara",
         "icon": "img/sets/arb.svg"
     },
     "arc": {
         "code": "arc",
-        "fullName": "Archenemy",
+        "fullName": "ARC-魔王",
         "icon": "img/sets/arc.svg"
     },
     "arn": {
         "code": "arn",
-        "fullName": "Arabian Nights",
+        "fullName": "ARN-阿拉伯之夜",
         "icon": "img/sets/arn.svg"
     },
     "ath": {
         "code": "ath",
-        "fullName": "Anthologies",
+        "fullName": "ATH-选集",
         "icon": "img/sets/ath.svg"
     },
     "atq": {
         "code": "atq",
-        "fullName": "Antiquities",
+        "fullName": "ATQ-古文明之战",
         "icon": "img/sets/atq.svg"
     },
     "avr": {
         "code": "avr",
-        "fullName": "Avacyn Restored",
+        "fullName": "AVR-艾维欣重临",
         "block": "Innistrad",
         "icon": "img/sets/avr.svg"
     },
     "bbd": {
         "code": "bbd",
-        "fullName": "Battlebond",
+        "fullName": "BBD-火线齐心",
         "icon": "img/sets/bbd.svg"
     },
     "bchr": {
         "code": "bchr",
-        "fullName": "Chronicles Foreign Black Border",
+        "fullName": "BCHR-外文黑边编年史",
         "icon": "img/sets/bchr.svg"
     },
     "bfz": {
         "code": "bfz",
-        "fullName": "Battle for Zendikar",
+        "fullName": "BFZ-再战赞迪卡",
         "block": "Battle for Zendikar",
         "icon": "img/sets/bfz.svg"
     },
     "big": {
         "code": "big",
-        "fullName": "The Big Score",
+        "fullName": "BIG-满载而归",
         "block": "Outlaws of Thunder Junction",
         "icon": "img/sets/big.svg"
     },
     "blb": {
         "code": "blb",
-        "fullName": "Bloomburrow",
+        "fullName": "BLB-斑隆洛",
         "icon": "img/sets/blb.svg"
     },
     "blc": {
         "code": "blc",
-        "fullName": "Bloomburrow Commander",
+        "fullName": "BLC-斑隆洛指挥官",
         "block": "Commander",
         "icon": "img/sets/blc.svg"
     },
     "bng": {
         "code": "bng",
-        "fullName": "Born of the Gods",
+        "fullName": "BNG-天神创生",
         "block": "Theros",
         "icon": "img/sets/bng.svg"
     },
     "bok": {
         "code": "bok",
-        "fullName": "Betrayers of Kamigawa",
+        "fullName": "BOK-神河叛将谱",
         "block": "Kamigawa",
         "icon": "img/sets/bok.svg"
     },
     "bot": {
         "code": "bot",
-        "fullName": "Transformers",
+        "fullName": "BOT-变形金刚",
         "icon": "img/sets/bot.svg"
     },
     "brb": {
         "code": "brb",
-        "fullName": "Battle Royale Box Set",
+        "fullName": "BRB-Battle Royale礼盒系列",
         "icon": "img/sets/brb.svg"
     },
     "brc": {
         "code": "brc",
-        "fullName": "The Brothers' War Commander",
+        "fullName": "BRC-兄弟之战指挥官",
         "block": "Commander",
         "icon": "img/sets/brc.svg"
     },
     "bro": {
         "code": "bro",
-        "fullName": "The Brothers' War",
+        "fullName": "BRO-兄弟之战",
         "icon": "img/sets/bro.svg"
     },
     "brr": {
         "code": "brr",
-        "fullName": "The Brothers' War Retro Artifacts",
+        "fullName": "BRR-兄弟之战复古神器",
         "icon": "img/sets/brr.svg"
     },
     "btd": {
         "code": "btd",
-        "fullName": "Beatdown Box Set",
+        "fullName": "BTD-Beatdown礼盒系列",
         "icon": "img/sets/btd.svg"
     },
     "c13": {
         "code": "c13",
-        "fullName": "Commander 2013",
+        "fullName": "C13-指挥官2013",
         "block": "Commander",
         "icon": "img/sets/c13.svg"
     },
     "c14": {
         "code": "c14",
-        "fullName": "Commander 2014",
+        "fullName": "C14-指挥官2014",
         "block": "Commander",
         "icon": "img/sets/c14.svg"
     },
     "c15": {
         "code": "c15",
-        "fullName": "Commander 2015",
+        "fullName": "C15-指挥官2015",
         "block": "Commander",
         "icon": "img/sets/c15.svg"
     },
     "c16": {
         "code": "c16",
-        "fullName": "Commander 2016",
+        "fullName": "C16-指挥官2016",
         "block": "Commander",
         "icon": "img/sets/c16.svg"
     },
     "c17": {
         "code": "c17",
-        "fullName": "Commander 2017",
+        "fullName": "C17-指挥官2017",
         "block": "Commander",
         "icon": "img/sets/c17.svg"
     },
     "c18": {
         "code": "c18",
-        "fullName": "Commander 2018",
+        "fullName": "C18-指挥官2018",
         "block": "Commander",
         "icon": "img/sets/c18.svg"
     },
     "c19": {
         "code": "c19",
-        "fullName": "Commander 2019",
+        "fullName": "C19-指挥官2019",
         "block": "Commander",
         "icon": "img/sets/c19.svg"
     },
     "c20": {
         "code": "c20",
-        "fullName": "Commander 2020",
+        "fullName": "C20-指挥官2020",
         "block": "Commander",
         "icon": "img/sets/c20.svg"
     },
     "c21": {
         "code": "c21",
-        "fullName": "Commander 2021",
+        "fullName": "C21-指挥官2021",
         "block": "Commander",
         "icon": "img/sets/c21.svg"
     },
     "cc1": {
         "code": "cc1",
-        "fullName": "Commander Collection: Green",
+        "fullName": "CC1-指挥官收藏：绿色",
         "icon": "img/sets/cc1.svg"
     },
     "cc2": {
         "code": "cc2",
-        "fullName": "Commander Collection: Black",
+        "fullName": "CC2-指挥官收藏：黑色",
         "icon": "img/sets/cc2.svg"
     },
     "ced": {
         "code": "ced",
-        "fullName": "Collectors' Edition",
+        "fullName": "CED-收藏版",
         "icon": "img/sets/ced.svg"
     },
     "cei": {
         "code": "cei",
-        "fullName": "Intl. Collectors' Edition",
+        "fullName": "CEI-国际收藏版",
         "icon": "img/sets/cei.svg"
     },
     "chk": {
         "code": "chk",
-        "fullName": "Champions of Kamigawa",
+        "fullName": "CHK-神河群英录",
         "block": "Kamigawa",
         "icon": "img/sets/chk.svg"
     },
     "chr": {
         "code": "chr",
-        "fullName": "Chronicles",
+        "fullName": "CHR-编年史",
         "icon": "img/sets/chr.svg"
     },
     "clb": {
         "code": "clb",
-        "fullName": "Commander Legends: Battle for Baldur's Gate",
+        "fullName": "CLB-指挥官传奇：争战博德之门",
         "block": "Commander",
         "icon": "img/sets/clb.svg"
     },
     "clu": {
         "code": "clu",
-        "fullName": "Ravnica: Clue Edition",
+        "fullName": "CLU-拉尼卡：妙探寻凶",
         "icon": "img/sets/clu.svg"
     },
     "cm1": {
         "code": "cm1",
-        "fullName": "Commander's Arsenal",
+        "fullName": "CM1-指挥官军火库",
         "block": "Commander",
         "icon": "img/sets/cm1.svg"
     },
     "cm2": {
         "code": "cm2",
-        "fullName": "Commander Anthology Volume II",
+        "fullName": "CM2-指挥官合集2",
         "block": "Commander",
         "icon": "img/sets/cm2.svg"
     },
     "cma": {
         "code": "cma",
-        "fullName": "Commander Anthology",
+        "fullName": "CMA-指挥官合集",
         "block": "Commander",
         "icon": "img/sets/cma.svg"
     },
     "cmb1": {
         "code": "cmb1",
-        "fullName": "Mystery Booster Playtest Cards 2019",
+        "fullName": "CMB1-神秘补充包测试牌2019",
         "icon": "img/sets/cmb1.svg"
     },
     "cmb2": {
         "code": "cmb2",
-        "fullName": "Mystery Booster Playtest Cards 2021",
+        "fullName": "CMB2-神秘补充包测试牌2021",
         "icon": "img/sets/cmb2.svg"
     },
     "cmd": {
         "code": "cmd",
-        "fullName": "Commander 2011",
+        "fullName": "CMD-指挥官",
         "block": "Commander",
         "icon": "img/sets/cmd.svg"
     },
     "cmm": {
         "code": "cmm",
-        "fullName": "Commander Masters",
+        "fullName": "CMM-指挥官大师",
         "block": "Commander",
         "icon": "img/sets/cmm.svg"
     },
     "cmr": {
         "code": "cmr",
-        "fullName": "Commander Legends",
+        "fullName": "CMR-指挥官传奇",
         "block": "Commander",
         "icon": "img/sets/cmr.svg"
     },
     "cn2": {
         "code": "cn2",
-        "fullName": "Conspiracy: Take the Crown",
+        "fullName": "CN2-诡局：王权争霸",
         "block": "Conspiracy",
         "icon": "img/sets/cn2.svg"
     },
     "cns": {
         "code": "cns",
-        "fullName": "Conspiracy",
+        "fullName": "CNS-诡局",
         "block": "Conspiracy",
         "icon": "img/sets/cns.svg"
     },
     "con": {
         "code": "con",
-        "fullName": "Conflux",
+        "fullName": "CON-聚流",
         "block": "Alara",
         "icon": "img/sets/conf.svg"
     },
     "cp1": {
         "code": "cp1",
-        "fullName": "Magic 2015 Clash Pack",
+        "fullName": "CP1-2015核心系列双人对阵组合",
         "icon": "img/sets/cp1.svg"
     },
     "cp2": {
         "code": "cp2",
-        "fullName": "Fate Reforged Clash Pack",
+        "fullName": "CP2-龙命殊途双人对阵组合",
         "block": "Khans of Tarkir",
         "icon": "img/sets/cp2.svg"
     },
     "cp3": {
         "code": "cp3",
-        "fullName": "Magic Origins Clash Pack",
+        "fullName": "CP3-万智牌：起源双人对阵组合",
         "icon": "img/sets/cp3.svg"
     },
     "csp": {
         "code": "csp",
-        "fullName": "Coldsnap",
+        "fullName": "CSP-骤霜",
         "block": "Ice Age",
         "icon": "img/sets/csp.svg"
     },
     "cst": {
         "code": "cst",
-        "fullName": "Coldsnap Theme Decks",
+        "fullName": "CST-骤霜主题套牌",
         "block": "Ice Age",
         "icon": "img/sets/cst.svg"
     },
     "dbl": {
         "code": "dbl",
-        "fullName": "Innistrad: Double Feature",
+        "fullName": "DBL-依尼翠：双系列",
         "icon": "img/sets/dbl.svg"
     },
     "dci": {
         "code": "dci",
-        "fullName": "DCI Promos",
+        "fullName": "DCI-DCI纪念牌",
         "icon": "img/sets/dci.svg"
     },
     "dd1": {
         "code": "dd1",
-        "fullName": "Duel Decks: Elves vs. Goblins",
+        "fullName": "DD1-对决套牌：妖精对鬼怪",
         "icon": "img/sets/dd1.svg"
     },
     "dd2": {
         "code": "dd2",
-        "fullName": "Duel Decks: Jace vs. Chandra",
+        "fullName": "DD2-对决套牌：杰斯对茜卓",
         "icon": "img/sets/dd2.svg"
     },
     "ddc": {
         "code": "ddc",
-        "fullName": "Duel Decks: Divine vs. Demonic",
+        "fullName": "DDC-对决套牌：神圣对邪魔",
         "icon": "img/sets/ddc.svg"
     },
     "ddd": {
         "code": "ddd",
-        "fullName": "Duel Decks: Garruk vs. Liliana",
+        "fullName": "DDD-对决套牌：贾路对莉莲娜",
         "icon": "img/sets/ddd.svg"
     },
     "dde": {
         "code": "dde",
-        "fullName": "Duel Decks: Phyrexia vs. the Coalition",
+        "fullName": "DDE-对决套牌：非瑞克西亚对联盟",
         "icon": "img/sets/dde.svg"
     },
     "ddf": {
         "code": "ddf",
-        "fullName": "Duel Decks: Elspeth vs. Tezzeret",
+        "fullName": "DDF-对决套牌：艾紫培对泰兹瑞",
         "icon": "img/sets/ddf.svg"
     },
     "ddg": {
         "code": "ddg",
-        "fullName": "Duel Decks: Knights vs. Dragons",
+        "fullName": "DDG-对决套牌：骑士对巨龙",
         "icon": "img/sets/ddg.svg"
     },
     "ddh": {
         "code": "ddh",
-        "fullName": "Duel Decks: Ajani vs. Nicol Bolas",
+        "fullName": "DDH-对决套牌：阿耶尼对尼可波拉斯",
         "icon": "img/sets/ddh.svg"
     },
     "ddi": {
         "code": "ddi",
-        "fullName": "Duel Decks: Venser vs. Koth",
+        "fullName": "DDI-对决套牌：凡瑟对寇斯",
         "icon": "img/sets/ddi.svg"
     },
     "ddj": {
         "code": "ddj",
-        "fullName": "Duel Decks: Izzet vs. Golgari",
+        "fullName": "DDJ-对决套牌：伊捷对葛加理",
         "icon": "img/sets/ddj.svg"
     },
     "ddk": {
         "code": "ddk",
-        "fullName": "Duel Decks: Sorin vs. Tibalt",
+        "fullName": "DDK-对决套牌：索霖对提勃",
         "icon": "img/sets/ddk.svg"
     },
     "ddl": {
         "code": "ddl",
-        "fullName": "Duel Decks: Heroes vs. Monsters",
+        "fullName": "DDL-对决套牌：英雄对怪兽",
         "icon": "img/sets/ddl.svg"
     },
     "ddm": {
         "code": "ddm",
-        "fullName": "Duel Decks: Jace vs. Vraska",
+        "fullName": "DDM-对决套牌：杰斯对瓦斯卡",
         "icon": "img/sets/ddm.svg"
     },
     "ddn": {
         "code": "ddn",
-        "fullName": "Duel Decks: Speed vs. Cunning",
+        "fullName": "DDN-对决套牌：速度对智慧",
         "icon": "img/sets/ddn.svg"
     },
     "ddo": {
         "code": "ddo",
-        "fullName": "Duel Decks: Elspeth vs. Kiora",
+        "fullName": "DDO-对决套牌：艾紫培对奇奥拉",
         "icon": "img/sets/ddo.svg"
     },
     "ddp": {
         "code": "ddp",
-        "fullName": "Duel Decks: Zendikar vs. Eldrazi",
+        "fullName": "DDP-对决套牌：赞迪卡对奥札奇",
         "icon": "img/sets/ddp.svg"
     },
     "ddq": {
         "code": "ddq",
-        "fullName": "Duel Decks: Blessed vs. Cursed",
+        "fullName": "DDQ-对决套牌：福佑对诅咒",
         "icon": "img/sets/ddq.svg"
     },
     "ddr": {
         "code": "ddr",
-        "fullName": "Duel Decks: Nissa vs. Ob Nixilis",
+        "fullName": "DDR-对决套牌：妮莎对欧尼希兹",
         "icon": "img/sets/ddr.svg"
     },
     "dds": {
         "code": "dds",
-        "fullName": "Duel Decks: Mind vs. Might",
+        "fullName": "DDS-对决套牌：心灵对武力",
         "icon": "img/sets/dds.svg"
     },
     "ddt": {
         "code": "ddt",
-        "fullName": "Duel Decks: Merfolk vs. Goblins",
+        "fullName": "DDT-对决套牌：人鱼对鬼怪",
         "icon": "img/sets/ddt.svg"
     },
     "ddu": {
         "code": "ddu",
-        "fullName": "Duel Decks: Elves vs. Inventors",
+        "fullName": "DDU-对决套牌：妖精对发明家",
         "icon": "img/sets/ddu.svg"
     },
     "dft": {
         "code": "dft",
-        "fullName": "Aetherdrift",
+        "fullName": "DFT-乙太飘移",
         "icon": "img/sets/dft.svg"
     },
     "dgm": {
         "code": "dgm",
-        "fullName": "Dragon's Maze",
+        "fullName": "DGM-巨龙迷城",
         "block": "Return to Ravnica",
         "icon": "img/sets/dgm.svg"
     },
     "dis": {
         "code": "dis",
-        "fullName": "Dissension",
+        "fullName": "DIS-纷争",
         "block": "Ravnica",
         "icon": "img/sets/dis.svg"
     },
     "dka": {
         "code": "dka",
-        "fullName": "Dark Ascension",
+        "fullName": "DKA-黑影笼罩",
         "block": "Innistrad",
         "icon": "img/sets/dka.svg"
     },
     "dkm": {
         "code": "dkm",
-        "fullName": "Deckmasters",
+        "fullName": "DKM-套牌大师",
         "icon": "img/sets/dkm.svg"
     },
     "dmc": {
         "code": "dmc",
-        "fullName": "Dominaria United Commander",
+        "fullName": "DMC-多明纳里亚：众志成城指挥官",
         "block": "Commander",
         "icon": "img/sets/dmc.svg"
     },
     "dmr": {
         "code": "dmr",
-        "fullName": "Dominaria Remastered",
+        "fullName": "DMR-多明纳里亚：重制版",
         "icon": "img/sets/dmr.svg"
     },
     "dmu": {
         "code": "dmu",
-        "fullName": "Dominaria United",
+        "fullName": "DMU-多明纳里亚：众志成城",
         "icon": "img/sets/dmu.svg"
     },
     "dom": {
         "code": "dom",
-        "fullName": "Dominaria",
+        "fullName": "DOM-多明纳里亚",
         "icon": "img/sets/dom.svg"
     },
     "dpa": {
         "code": "dpa",
-        "fullName": "Duels of the Planeswalkers",
+        "fullName": "DPA-鹏洛客对决",
         "icon": "img/sets/dpa.svg"
     },
     "drb": {
         "code": "drb",
-        "fullName": "From the Vault: Dragons",
+        "fullName": "DRB-来自黯窖：龙",
         "block": "From the Vault",
         "icon": "img/sets/drb.svg"
     },
     "drc": {
         "code": "drc",
-        "fullName": "Aetherdrift Commander",
+        "fullName": "DRC-乙太飘移指挥官",
         "block": "Commander",
         "icon": "img/sets/drc.svg"
     },
     "drk": {
         "code": "drk",
-        "fullName": "The Dark",
+        "fullName": "DRK-暗黑",
         "icon": "img/sets/drk.svg"
     },
     "dsc": {
         "code": "dsc",
-        "fullName": "Duskmourn: House of Horror Commander",
+        "fullName": "DSC-暮悲邸：鬼屋惊魂指挥官",
         "block": "Commander",
         "icon": "img/sets/dsc.svg"
     },
     "dsk": {
         "code": "dsk",
-        "fullName": "Duskmourn: House of Horror",
+        "fullName": "DSK-暮悲邸：鬼屋惊魂",
         "icon": "img/sets/dsk.svg"
     },
     "dst": {
         "code": "dst",
-        "fullName": "Darksteel",
+        "fullName": "DST-玄铁",
         "block": "Mirrodin",
         "icon": "img/sets/dst.svg"
     },
     "dtk": {
         "code": "dtk",
-        "fullName": "Dragons of Tarkir",
+        "fullName": "DTK-鞑契龙王",
         "block": "Khans of Tarkir",
         "icon": "img/sets/dtk.svg"
     },
     "dvd": {
         "code": "dvd",
-        "fullName": "Duel Decks Anthology: Divine vs. Demonic",
+        "fullName": "DVD-对决套牌合集：神圣对邪魔",
         "icon": "img/sets/dvd.svg"
     },
     "e01": {
         "code": "e01",
-        "fullName": "Archenemy: Nicol Bolas",
+        "fullName": "E01-魔王：尼可波拉斯",
         "icon": "img/sets/e01.svg"
     },
     "e02": {
         "code": "e02",
-        "fullName": "Explorers of Ixalan",
+        "fullName": "E02-依夏兰探索者",
         "icon": "img/sets/e02.svg"
     },
     "ea1": {
         "code": "ea1",
-        "fullName": "Explorer Anthology 1",
+        "fullName": "EA1-探险合集1",
         "icon": "img/sets/ea1.svg"
     },
     "ea2": {
         "code": "ea2",
-        "fullName": "Explorer Anthology 2",
+        "fullName": "EA2-探险合集2",
         "icon": "img/sets/ea2.svg"
     },
     "ea3": {
         "code": "ea3",
-        "fullName": "Explorer Anthology 3",
+        "fullName": "EA3-探险合集3",
         "icon": "img/sets/ea3.svg"
     },
     "ecc": {
         "code": "ecc",
-        "fullName": "Lorwyn Eclipsed Commander",
+        "fullName": "ECC-洛温：暗影笼罩指挥官",
         "block": "Commander",
         "icon": "img/sets/ecc.svg"
     },
     "ecl": {
         "code": "ecl",
-        "fullName": "Lorwyn Eclipsed",
+        "fullName": "ECL-洛温：暗影笼罩",
         "icon": "img/sets/ecl.svg"
     },
     "eld": {
         "code": "eld",
-        "fullName": "Throne of Eldraine",
+        "fullName": "ELD-艾卓王权",
         "icon": "img/sets/eld.svg"
     },
     "ema": {
         "code": "ema",
-        "fullName": "Eternal Masters",
+        "fullName": "EMA-经典大师",
         "icon": "img/sets/ema.svg"
     },
     "emn": {
         "code": "emn",
-        "fullName": "Eldritch Moon",
+        "fullName": "EMN-异月传奇",
         "block": "Shadows over Innistrad",
         "icon": "img/sets/emn.svg"
     },
     "eoc": {
         "code": "eoc",
-        "fullName": "Edge of Eternities Commander",
+        "fullName": "EOC-虚空边域指挥官",
         "block": "Commander",
         "icon": "img/sets/eoc.svg"
     },
     "eoe": {
         "code": "eoe",
-        "fullName": "Edge of Eternities",
+        "fullName": "EOE-虚空边域",
         "icon": "img/sets/eoe.svg"
     },
     "eos": {
         "code": "eos",
-        "fullName": "Edge of Eternities: Stellar Sights",
+        "fullName": "EOS-虚空边域：星间奇景",
         "icon": "img/sets/eos.svg"
     },
     "eve": {
         "code": "eve",
-        "fullName": "Eventide",
+        "fullName": "EVE-暮光",
         "block": "Shadowmoor",
         "icon": "img/sets/eve.svg"
     },
     "evg": {
         "code": "evg",
-        "fullName": "Duel Decks Anthology: Elves vs. Goblins",
+        "fullName": "EVG-对决套牌合集：妖精对鬼怪",
         "icon": "img/sets/evg.svg"
     },
     "exo": {
         "code": "exo",
-        "fullName": "Exodus",
+        "fullName": "EXO-出瑞斯记",
         "block": "Tempest",
         "icon": "img/sets/exo.svg"
     },
     "exp": {
         "code": "exp",
-        "fullName": "Zendikar Expeditions",
+        "fullName": "EXP-赞迪卡远探",
         "block": "Battle for Zendikar",
         "icon": "img/sets/exp.svg"
     },
     "f01": {
         "code": "f01",
-        "fullName": "Friday Night Magic 2001",
+        "fullName": "F01-周五万智夜2001",
         "block": "Friday Night Magic",
         "icon": "img/sets/f01.svg"
     },
     "f02": {
         "code": "f02",
-        "fullName": "Friday Night Magic 2002",
+        "fullName": "F02-周五万智夜2002",
         "block": "Friday Night Magic",
         "icon": "img/sets/f02.svg"
     },
     "f03": {
         "code": "f03",
-        "fullName": "Friday Night Magic 2003",
+        "fullName": "F03-周五万智夜2003",
         "block": "Friday Night Magic",
         "icon": "img/sets/f03.svg"
     },
     "f04": {
         "code": "f04",
-        "fullName": "Friday Night Magic 2004",
+        "fullName": "F04-周五万智夜2004",
         "block": "Friday Night Magic",
         "icon": "img/sets/f04.svg"
     },
     "f05": {
         "code": "f05",
-        "fullName": "Friday Night Magic 2005",
+        "fullName": "F05-周五万智夜2005",
         "block": "Friday Night Magic",
         "icon": "img/sets/f05.svg"
     },
     "f06": {
         "code": "f06",
-        "fullName": "Friday Night Magic 2006",
+        "fullName": "F06-周五万智夜2006",
         "block": "Friday Night Magic",
         "icon": "img/sets/f06.svg"
     },
     "f07": {
         "code": "f07",
-        "fullName": "Friday Night Magic 2007",
+        "fullName": "F07-周五万智夜2007",
         "block": "Friday Night Magic",
         "icon": "img/sets/f07.svg"
     },
     "f08": {
         "code": "f08",
-        "fullName": "Friday Night Magic 2008",
+        "fullName": "F08-周五万智夜2008",
         "block": "Friday Night Magic",
         "icon": "img/sets/f08.svg"
     },
     "f09": {
         "code": "f09",
-        "fullName": "Friday Night Magic 2009",
+        "fullName": "F09-周五万智夜2009",
         "block": "Friday Night Magic",
         "icon": "img/sets/f09.svg"
     },
     "f10": {
         "code": "f10",
-        "fullName": "Friday Night Magic 2010",
+        "fullName": "F10-周五万智夜2010",
         "block": "Friday Night Magic",
         "icon": "img/sets/f10.svg"
     },
     "f11": {
         "code": "f11",
-        "fullName": "Friday Night Magic 2011",
+        "fullName": "F11-周五万智夜2011",
         "block": "Friday Night Magic",
         "icon": "img/sets/f11.svg"
     },
     "f12": {
         "code": "f12",
-        "fullName": "Friday Night Magic 2012",
+        "fullName": "F12-周五万智夜2012",
         "block": "Friday Night Magic",
         "icon": "img/sets/f12.svg"
     },
     "f13": {
         "code": "f13",
-        "fullName": "Friday Night Magic 2013",
+        "fullName": "F13-周五万智夜2013",
         "block": "Friday Night Magic",
         "icon": "img/sets/f13.svg"
     },
     "f14": {
         "code": "f14",
-        "fullName": "Friday Night Magic 2014",
+        "fullName": "F14-周五万智夜2014",
         "block": "Friday Night Magic",
         "icon": "img/sets/f14.svg"
     },
     "f15": {
         "code": "f15",
-        "fullName": "Friday Night Magic 2015",
+        "fullName": "F15-周五万智夜2015",
         "block": "Friday Night Magic",
         "icon": "img/sets/f15.svg"
     },
     "f16": {
         "code": "f16",
-        "fullName": "Friday Night Magic 2016",
+        "fullName": "F16-周五万智夜2016",
         "block": "Friday Night Magic",
         "icon": "img/sets/f16.svg"
     },
     "f17": {
         "code": "f17",
-        "fullName": "Friday Night Magic 2017",
+        "fullName": "F17-周五万智夜2017",
         "block": "Friday Night Magic",
         "icon": "img/sets/f17.svg"
     },
     "fbb": {
         "code": "fbb",
-        "fullName": "Foreign Black Border",
+        "fullName": "FBB-外文黑边第三版",
         "block": "Core Set",
         "icon": "img/sets/fbb.svg"
     },
     "fca": {
         "code": "fca",
-        "fullName": "Final Fantasy: Through the Ages",
+        "fullName": "FCA-最终幻想继承史",
         "icon": "img/sets/fca.svg"
     },
     "fdc": {
         "code": "fdc",
-        "fullName": "Foundations Commander",
+        "fullName": "FDC-基石构筑指挥官",
         "icon": "img/sets/fdc.svg"
     },
     "fdn": {
         "code": "fdn",
-        "fullName": "Foundations",
+        "fullName": "FDN-基石构筑",
         "block": "Core Set",
         "icon": "img/sets/fdn.svg"
     },
     "fem": {
         "code": "fem",
-        "fullName": "Fallen Empires",
+        "fullName": "FEM-堕落王朝",
         "icon": "img/sets/fem.svg"
     },
     "fic": {
         "code": "fic",
-        "fullName": "Final Fantasy Commander",
+        "fullName": "FIC-最终幻想指挥官",
         "block": "Commander",
         "icon": "img/sets/fic.svg"
     },
     "fin": {
         "code": "fin",
-        "fullName": "Final Fantasy",
+        "fullName": "FIN-最终幻想",
         "icon": "img/sets/fin.svg"
     },
     "fnm": {
         "code": "fnm",
-        "fullName": "Friday Night Magic 2000",
+        "fullName": "FNM-周五万智夜2000",
         "block": "Friday Night Magic",
         "icon": "img/sets/fnm.svg"
     },
     "fra": {
         "code": "fra",
-        "fullName": "Reality Fracture",
+        "fullName": "FRA-现实裂界",
         "icon": "img/sets/fra.svg"
     },
     "frc": {
         "code": "frc",
-        "fullName": "Reality Fracture Commander"
+        "fullName": "FRC-现实裂界指挥官"
     },
     "frf": {
         "code": "frf",
-        "fullName": "Fate Reforged",
+        "fullName": "FRF-龙命殊途",
         "block": "Khans of Tarkir",
         "icon": "img/sets/frf.svg"
     },
     "fut": {
         "code": "fut",
-        "fullName": "Future Sight",
+        "fullName": "FUT-预知将来",
         "block": "Time Spiral",
         "icon": "img/sets/fut.svg"
     },
     "g00": {
         "code": "g00",
-        "fullName": "Judge Gift Cards 2000",
+        "fullName": "G00-裁判赠卡2000",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g00.svg"
     },
     "g01": {
         "code": "g01",
-        "fullName": "Judge Gift Cards 2001",
+        "fullName": "G01-裁判赠卡2001",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g01.svg"
     },
     "g02": {
         "code": "g02",
-        "fullName": "Judge Gift Cards 2002",
+        "fullName": "G02-裁判赠卡2002",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g02.svg"
     },
     "g03": {
         "code": "g03",
-        "fullName": "Judge Gift Cards 2003",
+        "fullName": "G03-裁判赠卡2003",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g03.svg"
     },
     "g04": {
         "code": "g04",
-        "fullName": "Judge Gift Cards 2004",
+        "fullName": "G04-裁判赠卡2004",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g04.svg"
     },
     "g05": {
         "code": "g05",
-        "fullName": "Judge Gift Cards 2005",
+        "fullName": "G05-裁判赠卡2005",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g05.svg"
     },
     "g06": {
         "code": "g06",
-        "fullName": "Judge Gift Cards 2006",
+        "fullName": "G06-裁判赠卡2006",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g06.svg"
     },
     "g07": {
         "code": "g07",
-        "fullName": "Judge Gift Cards 2007",
+        "fullName": "G07-裁判赠卡2007",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g07.svg"
     },
     "g08": {
         "code": "g08",
-        "fullName": "Judge Gift Cards 2008",
+        "fullName": "G08-裁判赠卡2008",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g08.svg"
     },
     "g09": {
         "code": "g09",
-        "fullName": "Judge Gift Cards 2009",
+        "fullName": "G09-裁判赠卡2009",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g09.svg"
     },
     "g10": {
         "code": "g10",
-        "fullName": "Judge Gift Cards 2010",
+        "fullName": "G10-裁判赠卡2010",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g10.svg"
     },
     "g11": {
         "code": "g11",
-        "fullName": "Judge Gift Cards 2011",
+        "fullName": "G11-裁判赠卡2011",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g11.svg"
     },
     "g17": {
         "code": "g17",
-        "fullName": "2017 Gift Pack",
+        "fullName": "G17-2017礼包",
         "icon": "img/sets/g17.svg"
     },
     "g18": {
         "code": "g18",
-        "fullName": "M19 Gift Pack",
+        "fullName": "G18-核心系列2019礼包",
         "icon": "img/sets/g18.svg"
     },
     "g99": {
         "code": "g99",
-        "fullName": "Judge Gift Cards 1999",
+        "fullName": "G99-裁判赠卡1999",
         "block": "Judge Gift Cards",
         "icon": "img/sets/g99.svg"
     },
     "gdy": {
         "code": "gdy",
-        "fullName": "Game Day Promos",
+        "fullName": "GDY-欢乐日纪念牌",
         "icon": "img/sets/gdy.svg"
     },
     "gk1": {
         "code": "gk1",
-        "fullName": "GRN Guild Kit",
+        "fullName": "GK1-烽会拉尼卡公会套组",
         "icon": "img/sets/gk1.svg"
     },
     "gk2": {
         "code": "gk2",
-        "fullName": "RNA Guild Kit",
+        "fullName": "GK2-效忠拉尼卡公会套组",
         "icon": "img/sets/gk2.svg"
     },
     "gn2": {
         "code": "gn2",
-        "fullName": "Game Night 2019",
+        "fullName": "GN2-欢乐夜2019",
         "icon": "img/sets/gn2.svg"
     },
     "gn3": {
         "code": "gn3",
-        "fullName": "Game Night: Free-for-All",
+        "fullName": "GN3-欢乐夜：全员免费",
         "icon": "img/sets/gn3.svg"
     },
     "gnt": {
         "code": "gnt",
-        "fullName": "Game Night",
+        "fullName": "GNT-欢乐夜",
         "icon": "img/sets/gnt.svg"
     },
     "gpt": {
         "code": "gpt",
-        "fullName": "Guildpact",
+        "fullName": "GPT-十会盟",
         "block": "Ravnica",
         "icon": "img/sets/gpt.svg"
     },
     "grn": {
         "code": "grn",
-        "fullName": "Guilds of Ravnica",
+        "fullName": "GRN-烽会拉尼卡",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/grn.svg"
     },
     "gs1": {
         "code": "gs1",
-        "fullName": "Global Series Jiang Yanggu & Mu Yanling",
+        "fullName": "GS1-幻境奇谭",
         "icon": "img/sets/gs1.svg"
     },
     "gtc": {
         "code": "gtc",
-        "fullName": "Gatecrash",
+        "fullName": "GTC-兵临古城",
         "block": "Return to Ravnica",
         "icon": "img/sets/gtc.svg"
     },
     "gvl": {
         "code": "gvl",
-        "fullName": "Duel Decks Anthology: Garruk vs. Liliana",
+        "fullName": "GVL-对决套牌合集：贾路对莉莲娜",
         "icon": "img/sets/gvl.svg"
     },
     "h09": {
         "code": "h09",
-        "fullName": "Premium Deck Series: Slivers",
+        "fullName": "H09-全闪套牌包：裂片妖",
         "icon": "img/sets/h09.svg"
     },
     "h17": {
         "code": "h17",
-        "fullName": "HasCon 2017",
+        "fullName": "H17-HasCon 2017",
         "icon": "img/sets/h17.svg"
     },
     "h1r": {
         "code": "h1r",
-        "fullName": "Modern Horizons 1 Timeshifts",
+        "fullName": "H1R-摩登新篇1时间转移牌",
         "icon": "img/sets/h1r.svg"
     },
     "h2r": {
         "code": "h2r",
-        "fullName": "Modern Horizons 2 Timeshifts",
+        "fullName": "H2R-摩登新篇2时间转移牌",
         "icon": "img/sets/h2r.svg"
     },
     "ha1": {
         "code": "ha1",
-        "fullName": "Historic Anthology 1",
+        "fullName": "HA1-史迹合集1",
         "icon": "img/sets/ha1.svg"
     },
     "ha2": {
         "code": "ha2",
-        "fullName": "Historic Anthology 2",
+        "fullName": "HA2-史迹合集2",
         "icon": "img/sets/ha2.svg"
     },
     "ha3": {
         "code": "ha3",
-        "fullName": "Historic Anthology 3",
+        "fullName": "HA3-史迹合集3",
         "icon": "img/sets/ha3.svg"
     },
     "ha4": {
         "code": "ha4",
-        "fullName": "Historic Anthology 4",
+        "fullName": "HA4-史迹合集4",
         "icon": "img/sets/ha4.svg"
     },
     "ha5": {
         "code": "ha5",
-        "fullName": "Historic Anthology 5",
+        "fullName": "HA5-史迹合集5",
         "icon": "img/sets/ha5.svg"
     },
     "ha6": {
         "code": "ha6",
-        "fullName": "Historic Anthology 6",
+        "fullName": "HA6-史迹合集6",
         "icon": "img/sets/ha6.svg"
     },
     "ha7": {
         "code": "ha7",
-        "fullName": "Historic Anthology 7",
+        "fullName": "HA7-史迹合集7",
         "icon": "img/sets/ha7.svg"
     },
     "hbg": {
         "code": "hbg",
-        "fullName": "Alchemy Horizons: Baldur's Gate",
+        "fullName": "HBG-炼金新篇：博德之门",
         "block": "Alchemy 2022",
         "icon": "img/sets/hbg.svg"
     },
     "hho": {
         "code": "hho",
-        "fullName": "Happy Holidays",
+        "fullName": "HHO-假日快乐",
         "icon": "img/sets/hho.svg"
     },
     "hml": {
         "code": "hml",
-        "fullName": "Homelands",
+        "fullName": "HML-家园",
         "icon": "img/sets/hml.svg"
     },
     "hob": {
         "code": "hob",
-        "fullName": "The Hobbit",
+        "fullName": "HOB-霍比特人",
         "icon": "img/sets/hob.svg"
     },
     "hoc": {
         "code": "hoc",
-        "fullName": "The Hobbit Commander",
+        "fullName": "HOC-霍比特人指挥官",
         "icon": "img/sets/hoc.svg"
     },
     "hop": {
         "code": "hop",
-        "fullName": "Planechase",
+        "fullName": "HOP-竞逐时空",
         "icon": "img/sets/hop.svg"
     },
     "hou": {
         "code": "hou",
-        "fullName": "Hour of Devastation",
+        "fullName": "HOU-幻灭时刻",
         "block": "Amonkhet",
         "icon": "img/sets/hou.svg"
     },
     "ice": {
         "code": "ice",
-        "fullName": "Ice Age",
+        "fullName": "ICE-冰雪时代",
         "block": "Ice Age",
         "icon": "img/sets/ice.svg"
     },
     "iko": {
         "code": "iko",
-        "fullName": "Ikoria: Lair of Behemoths",
+        "fullName": "IKO-依克黎：巨兽时空",
         "icon": "img/sets/iko.svg"
     },
     "ima": {
         "code": "ima",
-        "fullName": "Iconic Masters",
+        "fullName": "IMA-精英大师",
         "icon": "img/sets/ima.svg"
     },
     "inr": {
         "code": "inr",
-        "fullName": "Innistrad Remastered",
+        "fullName": "INR-依尼翠：重制版",
         "icon": "img/sets/inr.svg"
     },
     "inv": {
         "code": "inv",
-        "fullName": "Invasion",
+        "fullName": "INV-大战役",
         "block": "Invasion",
         "icon": "img/sets/inv.svg"
     },
     "isd": {
         "code": "isd",
-        "fullName": "Innistrad",
+        "fullName": "ISD-依尼翠",
         "block": "Innistrad",
         "icon": "img/sets/isd.svg"
     },
     "itp": {
         "code": "itp",
-        "fullName": "Introductory Two-Player Set",
+        "fullName": "ITP-双人入门系列",
         "icon": "img/sets/itp.svg"
     },
     "j12": {
         "code": "j12",
-        "fullName": "Judge Gift Cards 2012",
+        "fullName": "J12-裁判赠卡2012",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j12.svg"
     },
     "j13": {
         "code": "j13",
-        "fullName": "Judge Gift Cards 2013",
+        "fullName": "J13-裁判赠卡2013",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j13.svg"
     },
     "j14": {
         "code": "j14",
-        "fullName": "Judge Gift Cards 2014",
+        "fullName": "J14-裁判赠卡2014",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j14.svg"
     },
     "j15": {
         "code": "j15",
-        "fullName": "Judge Gift Cards 2015",
+        "fullName": "J15-裁判赠卡2015",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j15.svg"
     },
     "j16": {
         "code": "j16",
-        "fullName": "Judge Gift Cards 2016",
+        "fullName": "J16-裁判赠卡2016",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j16.svg"
     },
     "j17": {
         "code": "j17",
-        "fullName": "Judge Gift Cards 2017",
+        "fullName": "J17-裁判赠卡2017",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j17.svg"
     },
     "j18": {
         "code": "j18",
-        "fullName": "Judge Gift Cards 2018",
+        "fullName": "J18-裁判赠卡2018",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j18.svg"
     },
     "j19": {
         "code": "j19",
-        "fullName": "Judge Gift Cards 2019",
+        "fullName": "J19-裁判赠卡2019",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j19.svg"
     },
     "j20": {
         "code": "j20",
-        "fullName": "Judge Gift Cards 2020",
+        "fullName": "J20-裁判赠卡2020",
         "block": "Judge Gift Cards",
         "icon": "img/sets/j20.svg"
     },
     "j21": {
         "code": "j21",
-        "fullName": "Jumpstart: Historic Horizons",
+        "fullName": "J21-速战：史迹新篇",
         "icon": "img/sets/j21.svg"
     },
     "j22": {
         "code": "j22",
-        "fullName": "Jumpstart 2022",
+        "fullName": "J22-速战2022",
         "icon": "img/sets/j22.svg"
     },
     "j25": {
         "code": "j25",
-        "fullName": "Foundations Jumpstart",
+        "fullName": "J25-基石构筑速战",
         "icon": "img/sets/j25.svg"
     },
     "jgp": {
         "code": "jgp",
-        "fullName": "Judge Gift Cards 1998",
+        "fullName": "JGP-裁判赠卡1998",
         "block": "Judge Gift Cards",
         "icon": "img/sets/jgp.svg"
     },
     "jmp": {
         "code": "jmp",
-        "fullName": "Jumpstart",
+        "fullName": "JMP-速战",
         "icon": "img/sets/jmp.svg"
     },
     "jou": {
         "code": "jou",
-        "fullName": "Journey into Nyx",
+        "fullName": "JOU-尼兹之旅",
         "block": "Theros",
         "icon": "img/sets/jou.svg"
     },
     "jp1": {
         "code": "jp1",
-        "fullName": "Hobby Japan Promos",
+        "fullName": "JP1-Hobby日本纪念牌",
         "icon": "img/sets/jp1.svg"
     },
     "jud": {
         "code": "jud",
-        "fullName": "Judgment",
+        "fullName": "JUD-神谴",
         "block": "Odyssey",
         "icon": "img/sets/jud.svg"
     },
     "jvc": {
         "code": "jvc",
-        "fullName": "Duel Decks Anthology: Jace vs. Chandra",
+        "fullName": "JVC-对决套牌合集：杰斯对茜卓",
         "icon": "img/sets/jvc.svg"
     },
     "khc": {
         "code": "khc",
-        "fullName": "Kaldheim Commander",
+        "fullName": "KHC-凯德海姆指挥官",
         "block": "Commander",
         "icon": "img/sets/khc.svg"
     },
     "khm": {
         "code": "khm",
-        "fullName": "Kaldheim",
+        "fullName": "KHM-凯德海姆",
         "icon": "img/sets/khm.svg"
     },
     "kld": {
         "code": "kld",
-        "fullName": "Kaladesh",
+        "fullName": "KLD-卡拉德许",
         "block": "Kaladesh",
         "icon": "img/sets/kld.svg"
     },
     "klr": {
         "code": "klr",
-        "fullName": "Kaladesh Remastered",
+        "fullName": "KLR-卡拉德许重制版",
         "icon": "img/sets/klr.svg"
     },
     "ktk": {
         "code": "ktk",
-        "fullName": "Khans of Tarkir",
+        "fullName": "KTK-鞑契可汗",
         "block": "Khans of Tarkir",
         "icon": "img/sets/ktk.svg"
     },
     "lcc": {
         "code": "lcc",
-        "fullName": "The Lost Caverns of Ixalan Commander",
+        "fullName": "LCC-依夏兰迷窟指挥官",
         "block": "Commander",
         "icon": "img/sets/lcc.svg"
     },
     "lci": {
         "code": "lci",
-        "fullName": "The Lost Caverns of Ixalan",
+        "fullName": "LCI-依夏兰迷窟",
         "icon": "img/sets/lci.svg"
     },
     "lea": {
         "code": "lea",
-        "fullName": "Limited Edition Alpha",
+        "fullName": "LEA-第一版",
         "block": "Core Set",
         "icon": "img/sets/lea.svg"
     },
     "leb": {
         "code": "leb",
-        "fullName": "Limited Edition Beta",
+        "fullName": "LEB-第一版增印",
         "block": "Core Set",
         "icon": "img/sets/leb.svg"
     },
     "leg": {
         "code": "leg",
-        "fullName": "Legends",
+        "fullName": "LEG-传承",
         "icon": "img/sets/leg.svg"
     },
     "lgn": {
         "code": "lgn",
-        "fullName": "Legions",
+        "fullName": "LGN-万马千军",
         "block": "Onslaught",
         "icon": "img/sets/lgn.svg"
     },
     "lmar": {
         "code": "lmar",
-        "fullName": "Marvel Legends Series Inserts",
+        "fullName": "LMAR-漫威传奇系列附赠牌",
         "icon": "img/sets/lmar.svg"
     },
     "lrw": {
         "code": "lrw",
-        "fullName": "Lorwyn",
+        "fullName": "LRW-洛温",
         "block": "Lorwyn",
         "icon": "img/sets/lrw.svg"
     },
     "ltc": {
         "code": "ltc",
-        "fullName": "Tales of Middle-earth Commander",
+        "fullName": "LTC-中洲传说指挥官",
         "block": "Commander",
         "icon": "img/sets/ltc.svg"
     },
     "ltr": {
         "code": "ltr",
-        "fullName": "The Lord of the Rings: Tales of Middle-earth",
+        "fullName": "LTR-魔戒：中洲传说",
         "icon": "img/sets/ltr.svg"
     },
     "m10": {
         "code": "m10",
-        "fullName": "Magic 2010",
+        "fullName": "M10-2010核心系列",
         "block": "Core Set",
         "icon": "img/sets/m10.svg"
     },
     "m11": {
         "code": "m11",
-        "fullName": "Magic 2011",
+        "fullName": "M11-2011核心系列",
         "block": "Core Set",
         "icon": "img/sets/m11.svg"
     },
     "m12": {
         "code": "m12",
-        "fullName": "Magic 2012",
+        "fullName": "M12-2012核心系列",
         "block": "Core Set",
         "icon": "img/sets/m12.svg"
     },
     "m13": {
         "code": "m13",
-        "fullName": "Magic 2013",
+        "fullName": "M13-2013核心系列",
         "block": "Core Set",
         "icon": "img/sets/m13.svg"
     },
     "m14": {
         "code": "m14",
-        "fullName": "Magic 2014",
+        "fullName": "M14-2014核心系列",
         "block": "Core Set",
         "icon": "img/sets/m14.svg"
     },
     "m15": {
         "code": "m15",
-        "fullName": "Magic 2015",
+        "fullName": "M15-2015核心系列",
         "block": "Core Set",
         "icon": "img/sets/m15.svg"
     },
     "m19": {
         "code": "m19",
-        "fullName": "Core Set 2019",
+        "fullName": "M19-2019核心系列",
         "block": "Core Set",
         "icon": "img/sets/m19.svg"
     },
     "m20": {
         "code": "m20",
-        "fullName": "Core Set 2020",
+        "fullName": "M20-2020核心系列",
         "block": "Core Set",
         "icon": "img/sets/m20.svg"
     },
     "m21": {
         "code": "m21",
-        "fullName": "Core Set 2021",
+        "fullName": "M21-2021核心系列",
         "block": "Core Set",
         "icon": "img/sets/m21.svg"
     },
     "m3c": {
         "code": "m3c",
-        "fullName": "Modern Horizons 3 Commander",
+        "fullName": "M3C-摩登新篇3指挥官",
         "block": "Commander",
         "icon": "img/sets/m3c.svg"
     },
     "mar": {
         "code": "mar",
-        "fullName": "Marvel Universe",
+        "fullName": "MAR-漫威宇宙",
         "icon": "img/sets/mar.svg"
     },
     "mat": {
         "code": "mat",
-        "fullName": "March of the Machine: The Aftermath",
+        "fullName": "MAT-邪军压境：终战回响",
         "icon": "img/sets/mat.svg"
     },
     "mb2": {
         "code": "mb2",
-        "fullName": "Mystery Booster 2",
+        "fullName": "MB2-神秘补充包2",
         "icon": "img/sets/mb2.svg"
     },
     "mbc": {
         "code": "mbc",
-        "fullName": "Mystery Booster: Commander Edition"
+        "fullName": "MBC-神秘补充包指挥官版"
     },
     "mbs": {
         "code": "mbs",
-        "fullName": "Mirrodin Besieged",
+        "fullName": "MBS-围攻秘罗地",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/mbs.svg"
     },
     "md1": {
         "code": "md1",
-        "fullName": "Modern Event Deck 2014",
+        "fullName": "MD1-摩登预组套牌2014",
         "icon": "img/sets/md1.svg"
     },
     "me1": {
         "code": "me1",
-        "fullName": "Masters Edition",
+        "fullName": "ME1-大师版1",
         "icon": "img/sets/me1.svg"
     },
     "me2": {
         "code": "me2",
-        "fullName": "Masters Edition II",
+        "fullName": "ME2-大师版2",
         "icon": "img/sets/me2.svg"
     },
     "me3": {
         "code": "me3",
-        "fullName": "Masters Edition III",
+        "fullName": "ME3-大师版3",
         "icon": "img/sets/me3.svg"
     },
     "me4": {
         "code": "me4",
-        "fullName": "Masters Edition IV",
+        "fullName": "ME4-大师版4",
         "icon": "img/sets/me4.svg"
     },
     "med": {
         "code": "med",
-        "fullName": "Mythic Edition",
+        "fullName": "MED-秘稀版",
         "icon": "img/sets/med.svg"
     },
     "mgb": {
         "code": "mgb",
-        "fullName": "Multiverse Gift Box",
+        "fullName": "MGB-多重宇宙礼盒",
         "icon": "img/sets/mgb.svg"
     },
     "mh1": {
         "code": "mh1",
-        "fullName": "Modern Horizons",
+        "fullName": "MH1-摩登新篇",
         "block": "Modern Horizons Block",
         "icon": "img/sets/mh1.svg"
     },
     "mh2": {
         "code": "mh2",
-        "fullName": "Modern Horizons 2",
+        "fullName": "MH2-摩登新篇2",
         "block": "Modern Horizons Block",
         "icon": "img/sets/mh2.svg"
     },
     "mh3": {
         "code": "mh3",
-        "fullName": "Modern Horizons 3",
+        "fullName": "MH3-摩登新篇3",
         "block": "Modern Horizons Block",
         "icon": "img/sets/mh3.svg"
     },
     "mic": {
         "code": "mic",
-        "fullName": "Midnight Hunt Commander",
+        "fullName": "MIC-黯夜猎踪指挥官",
         "block": "Commander",
         "icon": "img/sets/mic.svg"
     },
     "mid": {
         "code": "mid",
-        "fullName": "Innistrad: Midnight Hunt",
+        "fullName": "MID-依尼翠：黯夜猎踪",
         "block": "Innistrad: Double Feature",
         "icon": "img/sets/mid.svg"
     },
     "mir": {
         "code": "mir",
-        "fullName": "Mirage",
+        "fullName": "MIR-海市蜃楼",
         "block": "Mirage",
         "icon": "img/sets/mir.svg"
     },
     "mkc": {
         "code": "mkc",
-        "fullName": "Murders at Karlov Manor Commander",
+        "fullName": "MKC-卡洛夫庄园谋杀案指挥官",
         "block": "Commander",
         "icon": "img/sets/mkc.svg"
     },
     "mkm": {
         "code": "mkm",
-        "fullName": "Murders at Karlov Manor",
+        "fullName": "MKM-卡洛夫庄园谋杀案",
         "icon": "img/sets/mkm.svg"
     },
     "mm2": {
         "code": "mm2",
-        "fullName": "Modern Masters 2015",
+        "fullName": "MM2-摩登大师2015",
         "icon": "img/sets/mm2.svg"
     },
     "mm3": {
         "code": "mm3",
-        "fullName": "Modern Masters 2017",
+        "fullName": "MM3-摩登大师2017",
         "icon": "img/sets/mm3.svg"
     },
     "mma": {
         "code": "mma",
-        "fullName": "Modern Masters",
+        "fullName": "MMA-摩登大师",
         "icon": "img/sets/mma.svg"
     },
     "mmq": {
         "code": "mmq",
-        "fullName": "Mercadian Masques",
+        "fullName": "MMQ-玛凯迪亚",
         "block": "Masques",
         "icon": "img/sets/mmq.svg"
     },
     "moc": {
         "code": "moc",
-        "fullName": "March of the Machine Commander",
+        "fullName": "MOC-邪军压境指挥官",
         "block": "Commander",
         "icon": "img/sets/moc.svg"
     },
     "mom": {
         "code": "mom",
-        "fullName": "March of the Machine",
+        "fullName": "MOM-邪军压境",
         "icon": "img/sets/mom.svg"
     },
     "mor": {
         "code": "mor",
-        "fullName": "Morningtide",
+        "fullName": "MOR-晨光",
         "block": "Lorwyn",
         "icon": "img/sets/mor.svg"
     },
     "mp2": {
         "code": "mp2",
-        "fullName": "Amonkhet Invocations",
+        "fullName": "MP2-阿芒凯祝愿",
         "block": "Amonkhet",
         "icon": "img/sets/mp2.svg"
     },
     "mpr": {
         "code": "mpr",
-        "fullName": "Magic Player Rewards 2001",
+        "fullName": "MPR-牌手奖励计划2001",
         "block": "Magic Player Rewards",
         "icon": "img/sets/mpr.svg"
     },
     "mps": {
         "code": "mps",
-        "fullName": "Kaladesh Inventions",
+        "fullName": "MPS-卡拉德许发明",
         "block": "Kaladesh",
         "icon": "img/sets/mps.svg"
     },
     "mrd": {
         "code": "mrd",
-        "fullName": "Mirrodin",
+        "fullName": "MRD-秘罗地",
         "block": "Mirrodin",
         "icon": "img/sets/mrd.svg"
     },
     "msc": {
         "code": "msc",
-        "fullName": "Marvel Super Heroes Commander",
+        "fullName": "MSC-漫威超级英雄指挥官",
         "block": "Commander",
         "icon": "img/sets/msc.svg"
     },
     "msh": {
         "code": "msh",
-        "fullName": "Marvel Super Heroes",
+        "fullName": "MSH-漫威超级英雄",
         "icon": "img/sets/msh.svg"
     },
     "mul": {
         "code": "mul",
-        "fullName": "Multiverse Legends",
+        "fullName": "MUL-多重宇宙传奇",
         "icon": "img/sets/mul.svg"
     },
     "ncc": {
         "code": "ncc",
-        "fullName": "New Capenna Commander",
+        "fullName": "NCC-新卡佩纳指挥官",
         "block": "Commander",
         "icon": "img/sets/ncc.svg"
     },
     "nec": {
         "code": "nec",
-        "fullName": "Neon Dynasty Commander",
+        "fullName": "NEC-霓朝纪指挥官",
         "block": "Commander",
         "icon": "img/sets/nec.svg"
     },
     "nem": {
         "code": "nem",
-        "fullName": "Nemesis",
+        "fullName": "NEM-宿敌",
         "block": "Masques",
         "icon": "img/sets/nem.svg"
     },
     "neo": {
         "code": "neo",
-        "fullName": "Kamigawa: Neon Dynasty",
+        "fullName": "NEO-神河霓朝纪",
         "icon": "img/sets/neo.svg"
     },
     "nph": {
         "code": "nph",
-        "fullName": "New Phyrexia",
+        "fullName": "NPH-新非瑞克西亚",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/nph.svg"
     },
     "o90p": {
         "code": "o90p",
-        "fullName": "Oversized 90's Promos",
+        "fullName": "O90P-90年代大画纪念牌",
         "icon": "img/sets/o90p.svg"
     },
     "oafc": {
         "code": "oafc",
-        "fullName": "Forgotten Realms Commander Display Commanders",
+        "fullName": "OAFC-被遗忘国度战记指挥官展示型指挥官",
         "icon": "img/sets/oafc.svg"
     },
     "oafr": {
         "code": "oafr",
-        "fullName": "Forgotten Realms Oversized Cards",
+        "fullName": "OAFR-被遗忘国度战记大画牌",
         "icon": "img/sets/oafr.svg"
     },
     "oana": {
         "code": "oana",
-        "fullName": "Arena New Player Experience Cards",
+        "fullName": "OANA-竞技场新手教程用牌",
         "icon": "img/sets/oana.svg"
     },
     "oarc": {
         "code": "oarc",
-        "fullName": "Archenemy Schemes",
+        "fullName": "OARC-魔王阴谋牌",
         "icon": "img/sets/oarc.svg"
     },
     "oc13": {
         "code": "oc13",
-        "fullName": "Commander 2013 Oversized",
+        "fullName": "OC13-指挥官2013大画牌",
         "block": "Commander",
         "icon": "img/sets/oc13.svg"
     },
     "oc14": {
         "code": "oc14",
-        "fullName": "Commander 2014 Oversized",
+        "fullName": "OC14-指挥官2014大画牌",
         "block": "Commander",
         "icon": "img/sets/oc14.svg"
     },
     "oc15": {
         "code": "oc15",
-        "fullName": "Commander 2015 Oversized",
+        "fullName": "OC15-指挥官2015大画牌",
         "block": "Commander",
         "icon": "img/sets/oc15.svg"
     },
     "oc16": {
         "code": "oc16",
-        "fullName": "Commander 2016 Oversized",
+        "fullName": "OC16-指挥官2016大画牌",
         "block": "Commander",
         "icon": "img/sets/oc16.svg"
     },
     "oc17": {
         "code": "oc17",
-        "fullName": "Commander 2017 Oversized",
+        "fullName": "OC17-指挥官2017大画牌",
         "block": "Commander",
         "icon": "img/sets/oc17.svg"
     },
     "oc18": {
         "code": "oc18",
-        "fullName": "Commander 2018 Oversized",
+        "fullName": "OC18-指挥官2018大画牌",
         "block": "Commander",
         "icon": "img/sets/oc18.svg"
     },
     "oc19": {
         "code": "oc19",
-        "fullName": "Commander 2019 Oversized",
+        "fullName": "OC19-指挥官2019大画牌",
         "block": "Commander",
         "icon": "img/sets/oc19.svg"
     },
     "oc20": {
         "code": "oc20",
-        "fullName": "Commander 2020 Oversized",
+        "fullName": "OC20-指挥官2020大画牌",
         "icon": "img/sets/oc20.svg"
     },
     "oc21": {
         "code": "oc21",
-        "fullName": "Commander 2021 Display Commanders",
+        "fullName": "OC21-指挥官2021展示型指挥官",
         "icon": "img/sets/oc21.svg"
     },
     "ocm1": {
         "code": "ocm1",
-        "fullName": "Commander's Arsenal Oversized",
+        "fullName": "OCM1-指挥官军火库大画牌",
         "block": "Commander",
         "icon": "img/sets/ocm1.svg"
     },
     "ocmd": {
         "code": "ocmd",
-        "fullName": "Commander 2011 Oversized",
+        "fullName": "OCMD-指挥官2011大画牌",
         "block": "Commander",
         "icon": "img/sets/ocmd.svg"
     },
     "ody": {
         "code": "ody",
-        "fullName": "Odyssey",
+        "fullName": "ODY-奥德赛",
         "block": "Odyssey",
         "icon": "img/sets/ody.svg"
     },
     "oe01": {
         "code": "oe01",
-        "fullName": "Archenemy: Nicol Bolas Schemes",
+        "fullName": "OE01-魔王：尼可波拉斯阴谋牌",
         "icon": "img/sets/oe01.svg"
     },
     "ogw": {
         "code": "ogw",
-        "fullName": "Oath of the Gatewatch",
+        "fullName": "OGW-守护者誓约",
         "block": "Battle for Zendikar",
         "icon": "img/sets/ogw.svg"
     },
     "ohop": {
         "code": "ohop",
-        "fullName": "Planechase Planes",
+        "fullName": "OHOP-竞逐时空时空牌",
         "icon": "img/sets/ohop.svg"
     },
     "olep": {
         "code": "olep",
-        "fullName": "Oversized League Prizes",
+        "fullName": "OLEP-联盟赛大画纪念牌",
         "icon": "img/sets/olep.svg"
     },
     "olgc": {
         "code": "olgc",
-        "fullName": "Legacy Championship",
+        "fullName": "OLGC-薪传冠军赛",
         "icon": "img/sets/olgc.svg"
     },
     "om1": {
         "code": "om1",
-        "fullName": "Through the Omenpaths",
+        "fullName": "OM1-穿越预兆路",
         "icon": "img/sets/om1.svg"
     },
     "omb": {
         "code": "omb",
-        "fullName": "Through the Omenpaths Bonus Sheet",
+        "fullName": "OMB-穿越预兆路额外列表",
         "icon": "img/sets/omb.svg"
     },
     "omic": {
         "code": "omic",
-        "fullName": "Midnight Hunt Commander Display Commanders",
+        "fullName": "OMIC-黯夜猎踪指挥官展示型指挥官",
         "block": "Commander",
         "icon": "img/sets/omic.svg"
     },
     "onc": {
         "code": "onc",
-        "fullName": "Phyrexia: All Will Be One Commander",
+        "fullName": "ONC-非瑞克西亚：万界归一指挥官",
         "block": "Commander",
         "icon": "img/sets/onc.svg"
     },
     "one": {
         "code": "one",
-        "fullName": "Phyrexia: All Will Be One",
+        "fullName": "ONE-非瑞克西亚：万界归一",
         "icon": "img/sets/one.svg"
     },
     "ons": {
         "code": "ons",
-        "fullName": "Onslaught",
+        "fullName": "ONS-石破天惊",
         "block": "Onslaught",
         "icon": "img/sets/ons.svg"
     },
     "opc2": {
         "code": "opc2",
-        "fullName": "Planechase 2012 Planes",
+        "fullName": "OPC2-竞逐时空2012时空牌",
         "icon": "img/sets/opc2.svg"
     },
     "opca": {
         "code": "opca",
-        "fullName": "Planechase Anthology Planes",
+        "fullName": "OPCA-竞逐时空合集时空牌",
         "icon": "img/sets/opca.svg"
     },
     "ori": {
         "code": "ori",
-        "fullName": "Magic Origins",
+        "fullName": "ORI-万智牌：起源",
         "block": "Core Set",
         "icon": "img/sets/ori.svg"
     },
     "otc": {
         "code": "otc",
-        "fullName": "Outlaws of Thunder Junction Commander",
+        "fullName": "OTC-光雷驿镖客指挥官",
         "block": "Commander",
         "icon": "img/sets/otc.svg"
     },
     "otj": {
         "code": "otj",
-        "fullName": "Outlaws of Thunder Junction",
+        "fullName": "OTJ-光雷驿镖客",
         "block": "Outlaws of Thunder Junction",
         "icon": "img/sets/otj.svg"
     },
     "otp": {
         "code": "otp",
-        "fullName": "Breaking News",
+        "fullName": "OTP-号外新闻",
         "block": "Outlaws of Thunder Junction",
         "icon": "img/sets/otp.svg"
     },
     "ovnt": {
         "code": "ovnt",
-        "fullName": "Vintage Championship",
+        "fullName": "OVNT-特选冠军赛",
         "icon": "img/sets/ovnt.svg"
     },
     "ovoc": {
         "code": "ovoc",
-        "fullName": "Crimson Vow Commander Display Commanders",
+        "fullName": "OVOC-腥红婚誓指挥官展示型指挥官",
         "block": "Innistrad: Double Feature",
         "icon": "img/sets/ovoc.svg"
     },
     "p02": {
         "code": "p02",
-        "fullName": "Portal Second Age",
+        "fullName": "P02-博图第二版",
         "block": "Portal",
         "icon": "img/sets/p02.svg"
     },
     "p03": {
         "code": "p03",
-        "fullName": "Magic Player Rewards 2003",
+        "fullName": "P03-牌手奖励计划2003",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p03.svg"
     },
     "p04": {
         "code": "p04",
-        "fullName": "Magic Player Rewards 2004",
+        "fullName": "P04-牌手奖励计划2004",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p04.svg"
     },
     "p05": {
         "code": "p05",
-        "fullName": "Magic Player Rewards 2005",
+        "fullName": "P05-牌手奖励计划2005",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p05.svg"
     },
     "p06": {
         "code": "p06",
-        "fullName": "Magic Player Rewards 2006",
+        "fullName": "P06-牌手奖励计划2006",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p06.svg"
     },
     "p07": {
         "code": "p07",
-        "fullName": "Magic Player Rewards 2007",
+        "fullName": "P07-牌手奖励计划2007",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p07.svg"
     },
     "p08": {
         "code": "p08",
-        "fullName": "Magic Player Rewards 2008",
+        "fullName": "P08-牌手奖励计划2008",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p08.svg"
     },
     "p09": {
         "code": "p09",
-        "fullName": "Magic Player Rewards 2009",
+        "fullName": "P09-牌手奖励计划2009",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p09.svg"
     },
     "p10": {
         "code": "p10",
-        "fullName": "Magic Player Rewards 2010",
+        "fullName": "P10-牌手奖励计划2010",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p10.svg"
     },
     "p10e": {
         "code": "p10e",
-        "fullName": "Tenth Edition Promos",
+        "fullName": "P10E-第十版纪念牌",
         "icon": "img/sets/p10e.svg"
     },
     "p11": {
         "code": "p11",
-        "fullName": "Magic Player Rewards 2011",
+        "fullName": "P11-牌手奖励计划2011",
         "block": "Magic Player Rewards",
         "icon": "img/sets/p11.svg"
     },
     "p15a": {
         "code": "p15a",
-        "fullName": "15th Anniversary Cards",
+        "fullName": "P15A-15周年庆纪念牌",
         "icon": "img/sets/p15a.svg"
     },
     "p22": {
         "code": "p22",
-        "fullName": "Judge Gift Cards 2022",
+        "fullName": "P22-裁判赠卡2022",
         "block": "Judge Gift Cards",
         "icon": "img/sets/p22.svg"
     },
     "p23": {
         "code": "p23",
-        "fullName": "Judge Gift Cards 2023",
+        "fullName": "P23-裁判赠卡2023",
         "block": "Judge Gift Cards",
         "icon": "img/sets/p23.svg"
     },
     "p2hg": {
         "code": "p2hg",
-        "fullName": "Two-Headed Giant Tournament",
+        "fullName": "P2HG-双头巨人锦标赛",
         "icon": "img/sets/p2hg.svg"
     },
     "p30a": {
         "code": "p30a",
-        "fullName": "30th Anniversary Play Promos",
+        "fullName": "P30A-30周年庆典现开纪念牌",
         "icon": "img/sets/p30a.svg"
     },
     "p30h": {
         "code": "p30h",
-        "fullName": "30th Anniversary History Promos",
+        "fullName": "P30H-30周年庆典复古纪念牌",
         "icon": "img/sets/p30h.svg"
     },
     "p30m": {
         "code": "p30m",
-        "fullName": "30th Anniversary Misc Promos",
+        "fullName": "P30M-30周年庆典杂项纪念牌",
         "icon": "img/sets/p30m.svg"
     },
     "p30t": {
         "code": "p30t",
-        "fullName": "30th Anniversary Celebration Tokyo",
+        "fullName": "P30T-30周年庆东京",
         "icon": "img/sets/p30t.svg"
     },
     "p5dn": {
         "code": "p5dn",
-        "fullName": "Fifth Dawn Promos",
+        "fullName": "P5DN-五色曙光纪念牌",
         "block": "Mirrodin",
         "icon": "img/sets/p5dn.svg"
     },
     "p8ed": {
         "code": "p8ed",
-        "fullName": "Eighth Edition Promos",
+        "fullName": "P8ED-第八版纪念牌",
         "block": "Core Set",
         "icon": "img/sets/p8ed.svg"
     },
     "p9ed": {
         "code": "p9ed",
-        "fullName": "Ninth Edition Promos",
+        "fullName": "P9ED-第九版纪念牌",
         "block": "Core Set",
         "icon": "img/sets/p9ed.svg"
     },
     "pa1": {
         "code": "pa1",
-        "fullName": "Pioneer Anthology 1",
+        "fullName": "PA1-先驱合集1",
         "icon": "img/sets/pa1.svg"
     },
     "paer": {
         "code": "paer",
-        "fullName": "Aether Revolt Promos",
+        "fullName": "PAER-乙太之乱纪念牌",
         "block": "Kaladesh",
         "icon": "img/sets/paer.svg"
     },
     "pafr": {
         "code": "pafr",
-        "fullName": "Adventures in the Forgotten Realms Promos",
+        "fullName": "PAFR-被遗忘国度战记纪念牌",
         "icon": "img/sets/pafr.svg"
     },
     "pakh": {
         "code": "pakh",
-        "fullName": "Amonkhet Promos",
+        "fullName": "PAKH-阿芒凯纪念牌",
         "block": "Amonkhet",
         "icon": "img/sets/pakh.svg"
     },
     "pal00": {
         "code": "pal00",
-        "fullName": "Arena League 2000",
+        "fullName": "PAL00-竞技场联盟赛2000",
         "block": "Arena League",
         "icon": "img/sets/pal00.svg"
     },
     "pal01": {
         "code": "pal01",
-        "fullName": "Arena League 2001",
+        "fullName": "PAL01-竞技场联盟赛2001",
         "block": "Arena League",
         "icon": "img/sets/pal01.svg"
     },
     "pal02": {
         "code": "pal02",
-        "fullName": "Arena League 2002",
+        "fullName": "PAL02-竞技场联盟赛2002",
         "block": "Arena League",
         "icon": "img/sets/pal02.svg"
     },
     "pal03": {
         "code": "pal03",
-        "fullName": "Arena League 2003",
+        "fullName": "PAL03-竞技场联盟赛2003",
         "block": "Arena League",
         "icon": "img/sets/pal03.svg"
     },
     "pal04": {
         "code": "pal04",
-        "fullName": "Arena League 2004",
+        "fullName": "PAL04-竞技场联盟赛2004",
         "block": "Arena League",
         "icon": "img/sets/pal04.svg"
     },
     "pal05": {
         "code": "pal05",
-        "fullName": "Arena League 2005",
+        "fullName": "PAL05-竞技场联盟赛2005",
         "block": "Arena League",
         "icon": "img/sets/pal05.svg"
     },
     "pal06": {
         "code": "pal06",
-        "fullName": "Arena League 2006",
+        "fullName": "PAL06-竞技场联盟赛2006",
         "block": "Arena League",
         "icon": "img/sets/pal06.svg"
     },
     "pal99": {
         "code": "pal99",
-        "fullName": "Arena League 1999",
+        "fullName": "PAL99-竞技场联盟赛1999",
         "block": "Arena League",
         "icon": "img/sets/pal99.svg"
     },
     "pala": {
         "code": "pala",
-        "fullName": "Shards of Alara Promos",
+        "fullName": "PALA-阿拉若断片纪念牌",
         "block": "Alara",
         "icon": "img/sets/pala.svg"
     },
     "palp": {
         "code": "palp",
-        "fullName": "Asia Pacific Land Program",
+        "fullName": "PALP-亚洲地",
         "icon": "img/sets/palp.svg"
     },
     "pana": {
         "code": "pana",
-        "fullName": "MTG Arena Promos",
+        "fullName": "PANA-万智牌竞技场纪念牌",
         "icon": "img/sets/pana.svg"
     },
     "papc": {
         "code": "papc",
-        "fullName": "Apocalypse Promos",
+        "fullName": "PAPC-启示录纪念牌",
         "block": "Invasion",
         "icon": "img/sets/papc.svg"
     },
     "parb": {
         "code": "parb",
-        "fullName": "Alara Reborn Promos",
+        "fullName": "PARB-阿拉若新生纪念牌",
         "block": "Alara",
         "icon": "img/sets/parb.svg"
     },
     "parl": {
         "code": "parl",
-        "fullName": "Arena League 1996",
+        "fullName": "PARL-竞技场联盟赛1996",
         "block": "Arena League",
         "icon": "img/sets/parl.svg"
     },
     "past": {
         "code": "past",
-        "fullName": "Astral Cards",
+        "fullName": "PAST-星界牌",
         "icon": "img/sets/past.svg"
     },
     "pavr": {
         "code": "pavr",
-        "fullName": "Avacyn Restored Promos",
+        "fullName": "PAVR-艾维欣重临纪念牌",
         "block": "Innistrad",
         "icon": "img/sets/pavr.svg"
     },
     "pbbd": {
         "code": "pbbd",
-        "fullName": "Battlebond Promos",
+        "fullName": "PBBD-火线齐心纪念牌",
         "icon": "img/sets/pbbd.svg"
     },
     "pbfz": {
         "code": "pbfz",
-        "fullName": "Battle for Zendikar Promos",
+        "fullName": "PBFZ-再战赞迪卡纪念牌",
         "block": "Battle for Zendikar",
         "icon": "img/sets/pbfz.svg"
     },
     "pbig": {
         "code": "pbig",
-        "fullName": "The Big Score Promos",
+        "fullName": "PBIG-满载而归纪念牌",
         "icon": "img/sets/pbig.svg"
     },
     "pblb": {
         "code": "pblb",
-        "fullName": "Bloomburrow Promos",
+        "fullName": "PBLB-斑隆洛纪念牌",
         "icon": "img/sets/pblb.svg"
     },
     "pbng": {
         "code": "pbng",
-        "fullName": "Born of the Gods Promos",
+        "fullName": "PBNG-天神创生纪念牌",
         "block": "Theros",
         "icon": "img/sets/pbng.svg"
     },
     "pbok": {
         "code": "pbok",
-        "fullName": "Betrayers of Kamigawa Promos",
+        "fullName": "PBOK-神河叛将谱纪念牌",
         "block": "Kamigawa",
         "icon": "img/sets/pbok.svg"
     },
     "pbro": {
         "code": "pbro",
-        "fullName": "The Brothers' War Promos",
+        "fullName": "PBRO-兄弟之战纪念牌",
         "icon": "img/sets/pbro.svg"
     },
     "pc2": {
         "code": "pc2",
-        "fullName": "Planechase 2012",
+        "fullName": "PC2-竞逐时空2012",
         "icon": "img/sets/pc2.svg"
     },
     "pca": {
         "code": "pca",
-        "fullName": "Planechase Anthology",
+        "fullName": "PCA-竞逐时空合集",
         "icon": "img/sets/pca.svg"
     },
     "pcbb": {
         "code": "pcbb",
-        "fullName": "Cowboy Bebop",
+        "fullName": "PCBB-星际牛仔",
         "icon": "img/sets/pcbb.svg"
     },
     "pcel": {
         "code": "pcel",
-        "fullName": "Celebration Cards",
+        "fullName": "PCEL-庆典牌",
         "icon": "img/sets/pcel.svg"
     },
     "pchk": {
         "code": "pchk",
-        "fullName": "Champions of Kamigawa Promos",
+        "fullName": "PCHK-神河群英录纪念牌",
         "block": "Kamigawa",
         "icon": "img/sets/pchk.svg"
     },
     "pclb": {
         "code": "pclb",
-        "fullName": "Battle for Baldur's Gate Promos",
+        "fullName": "PCLB-争战博德之门纪念牌",
         "icon": "img/sets/pclb.svg"
     },
     "pcmd": {
         "code": "pcmd",
-        "fullName": "Commander 2011 Launch Party",
+        "fullName": "PCMD-指挥官2011发售欢庆会",
         "block": "Commander",
         "icon": "img/sets/pcmd.svg"
     },
     "pcmp": {
         "code": "pcmp",
-        "fullName": "Champs and States",
+        "fullName": "PCMP-Champs and States",
         "icon": "img/sets/pcmp.svg"
     },
     "pcmr": {
         "code": "pcmr",
-        "fullName": "Commander Legends Promos",
+        "fullName": "PCMR-指挥官传奇纪念牌",
         "icon": "img/sets/pcmr.svg"
     },
     "pcns": {
         "code": "pcns",
-        "fullName": "Conspiracy Promos",
+        "fullName": "PCNS-诡局纪念牌",
         "block": "Conspiracy",
         "icon": "img/sets/pcns.svg"
     },
     "pcon": {
         "code": "pcon",
-        "fullName": "Conflux Promos",
+        "fullName": "PCON-聚流纪念牌",
         "block": "Alara",
         "icon": "img/sets/pcon.svg"
     },
     "pcsp": {
         "code": "pcsp",
-        "fullName": "Coldsnap Promos",
+        "fullName": "PCSP-骤霜纪念牌",
         "block": "Ice Age",
         "icon": "img/sets/pcsp.svg"
     },
     "pcy": {
         "code": "pcy",
-        "fullName": "Prophecy",
+        "fullName": "PCY-预言",
         "block": "Masques",
         "icon": "img/sets/pcy.svg"
     },
     "pd2": {
         "code": "pd2",
-        "fullName": "Premium Deck Series: Fire and Lightning",
+        "fullName": "PD2-全闪套牌包：烈火与闪电",
         "icon": "img/sets/pd2.svg"
     },
     "pd3": {
         "code": "pd3",
-        "fullName": "Premium Deck Series: Graveborn",
+        "fullName": "PD3-全闪套牌包：坟场复生",
         "icon": "img/sets/pd3.svg"
     },
     "pdft": {
         "code": "pdft",
-        "fullName": "Aetherdrift Promos",
+        "fullName": "PDFT-乙太飘移纪念牌",
         "icon": "img/sets/pdft.svg"
     },
     "pdgm": {
         "code": "pdgm",
-        "fullName": "Dragon's Maze Promos",
+        "fullName": "PDGM-巨龙迷城纪念牌",
         "block": "Return to Ravnica",
         "icon": "img/sets/pdgm.svg"
     },
     "pdis": {
         "code": "pdis",
-        "fullName": "Dissension Promos",
+        "fullName": "PDIS-纷争纪念牌",
         "block": "Ravnica",
         "icon": "img/sets/pdis.svg"
     },
     "pdka": {
         "code": "pdka",
-        "fullName": "Dark Ascension Promos",
+        "fullName": "PDKA-黑影笼罩纪念牌",
         "block": "Innistrad",
         "icon": "img/sets/pdka.svg"
     },
     "pdmu": {
         "code": "pdmu",
-        "fullName": "Dominaria United Promos",
+        "fullName": "PDMU-多明纳里亚：众志成城纪念牌",
         "icon": "img/sets/pdmu.svg"
     },
     "pdom": {
         "code": "pdom",
-        "fullName": "Dominaria Promos",
+        "fullName": "PDOM-多明纳里亚纪念牌",
         "icon": "img/sets/pdom.svg"
     },
     "pdp10": {
         "code": "pdp10",
-        "fullName": "Duels of the Planeswalkers 2010 Promos",
+        "fullName": "PDP10-鹏洛客对决2010纪念牌",
         "icon": "img/sets/pdp10.svg"
     },
     "pdp12": {
         "code": "pdp12",
-        "fullName": "Duels of the Planeswalkers 2012 Promos",
+        "fullName": "PDP12-鹏洛客对决2012纪念牌",
         "icon": "img/sets/pdp12.svg"
     },
     "pdp13": {
         "code": "pdp13",
-        "fullName": "Duels of the Planeswalkers 2013 Promos",
+        "fullName": "PDP13-鹏洛客对决2013纪念牌",
         "icon": "img/sets/pdp13.svg"
     },
     "pdp14": {
         "code": "pdp14",
-        "fullName": "Duels of the Planeswalkers 2014 Promos",
+        "fullName": "PDP14-鹏洛客对决2014纪念牌",
         "icon": "img/sets/pdp14.svg"
     },
     "pdp15": {
         "code": "pdp15",
-        "fullName": "Duels of the Planeswalkers 2015 Promos",
+        "fullName": "PDP15-鹏洛客对决2015纪念牌",
         "icon": "img/sets/pdp15.svg"
     },
     "pdrc": {
         "code": "pdrc",
-        "fullName": "Dragon Con",
+        "fullName": "PDRC-Dragon Con",
         "icon": "img/sets/pdrc.svg"
     },
     "pdsk": {
         "code": "pdsk",
-        "fullName": "Duskmourn: House of Horror Promos",
+        "fullName": "PDSK-暮悲邸：鬼屋惊魂纪念牌",
         "icon": "img/sets/pdsk.svg"
     },
     "pdst": {
         "code": "pdst",
-        "fullName": "Darksteel Promos",
+        "fullName": "PDST-玄铁纪念牌",
         "block": "Mirrodin",
         "icon": "img/sets/pdst.svg"
     },
     "pdtk": {
         "code": "pdtk",
-        "fullName": "Dragons of Tarkir Promos",
+        "fullName": "PDTK-鞑契龙王纪念牌",
         "block": "Khans of Tarkir",
         "icon": "img/sets/pdtk.svg"
     },
     "pdtp": {
         "code": "pdtp",
-        "fullName": "Duels of the Planeswalkers 2009 Promos",
+        "fullName": "PDTP-鹏洛客对决2009纪念牌",
         "icon": "img/sets/pdtp.svg"
     },
     "pecl": {
         "code": "pecl",
-        "fullName": "Lorwyn Eclipsed Promos",
+        "fullName": "PECL-洛温：暗影笼罩纪念牌",
         "icon": "img/sets/pecl.svg"
     },
     "peld": {
         "code": "peld",
-        "fullName": "Throne of Eldraine Promos",
+        "fullName": "PELD-艾卓王权纪念牌",
         "icon": "img/sets/peld.svg"
     },
     "pelp": {
         "code": "pelp",
-        "fullName": "European Land Program",
+        "fullName": "PELP-欧洲地",
         "icon": "img/sets/pelp.svg"
     },
     "pemn": {
         "code": "pemn",
-        "fullName": "Eldritch Moon Promos",
+        "fullName": "PEMN-异月传奇纪念牌",
         "block": "Shadows over Innistrad",
         "icon": "img/sets/pemn.svg"
     },
     "peoe": {
         "code": "peoe",
-        "fullName": "Edge of Eternities Promos",
+        "fullName": "PEOE-虚空边域纪念牌",
         "icon": "img/sets/peoe.svg"
     },
     "peve": {
         "code": "peve",
-        "fullName": "Eventide Promos",
+        "fullName": "PEVE-暮光纪念牌",
         "block": "Shadowmoor",
         "icon": "img/sets/peve.svg"
     },
     "pewk": {
         "code": "pewk",
-        "fullName": "Eternal Weekend",
+        "fullName": "PEWK-永恒周末",
         "icon": "img/sets/pewk.svg"
     },
     "pexo": {
         "code": "pexo",
-        "fullName": "Exodus Promos",
+        "fullName": "PEXO-出瑞斯记纪念牌",
         "block": "Tempest",
         "icon": "img/sets/pexo.svg"
     },
     "pf19": {
         "code": "pf19",
-        "fullName": "MagicFest 2019",
+        "fullName": "PF19-万智节2019",
         "icon": "img/sets/pf19.svg"
     },
     "pf20": {
         "code": "pf20",
-        "fullName": "MagicFest 2020",
+        "fullName": "PF20-万智节2020",
         "icon": "img/sets/pf20.svg"
     },
     "pf23": {
         "code": "pf23",
-        "fullName": "MagicFest 2023",
+        "fullName": "PF23-万智节2023",
         "icon": "img/sets/pf23.svg"
     },
     "pf24": {
         "code": "pf24",
-        "fullName": "MagicFest 2024",
+        "fullName": "PF24-万智节2024",
         "icon": "img/sets/pf24.svg"
     },
     "pf25": {
         "code": "pf25",
-        "fullName": "MagicFest 2025",
+        "fullName": "PF25-万智节2025",
         "icon": "img/sets/pf25.svg"
     },
     "pf26": {
         "code": "pf26",
-        "fullName": "MagicFest 2026",
+        "fullName": "PF26-万智节2026",
         "icon": "img/sets/pf26.svg"
     },
     "pfdn": {
         "code": "pfdn",
-        "fullName": "Foundations Promos",
+        "fullName": "PFDN-基石构筑纪念牌",
         "icon": "img/sets/pfdn.svg"
     },
     "pfin": {
         "code": "pfin",
-        "fullName": "Final Fantasy Promos",
+        "fullName": "PFIN-最终幻想纪念牌",
         "icon": "img/sets/pfin.svg"
     },
     "pfrf": {
         "code": "pfrf",
-        "fullName": "Fate Reforged Promos",
+        "fullName": "PFRF-龙命殊途纪念牌",
         "block": "Khans of Tarkir",
         "icon": "img/sets/pfrf.svg"
     },
     "pfut": {
         "code": "pfut",
-        "fullName": "Future Sight Promos",
+        "fullName": "PFUT-预知将来纪念牌",
         "block": "Time Spiral",
         "icon": "img/sets/pfut.svg"
     },
     "pgpt": {
         "code": "pgpt",
-        "fullName": "Guildpact Promos",
+        "fullName": "PGPT-十会盟纪念牌",
         "block": "Ravnica",
         "icon": "img/sets/pgpt.svg"
     },
     "pgpx": {
         "code": "pgpx",
-        "fullName": "Grand Prix Promos",
+        "fullName": "PGPX-大奖赛纪念牌",
         "icon": "img/sets/pgpx.svg"
     },
     "pgrn": {
         "code": "pgrn",
-        "fullName": "Guilds of Ravnica Promos",
+        "fullName": "PGRN-烽会拉尼卡纪念牌",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/pgrn.svg"
     },
     "pgru": {
         "code": "pgru",
-        "fullName": "Guru",
+        "fullName": "PGRU-大师地",
         "icon": "img/sets/pgru.svg"
     },
     "pgtc": {
         "code": "pgtc",
-        "fullName": "Gatecrash Promos",
+        "fullName": "PGTC-兵临古城纪念牌",
         "block": "Return to Ravnica",
         "icon": "img/sets/pgtc.svg"
     },
     "ph17": {
         "code": "ph17",
-        "fullName": "2017 Heroes of the Realm",
+        "fullName": "PH17-2017年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph17.svg"
     },
     "ph18": {
         "code": "ph18",
-        "fullName": "2018 Heroes of the Realm",
+        "fullName": "PH18-2018年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph18.svg"
     },
     "ph19": {
         "code": "ph19",
-        "fullName": "2019 Heroes of the Realm",
+        "fullName": "PH19-2019年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph19.svg"
     },
     "ph20": {
         "code": "ph20",
-        "fullName": "2020 Heroes of the Realm",
+        "fullName": "PH20-2020年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph20.svg"
     },
     "ph21": {
         "code": "ph21",
-        "fullName": "2021 Heroes of the Realm",
+        "fullName": "PH21-2021年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph21.svg"
     },
     "ph22": {
         "code": "ph22",
-        "fullName": "2022 Heroes of the Realm",
+        "fullName": "PH22-2022年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph22.svg"
     },
     "ph23": {
         "code": "ph23",
-        "fullName": "2023 Heroes of the Realm",
+        "fullName": "PH23-2023年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/ph23.svg"
     },
     "phel": {
         "code": "phel",
-        "fullName": "Open the Helvault",
+        "fullName": "PHEL-打开狱窖",
         "icon": "img/sets/phel.svg"
     },
     "phop": {
         "code": "phop",
-        "fullName": "Planechase Promos",
+        "fullName": "PHOP-竞逐时空纪念牌",
         "icon": "img/sets/phop.svg"
     },
     "phou": {
         "code": "phou",
-        "fullName": "Hour of Devastation Promos",
+        "fullName": "PHOU-幻灭时刻纪念牌",
         "block": "Amonkhet",
         "icon": "img/sets/phou.svg"
     },
     "phpr": {
         "code": "phpr",
-        "fullName": "HarperPrism Book Promos",
+        "fullName": "PHPR-HarperPrism图书纪念牌",
         "icon": "img/sets/phpr.svg"
     },
     "phtr": {
         "code": "phtr",
-        "fullName": "2016 Heroes of the Realm",
+        "fullName": "PHTR-2016年员工奖励",
         "block": "Heroes of the Realm",
         "icon": "img/sets/phtr.svg"
     },
     "phuk": {
         "code": "phuk",
-        "fullName": "Hachette UK",
+        "fullName": "PHUK-Hachette UK",
         "icon": "img/sets/phuk.svg"
     },
     "pidw": {
         "code": "pidw",
-        "fullName": "IDW Comics Inserts",
+        "fullName": "PIDW-IDW漫画赠送",
         "icon": "img/sets/pidw.svg"
     },
     "piko": {
         "code": "piko",
-        "fullName": "Ikoria: Lair of Behemoths Promos",
+        "fullName": "PIKO-依克黎：巨兽时空纪念牌",
         "icon": "img/sets/piko.svg"
     },
     "pinv": {
         "code": "pinv",
-        "fullName": "Invasion Promos",
+        "fullName": "PINV-大战役纪念牌",
         "block": "Invasion",
         "icon": "img/sets/pinv.svg"
     },
     "pio": {
         "code": "pio",
-        "fullName": "Pioneer Masters",
+        "fullName": "PIO-先驱大师",
         "icon": "img/sets/pio.svg"
     },
     "pip": {
         "code": "pip",
-        "fullName": "Fallout",
+        "fullName": "PIP-辐射",
         "block": "Commander",
         "icon": "img/sets/pip.svg"
     },
     "pisd": {
         "code": "pisd",
-        "fullName": "Innistrad Promos",
+        "fullName": "PISD-依尼翠纪念牌",
         "block": "Innistrad",
         "icon": "img/sets/pisd.svg"
     },
     "pj21": {
         "code": "pj21",
-        "fullName": "Judge Gift Cards 2021",
+        "fullName": "PJ21-裁判赠卡2021",
         "block": "Judge Gift Cards",
         "icon": "img/sets/pj21.svg"
     },
     "pjas": {
         "code": "pjas",
-        "fullName": "Junior APAC Series",
+        "fullName": "PJAS-亚太青年联赛",
         "icon": "img/sets/pjas.svg"
     },
     "pjjt": {
         "code": "pjjt",
-        "fullName": "Japan Junior Tournament",
+        "fullName": "PJJT-日本青少年锦标赛",
         "icon": "img/sets/pjjt.svg"
     },
     "pjou": {
         "code": "pjou",
-        "fullName": "Journey into Nyx Promos",
+        "fullName": "PJOU-尼兹之旅纪念牌",
         "block": "Theros",
         "icon": "img/sets/pjou.svg"
     },
     "pjsc": {
         "code": "pjsc",
-        "fullName": "Japan Standard Cup",
+        "fullName": "PJSC-日本标准杯",
         "icon": "img/sets/pjsc.svg"
     },
     "pjse": {
         "code": "pjse",
-        "fullName": "Junior Series Europe",
+        "fullName": "PJSE-欧洲青少年联赛",
         "icon": "img/sets/pjse.svg"
     },
     "pjud": {
         "code": "pjud",
-        "fullName": "Judgment Promos",
+        "fullName": "PJUD-神谴纪念牌",
         "block": "Odyssey",
         "icon": "img/sets/pjud.svg"
     },
     "pkhm": {
         "code": "pkhm",
-        "fullName": "Kaldheim Promos",
+        "fullName": "PKHM-凯德海姆纪念牌",
         "icon": "img/sets/pkhm.svg"
     },
     "pkld": {
         "code": "pkld",
-        "fullName": "Kaladesh Promos",
+        "fullName": "PKLD-卡拉德许纪念牌",
         "block": "Kaladesh",
         "icon": "img/sets/pkld.svg"
     },
     "pktk": {
         "code": "pktk",
-        "fullName": "Khans of Tarkir Promos",
+        "fullName": "PKTK-鞑契可汗纪念牌",
         "block": "Khans of Tarkir",
         "icon": "img/sets/pktk.svg"
     },
     "pl21": {
         "code": "pl21",
-        "fullName": "Year of the Ox 2021",
+        "fullName": "PL21-农历牛年2021",
         "icon": "img/sets/pl21.svg"
     },
     "pl22": {
         "code": "pl22",
-        "fullName": "Year of the Tiger 2022",
+        "fullName": "PL22-农历虎年2022",
         "icon": "img/sets/pl22.svg"
     },
     "pl23": {
         "code": "pl23",
-        "fullName": "Year of the Rabbit 2023",
+        "fullName": "PL23-农历兔年2023",
         "icon": "img/sets/pl23.svg"
     },
     "pl24": {
         "code": "pl24",
-        "fullName": "Year of the Dragon 2024",
+        "fullName": "PL24-农历龙年2024",
         "icon": "img/sets/pl24.svg"
     },
     "pl25": {
         "code": "pl25",
-        "fullName": "Year of the Snake 2025",
+        "fullName": "PL25-农历蛇年2025",
         "icon": "img/sets/pl25.svg"
     },
     "pl26": {
         "code": "pl26",
-        "fullName": "Year of the Horse 2026",
+        "fullName": "PL26-农历马年2026",
         "icon": "img/sets/pl26.svg"
     },
     "plc": {
         "code": "plc",
-        "fullName": "Planar Chaos",
+        "fullName": "PLC-时空混沌",
         "block": "Time Spiral",
         "icon": "img/sets/plc.svg"
     },
     "plci": {
         "code": "plci",
-        "fullName": "The Lost Caverns of Ixalan Promos",
+        "fullName": "PLCI-依夏兰迷窟纪念牌",
         "icon": "img/sets/plci.svg"
     },
     "plg20": {
         "code": "plg20",
-        "fullName": "Love Your LGS 2020",
+        "fullName": "PLG20-关爱你的零售店2020",
         "icon": "img/sets/plg20.svg"
     },
     "plg21": {
         "code": "plg21",
-        "fullName": "Love Your LGS 2021",
+        "fullName": "PLG21-关爱你的零售店2021",
         "icon": "img/sets/plg21.svg"
     },
     "plg22": {
         "code": "plg22",
-        "fullName": "Love Your LGS 2022",
+        "fullName": "PLG22-关爱你的零售店2022",
         "icon": "img/sets/plg22.svg"
     },
     "plg24": {
         "code": "plg24",
-        "fullName": "Love Your LGS 2024",
+        "fullName": "PLG24-关爱你的零售店2024",
         "icon": "img/sets/plg24.svg"
     },
     "plg25": {
         "code": "plg25",
-        "fullName": "Love Your LGS 2025",
+        "fullName": "PLG25-关爱你的零售店2025",
         "icon": "img/sets/plg25.svg"
     },
     "plgm": {
         "code": "plgm",
-        "fullName": "DCI Legend Membership",
+        "fullName": "PLGM-DCI传奇会员",
         "icon": "img/sets/plgm.svg"
     },
     "plgn": {
         "code": "plgn",
-        "fullName": "Legions Promos",
+        "fullName": "PLGN-万马千军纪念牌",
         "block": "Onslaught",
         "icon": "img/sets/plgn.svg"
     },
     "plrw": {
         "code": "plrw",
-        "fullName": "Lorwyn Promos",
+        "fullName": "PLRW-洛温纪念牌",
         "block": "Lorwyn",
         "icon": "img/sets/plrw.svg"
     },
     "pls": {
         "code": "pls",
-        "fullName": "Planeshift",
+        "fullName": "PLS-时空转移",
         "block": "Invasion",
         "icon": "img/sets/pls.svg"
     },
     "plst": {
         "code": "plst",
-        "fullName": "The List",
+        "fullName": "PLST-精选列表",
         "icon": "img/sets/plst.svg"
     },
     "pltc": {
         "code": "pltc",
-        "fullName": "Tales of Middle-earth Deluxe Commander Kit",
+        "fullName": "PLTC-中洲传说豪华指挥官套件",
         "icon": "img/sets/pltc.svg"
     },
     "pltr": {
         "code": "pltr",
-        "fullName": "Tales of Middle-earth Promos",
+        "fullName": "PLTR-中洲传说纪念牌",
         "icon": "img/sets/pltr.svg"
     },
     "pm10": {
         "code": "pm10",
-        "fullName": "Magic 2010 Promos",
+        "fullName": "PM10-2010核心系列纪念牌",
         "icon": "img/sets/pm10.svg"
     },
     "pm11": {
         "code": "pm11",
-        "fullName": "Magic 2011 Promos",
+        "fullName": "PM11-2011核心系列纪念牌",
         "icon": "img/sets/pm11.svg"
     },
     "pm12": {
         "code": "pm12",
-        "fullName": "Magic 2012 Promos",
+        "fullName": "PM12-2012核心系列纪念牌",
         "icon": "img/sets/pm12.svg"
     },
     "pm13": {
         "code": "pm13",
-        "fullName": "Magic 2013 Promos",
+        "fullName": "PM13-2013核心系列纪念牌",
         "icon": "img/sets/pm13.svg"
     },
     "pm14": {
         "code": "pm14",
-        "fullName": "Magic 2014 Promos",
+        "fullName": "PM14-2014核心系列纪念牌",
         "icon": "img/sets/pm14.svg"
     },
     "pm15": {
         "code": "pm15",
-        "fullName": "Magic 2015 Promos",
+        "fullName": "PM15-2015核心系列纪念牌",
         "icon": "img/sets/pm15.svg"
     },
     "pm19": {
         "code": "pm19",
-        "fullName": "Core Set 2019 Promos",
+        "fullName": "PM19-2019核心系列纪念牌",
         "icon": "img/sets/pm19.svg"
     },
     "pm20": {
         "code": "pm20",
-        "fullName": "Core Set 2020 Promos",
+        "fullName": "PM20-2020核心系列纪念牌",
         "icon": "img/sets/pm20.svg"
     },
     "pm21": {
         "code": "pm21",
-        "fullName": "Core Set 2021 Promos",
+        "fullName": "PM21-2021核心系列纪念牌",
         "icon": "img/sets/pm21.svg"
     },
     "pmat": {
         "code": "pmat",
-        "fullName": "March of the Machine: The Aftermath Promos",
+        "fullName": "PMAT-邪军压境：终战回响纪念牌",
         "icon": "img/sets/pmat.svg"
     },
     "pmbs": {
         "code": "pmbs",
-        "fullName": "Mirrodin Besieged Promos",
+        "fullName": "PMBS-围攻秘罗地纪念牌",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/pmbs.svg"
     },
     "pmda": {
         "code": "pmda",
-        "fullName": "Magic × Duel Masters Promos",
+        "fullName": "PMDA-万智牌×决斗大师纪念牌",
         "icon": "img/sets/pmda.svg"
     },
     "pmei": {
         "code": "pmei",
-        "fullName": "Media and Collaboration Promos",
+        "fullName": "PMEI-媒体赠送",
         "icon": "img/sets/pmei.svg"
     },
     "pmh1": {
         "code": "pmh1",
-        "fullName": "Modern Horizons Promos",
+        "fullName": "PMH1-摩登新篇纪念牌",
         "icon": "img/sets/pmh1.svg"
     },
     "pmh2": {
         "code": "pmh2",
-        "fullName": "Modern Horizons 2 Promos",
+        "fullName": "PMH2-摩登新篇2纪念牌",
         "icon": "img/sets/pmh2.svg"
     },
     "pmh3": {
         "code": "pmh3",
-        "fullName": "Modern Horizons 3 Promos",
+        "fullName": "PMH3-摩登新篇3纪念牌",
         "icon": "img/sets/pmh3.svg"
     },
     "pmic": {
         "code": "pmic",
-        "fullName": "MicroProse Promos",
+        "fullName": "PMIC-MicroProse纪念牌",
         "icon": "img/sets/pmic.svg"
     },
     "pmid": {
         "code": "pmid",
-        "fullName": "Innistrad: Midnight Hunt Promos",
+        "fullName": "PMID-依尼翠：黯夜猎踪纪念牌",
         "block": "Innistrad: Double Feature",
         "icon": "img/sets/pmid.svg"
     },
     "pmkm": {
         "code": "pmkm",
-        "fullName": "Murders at Karlov Manor Promos",
+        "fullName": "PMKM-卡洛夫庄园谋杀案纪念牌",
         "icon": "img/sets/pmkm.svg"
     },
     "pmmq": {
         "code": "pmmq",
-        "fullName": "Mercadian Masques Promos",
+        "fullName": "PMMQ-玛凯迪亚纪念牌",
         "block": "Masques",
         "icon": "img/sets/pmmq.svg"
     },
     "pmoa": {
         "code": "pmoa",
-        "fullName": "Magic Online Avatars",
+        "fullName": "PMOA-万智牌在线版头像",
         "icon": "img/sets/pmoa.svg"
     },
     "pmom": {
         "code": "pmom",
-        "fullName": "March of the Machine Promos",
+        "fullName": "PMOM-邪军压境纪念牌",
         "icon": "img/sets/pmom.svg"
     },
     "pmor": {
         "code": "pmor",
-        "fullName": "Morningtide Promos",
+        "fullName": "PMOR-晨光纪念牌",
         "block": "Lorwyn",
         "icon": "img/sets/pmor.svg"
     },
     "pmps": {
         "code": "pmps",
-        "fullName": "Magic Premiere Shop 2005",
+        "fullName": "PMPS-Magic Premiere Shop 2005",
         "icon": "img/sets/pmps.svg"
     },
     "pmps06": {
         "code": "pmps06",
-        "fullName": "Magic Premiere Shop 2006",
+        "fullName": "PMPS06-Magic Premiere Shop 2006",
         "icon": "img/sets/pmps06.svg"
     },
     "pmps07": {
         "code": "pmps07",
-        "fullName": "Magic Premiere Shop 2007",
+        "fullName": "PMPS07-Magic Premiere Shop 2007",
         "icon": "img/sets/pmps07.svg"
     },
     "pmps08": {
         "code": "pmps08",
-        "fullName": "Magic Premiere Shop 2008",
+        "fullName": "PMPS08-Magic Premiere Shop 2008",
         "icon": "img/sets/pmps08.svg"
     },
     "pmps09": {
         "code": "pmps09",
-        "fullName": "Magic Premiere Shop 2009",
+        "fullName": "PMPS09-Magic Premiere Shop 2009",
         "icon": "img/sets/pmps09.svg"
     },
     "pmps10": {
         "code": "pmps10",
-        "fullName": "Magic Premiere Shop 2010",
+        "fullName": "PMPS10-Magic Premiere Shop 2010",
         "icon": "img/sets/pmps10.svg"
     },
     "pmps11": {
         "code": "pmps11",
-        "fullName": "Magic Premiere Shop 2011",
+        "fullName": "PMPS11-Magic Premiere Shop 2011",
         "icon": "img/sets/pmps11.svg"
     },
     "pmrd": {
         "code": "pmrd",
-        "fullName": "Mirrodin Promos",
+        "fullName": "PMRD-秘罗地纪念牌",
         "block": "Mirrodin",
         "icon": "img/sets/pmrd.svg"
     },
     "pnat": {
         "code": "pnat",
-        "fullName": "Nationals Promos",
+        "fullName": "PNAT-国家冠军赛纪念牌",
         "icon": "img/sets/pnat.svg"
     },
     "pncc": {
         "code": "pncc",
-        "fullName": "New Capenna Commander Promos",
+        "fullName": "PNCC-新卡佩纳指挥官纪念牌",
         "icon": "img/sets/pncc.svg"
     },
     "pnem": {
         "code": "pnem",
-        "fullName": "Nemesis Promos",
+        "fullName": "PNEM-宿敌纪念牌",
         "block": "Masques",
         "icon": "img/sets/pnem.svg"
     },
     "pneo": {
         "code": "pneo",
-        "fullName": "Kamigawa: Neon Dynasty Promos",
+        "fullName": "PNEO-神河霓朝纪纪念牌",
         "icon": "img/sets/pneo.svg"
     },
     "pnph": {
         "code": "pnph",
-        "fullName": "New Phyrexia Promos",
+        "fullName": "PNPH-新非瑞克西亚纪念牌",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/pnph.svg"
     },
     "pody": {
         "code": "pody",
-        "fullName": "Odyssey Promos",
+        "fullName": "PODY-奥德赛纪念牌",
         "block": "Odyssey",
         "icon": "img/sets/pody.svg"
     },
     "pogw": {
         "code": "pogw",
-        "fullName": "Oath of the Gatewatch Promos",
+        "fullName": "POGW-守护者誓约纪念牌",
         "block": "Battle for Zendikar",
         "icon": "img/sets/pogw.svg"
     },
     "pone": {
         "code": "pone",
-        "fullName": "Phyrexia: All Will Be One Promos",
+        "fullName": "PONE-非瑞克西亚：万界归一纪念牌",
         "icon": "img/sets/pone.svg"
     },
     "pons": {
         "code": "pons",
-        "fullName": "Onslaught Promos",
+        "fullName": "PONS-石破天惊纪念牌",
         "block": "Onslaught",
         "icon": "img/sets/pons.svg"
     },
     "por": {
         "code": "por",
-        "fullName": "Portal",
+        "fullName": "POR-博图",
         "block": "Portal",
         "icon": "img/sets/por.svg"
     },
     "pori": {
         "code": "pori",
-        "fullName": "Magic Origins Promos",
+        "fullName": "PORI-万智牌：起源纪念牌",
         "icon": "img/sets/pori.svg"
     },
     "potj": {
         "code": "potj",
-        "fullName": "Outlaws of Thunder Junction Promos",
+        "fullName": "POTJ-光雷驿镖客纪念牌",
         "icon": "img/sets/potj.svg"
     },
     "ppc1": {
         "code": "ppc1",
-        "fullName": "M15 Prerelease Challenge",
+        "fullName": "PPC1-M15预售挑战",
         "icon": "img/sets/ppc1.svg"
     },
     "ppcy": {
         "code": "ppcy",
-        "fullName": "Prophecy Promos",
+        "fullName": "PPCY-预言纪念牌",
         "block": "Masques",
         "icon": "img/sets/ppcy.svg"
     },
     "pplc": {
         "code": "pplc",
-        "fullName": "Planar Chaos Promos",
+        "fullName": "PPLC-时空混沌纪念牌",
         "block": "Time Spiral",
         "icon": "img/sets/pplc.svg"
     },
     "ppls": {
         "code": "ppls",
-        "fullName": "Planeshift Promos",
+        "fullName": "PPLS-时空转移纪念牌",
         "block": "Invasion",
         "icon": "img/sets/ppls.svg"
     },
     "ppp1": {
         "code": "ppp1",
-        "fullName": "M20 Promo Packs",
+        "fullName": "PPP1-M20 Promo Packs",
         "block": "Core Set",
         "icon": "img/sets/ppp1.svg"
     },
     "ppro": {
         "code": "ppro",
-        "fullName": "Pro Tour Promos",
+        "fullName": "PPRO-专业赛纪念牌",
         "icon": "img/sets/ppro.svg"
     },
     "pptk": {
         "code": "pptk",
-        "fullName": "Portal Three Kingdoms Promos",
+        "fullName": "PPTK-博图三国志纪念牌",
         "block": "Portal",
         "icon": "img/sets/pptk.svg"
     },
     "pr23": {
         "code": "pr23",
-        "fullName": "Regional Championship Qualifiers 2023",
+        "fullName": "PR23-区域冠军资格赛2023",
         "icon": "img/sets/pr23.svg"
     },
     "prav": {
         "code": "prav",
-        "fullName": "Ravnica: City of Guilds Promos",
+        "fullName": "PRAV-拉尼卡公会城纪念牌",
         "block": "Ravnica",
         "icon": "img/sets/prav.svg"
     },
     "prcq": {
         "code": "prcq",
-        "fullName": "Regional Championship Qualifiers 2022",
+        "fullName": "PRCQ-区域冠军资格赛2022",
         "icon": "img/sets/prcq.svg"
     },
     "pred": {
         "code": "pred",
-        "fullName": "Redemption Program",
+        "fullName": "PRED-兑换计划",
         "icon": "img/sets/pred.svg"
     },
     "prix": {
         "code": "prix",
-        "fullName": "Rivals of Ixalan Promos",
+        "fullName": "PRIX-决胜依夏兰纪念牌",
         "block": "Ixalan",
         "icon": "img/sets/prix.svg"
     },
     "prm": {
         "code": "prm",
-        "fullName": "Magic Online Promos",
+        "fullName": "PRM-万智牌在线版纪念牌",
         "icon": "img/sets/prm.svg"
     },
     "prna": {
         "code": "prna",
-        "fullName": "Ravnica Allegiance Promos",
+        "fullName": "PRNA-效忠拉尼卡纪念牌",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/prna.svg"
     },
     "proe": {
         "code": "proe",
-        "fullName": "Rise of the Eldrazi Promos",
+        "fullName": "PROE-奥札奇再起纪念牌",
         "block": "Zendikar",
         "icon": "img/sets/proe.svg"
     },
     "prtr": {
         "code": "prtr",
-        "fullName": "Return to Ravnica Promos",
+        "fullName": "PRTR-再访拉尼卡纪念牌",
         "block": "Return to Ravnica",
         "icon": "img/sets/prtr.svg"
     },
     "prw2": {
         "code": "prw2",
-        "fullName": "RNA Ravnica Weekend",
+        "fullName": "PRW2-效忠拉尼卡周末",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/prw2.svg"
     },
     "prwk": {
         "code": "prwk",
-        "fullName": "GRN Ravnica Weekend",
+        "fullName": "PRWK-烽会拉尼卡周末",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/prwk.svg"
     },
     "ps11": {
         "code": "ps11",
-        "fullName": "Salvat 2011",
+        "fullName": "PS11-Salvat 2011",
         "icon": "img/sets/ps11.svg"
     },
     "ps14": {
         "code": "ps14",
-        "fullName": "San Diego Comic-Con 2014",
+        "fullName": "PS14-圣迭戈漫展2014",
         "icon": "img/sets/ps14.svg"
     },
     "ps15": {
         "code": "ps15",
-        "fullName": "San Diego Comic-Con 2015",
+        "fullName": "PS15-圣迭戈漫展2015",
         "icon": "img/sets/ps15.svg"
     },
     "ps16": {
         "code": "ps16",
-        "fullName": "San Diego Comic-Con 2016",
+        "fullName": "PS16-圣迭戈漫展2016",
         "icon": "img/sets/ps16.svg"
     },
     "ps17": {
         "code": "ps17",
-        "fullName": "San Diego Comic-Con 2017",
+        "fullName": "PS17-圣迭戈漫展2017",
         "icon": "img/sets/ps17.svg"
     },
     "ps18": {
         "code": "ps18",
-        "fullName": "San Diego Comic-Con 2018",
+        "fullName": "PS18-圣迭戈漫展2018",
         "icon": "img/sets/ps18.svg"
     },
     "ps19": {
         "code": "ps19",
-        "fullName": "San Diego Comic-Con 2019",
+        "fullName": "PS19-圣迭戈漫展2019",
         "icon": "img/sets/ps19.svg"
     },
     "psal": {
         "code": "psal",
-        "fullName": "Salvat 2005",
+        "fullName": "PSAL-Salvat 2005",
         "icon": "img/sets/psal.svg"
     },
     "pscg": {
         "code": "pscg",
-        "fullName": "Scourge Promos",
+        "fullName": "PSCG-劫运降临纪念牌",
         "block": "Onslaught",
         "icon": "img/sets/pscg.svg"
     },
     "psdc": {
         "code": "psdc",
-        "fullName": "San Diego Comic-Con 2013",
+        "fullName": "PSDC-圣迭戈漫展2013",
         "icon": "img/sets/psdc.svg"
     },
     "psdg": {
         "code": "psdg",
-        "fullName": "Sega Dreamcast Cards",
+        "fullName": "PSDG-世嘉Dreamcast游戏牌",
         "icon": "img/sets/psdg.svg"
     },
     "pshm": {
         "code": "pshm",
-        "fullName": "Shadowmoor Promos",
+        "fullName": "PSHM-暗影荒原纪念牌",
         "block": "Shadowmoor",
         "icon": "img/sets/pshm.svg"
     },
     "psnc": {
         "code": "psnc",
-        "fullName": "Streets of New Capenna Promos",
+        "fullName": "PSNC-新卡佩纳：喧嚣黑街纪念牌",
         "icon": "img/sets/psnc.svg"
     },
     "psoi": {
         "code": "psoi",
-        "fullName": "Shadows over Innistrad Promos",
+        "fullName": "PSOI-依尼翠暗影纪念牌",
         "block": "Shadows over Innistrad",
         "icon": "img/sets/psoi.svg"
     },
     "psok": {
         "code": "psok",
-        "fullName": "Saviors of Kamigawa Promos",
+        "fullName": "PSOK-神河任侠传纪念牌",
         "block": "Kamigawa",
         "icon": "img/sets/psok.svg"
     },
     "psom": {
         "code": "psom",
-        "fullName": "Scars of Mirrodin Promos",
+        "fullName": "PSOM-秘罗地创痕纪念牌",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/psom.svg"
     },
     "psos": {
         "code": "psos",
-        "fullName": "Secrets of Strixhaven Promos",
+        "fullName": "PSOS-斯翠海文的秘密纪念牌",
         "icon": "img/sets/psos.svg"
     },
     "pspl": {
         "code": "pspl",
-        "fullName": "Spotlight Series",
+        "fullName": "PSPL-聚光灯系列赛",
         "icon": "img/sets/pspl.svg"
     },
     "pspm": {
         "code": "pspm",
-        "fullName": "Marvel's Spider-Man Promos",
+        "fullName": "PSPM-漫威的蜘蛛侠纪念牌",
         "icon": "img/sets/pspm.svg"
     },
     "pss1": {
         "code": "pss1",
-        "fullName": "BFZ Standard Series",
+        "fullName": "PSS1-再战赞迪卡标准联赛",
         "block": "Battle for Zendikar",
         "icon": "img/sets/pss1.svg"
     },
     "pss2": {
         "code": "pss2",
-        "fullName": "XLN Standard Showdown",
+        "fullName": "PSS2-依夏兰标准赛对决",
         "block": "Ixalan",
         "icon": "img/sets/pss2.svg"
     },
     "pss3": {
         "code": "pss3",
-        "fullName": "M19 Standard Showdown",
+        "fullName": "PSS3-2019核心系列标准赛对决",
         "icon": "img/sets/pss3.svg"
     },
     "pss4": {
         "code": "pss4",
-        "fullName": "MKM Standard Showdown",
+        "fullName": "PSS4-卡洛夫庄园谋杀案标准赛对决",
         "icon": "img/sets/pss4.svg"
     },
     "pss5": {
         "code": "pss5",
-        "fullName": "FIN Standard Showdown",
+        "fullName": "PSS5-最终幻想标准赛对决",
         "icon": "img/sets/pss5.svg"
     },
     "pssc": {
         "code": "pssc",
-        "fullName": "Secret Lair Showcase Planes",
+        "fullName": "PSSC-秘室珍品时空牌",
         "icon": "img/sets/pssc.svg"
     },
     "psth": {
         "code": "psth",
-        "fullName": "Stronghold Promos",
+        "fullName": "PSTH-天罗城塞纪念牌",
         "block": "Tempest",
         "icon": "img/sets/psth.svg"
     },
     "pstx": {
         "code": "pstx",
-        "fullName": "Strixhaven: School of Mages Promos",
+        "fullName": "PSTX-斯翠海文：魔法学校纪念牌",
         "icon": "img/sets/pstx.svg"
     },
     "psus": {
         "code": "psus",
-        "fullName": "Junior Super Series",
+        "fullName": "PSUS-青少年超级联赛",
         "icon": "img/sets/psus.svg"
     },
     "psvc": {
         "code": "psvc",
-        "fullName": "Summer Vacation Promos 2022",
+        "fullName": "PSVC-暑假纪念牌2022",
         "icon": "img/sets/psvc.svg"
     },
     "ptc": {
         "code": "ptc",
-        "fullName": "Pro Tour Collector Set",
+        "fullName": "PTC-专业赛收藏系列",
         "icon": "img/sets/ptc.svg"
     },
     "ptdm": {
         "code": "ptdm",
-        "fullName": "Tarkir: Dragonstorm Promos",
+        "fullName": "PTDM-鞑契龙岚录纪念牌",
         "icon": "img/sets/ptdm.svg"
     },
     "ptg": {
         "code": "ptg",
-        "fullName": "Ponies: The Galloping",
+        "fullName": "PTG-小马奔腾",
         "icon": "img/sets/ptg.svg"
     },
     "pthb": {
         "code": "pthb",
-        "fullName": "Theros Beyond Death Promos",
+        "fullName": "PTHB-塞洛斯：冥途求生纪念牌",
         "icon": "img/sets/pthb.svg"
     },
     "pths": {
         "code": "pths",
-        "fullName": "Theros Promos",
+        "fullName": "PTHS-塞洛斯纪念牌",
         "block": "Theros",
         "icon": "img/sets/pths.svg"
     },
     "ptk": {
         "code": "ptk",
-        "fullName": "Portal Three Kingdoms",
+        "fullName": "PTK-博图三国志",
         "block": "Portal",
         "icon": "img/sets/ptk.svg"
     },
     "ptkdf": {
         "code": "ptkdf",
-        "fullName": "Tarkir Dragonfury",
+        "fullName": "PTKDF-鞑契龙怒",
         "block": "Khans of Tarkir",
         "icon": "img/sets/ptkdf.svg"
     },
     "ptla": {
         "code": "ptla",
-        "fullName": "Avatar: The Last Airbender Promos",
+        "fullName": "PTLA-降世神通：最后的气宗纪念牌",
         "icon": "img/sets/ptla.svg"
     },
     "ptmp": {
         "code": "ptmp",
-        "fullName": "Tempest Promos",
+        "fullName": "PTMP-暴风雨纪念牌",
         "block": "Tempest",
         "icon": "img/sets/ptmp.svg"
     },
     "ptor": {
         "code": "ptor",
-        "fullName": "Torment Promos",
+        "fullName": "PTOR-绝境纪念牌",
         "block": "Odyssey",
         "icon": "img/sets/ptor.svg"
     },
     "ptsp": {
         "code": "ptsp",
-        "fullName": "Time Spiral Promos",
+        "fullName": "PTSP-时间漩涡纪念牌",
         "block": "Time Spiral",
         "icon": "img/sets/ptsp.svg"
     },
     "ptsr": {
         "code": "ptsr",
-        "fullName": "Time Spiral Remastered Promos",
+        "fullName": "PTSR-时间漩涡重制版纪念牌",
         "icon": "img/sets/ptsr.svg"
     },
     "puds": {
         "code": "puds",
-        "fullName": "Urza's Destiny Promos",
+        "fullName": "PUDS-天命之战纪念牌",
         "block": "Urza",
         "icon": "img/sets/puds.svg"
     },
     "pulg": {
         "code": "pulg",
-        "fullName": "Urza's Legacy Promos",
+        "fullName": "PULG-远古遗产纪念牌",
         "block": "Urza",
         "icon": "img/sets/pulg.svg"
     },
     "puma": {
         "code": "puma",
-        "fullName": "Ultimate Box Topper",
+        "fullName": "PUMA-终极大师盒顶赠卡",
         "icon": "img/sets/puma.svg"
     },
     "punh": {
         "code": "punh",
-        "fullName": "Unhinged Promos",
+        "fullName": "PUNH-鸡飞2纪念牌",
         "icon": "img/sets/punh.svg"
     },
     "punk": {
         "code": "punk",
-        "fullName": "Black Lotus Unknown Planechase",
+        "fullName": "PUNK-黑莲花未知竞逐时空",
         "icon": "img/sets/punk.svg"
     },
     "purl": {
         "code": "purl",
-        "fullName": "URL/Convention Promos",
+        "fullName": "PURL-URL展会纪念牌",
         "icon": "img/sets/purl.svg"
     },
     "pusg": {
         "code": "pusg",
-        "fullName": "Urza's Saga Promos",
+        "fullName": "PUSG-克撒传纪念牌",
         "block": "Urza",
         "icon": "img/sets/pusg.svg"
     },
     "pust": {
         "code": "pust",
-        "fullName": "Unstable Promos",
+        "fullName": "PUST-Unstable纪念牌",
         "icon": "img/sets/pust.svg"
     },
     "pvan": {
         "code": "pvan",
-        "fullName": "Vanguard Series",
+        "fullName": "PVAN-先锋",
         "icon": "img/sets/pvan.svg"
     },
     "pvow": {
         "code": "pvow",
-        "fullName": "Innistrad: Crimson Vow Promos",
+        "fullName": "PVOW-依尼翠：腥红婚誓纪念牌",
         "icon": "img/sets/pvow.svg"
     },
     "pw11": {
         "code": "pw11",
-        "fullName": "Wizards Play Network 2011",
+        "fullName": "PW11-Wizards Play Network 2011",
         "icon": "img/sets/pw11.svg"
     },
     "pw12": {
         "code": "pw12",
-        "fullName": "Wizards Play Network 2012",
+        "fullName": "PW12-Wizards Play Network 2012",
         "icon": "img/sets/pw12.svg"
     },
     "pw21": {
         "code": "pw21",
-        "fullName": "Wizards Play Network 2021",
+        "fullName": "PW21-Wizards Play Network 2021",
         "icon": "img/sets/pw21.svg"
     },
     "pw22": {
         "code": "pw22",
-        "fullName": "Wizards Play Network 2022",
+        "fullName": "PW22-Wizards Play Network 2022",
         "icon": "img/sets/pw22.svg"
     },
     "pw23": {
         "code": "pw23",
-        "fullName": "Wizards Play Network 2023",
+        "fullName": "PW23-Wizards Play Network 2023",
         "icon": "img/sets/pw23.svg"
     },
     "pw24": {
         "code": "pw24",
-        "fullName": "Wizards Play Network 2024",
+        "fullName": "PW24-Wizards Play Network 2024",
         "icon": "img/sets/pw24.svg"
     },
     "pw25": {
         "code": "pw25",
-        "fullName": "Wizards Play Network 2025",
+        "fullName": "PW25-Wizards Play Network 2025",
         "icon": "img/sets/pw25.svg"
     },
     "pw26": {
         "code": "pw26",
-        "fullName": "Wizards Play Network 2026",
+        "fullName": "PW26-Wizards Play Network 2026",
         "icon": "img/sets/pw26.svg"
     },
     "pwar": {
         "code": "pwar",
-        "fullName": "War of the Spark Promos",
+        "fullName": "PWAR-火花之战纪念牌",
         "icon": "img/sets/pwar.svg"
     },
     "pwcs": {
         "code": "pwcs",
-        "fullName": "Planeswalker Championship Promos",
+        "fullName": "PWCS-鹏洛客冠军赛纪念牌",
         "icon": "img/sets/pwcs.svg"
     },
     "pwoe": {
         "code": "pwoe",
-        "fullName": "Wilds of Eldraine Promos",
+        "fullName": "PWOE-艾卓仙踪纪念牌",
         "icon": "img/sets/pwoe.svg"
     },
     "pwor": {
         "code": "pwor",
-        "fullName": "World Championship Promos",
+        "fullName": "PWOR-世界冠军赛纪念牌",
         "icon": "img/sets/pwor.svg"
     },
     "pwos": {
         "code": "pwos",
-        "fullName": "Wizards of the Coast Online Store",
+        "fullName": "PWOS-威世智在线商店",
         "icon": "img/sets/pwos.svg"
     },
     "pwwk": {
         "code": "pwwk",
-        "fullName": "Worldwake Promos",
+        "fullName": "PWWK-天地醒转纪念牌",
         "block": "Zendikar",
         "icon": "img/sets/pwwk.svg"
     },
     "pxln": {
         "code": "pxln",
-        "fullName": "Ixalan Promos",
+        "fullName": "PXLN-依夏兰纪念牌",
         "block": "Ixalan",
         "icon": "img/sets/pxln.svg"
     },
     "pxtc": {
         "code": "pxtc",
-        "fullName": "XLN Treasure Chest",
+        "fullName": "PXTC-依夏兰宝箱",
         "block": "Ixalan",
         "icon": "img/sets/pxtc.svg"
     },
     "pz1": {
         "code": "pz1",
-        "fullName": "Legendary Cube Prize Pack",
+        "fullName": "PZ1-传奇Cube奖品包",
         "icon": "img/sets/pz1.svg"
     },
     "pz2": {
         "code": "pz2",
-        "fullName": "Treasure Chest",
+        "fullName": "PZ2-在线版宝箱",
         "icon": "img/sets/pz2.svg"
     },
     "pza": {
         "code": "pza",
-        "fullName": "Teenage Mutant Ninja Turtles Source Material",
+        "fullName": "PZA-忍者神龟原始素材",
         "icon": "img/sets/pza.svg"
     },
     "pzen": {
         "code": "pzen",
-        "fullName": "Zendikar Promos",
+        "fullName": "PZEN-赞迪卡纪念牌",
         "block": "Zendikar",
         "icon": "img/sets/pzen.svg"
     },
     "pznr": {
         "code": "pznr",
-        "fullName": "Zendikar Rising Promos",
+        "fullName": "PZNR-赞迪卡再起纪念牌",
         "icon": "img/sets/pznr.svg"
     },
     "q06": {
         "code": "q06",
-        "fullName": "Pioneer Challenger Decks 2021",
+        "fullName": "Q06-先驱挑战者套牌2021",
         "icon": "img/sets/q06.svg"
     },
     "rav": {
         "code": "rav",
-        "fullName": "Ravnica: City of Guilds",
+        "fullName": "RAV-拉尼卡公会城",
         "block": "Ravnica",
         "icon": "img/sets/rav.svg"
     },
     "ren": {
         "code": "ren",
-        "fullName": "Renaissance",
+        "fullName": "REN-文艺复兴",
         "icon": "img/sets/ren.svg"
     },
     "rex": {
         "code": "rex",
-        "fullName": "Jurassic World Collection",
+        "fullName": "REX-侏罗纪世界合集",
         "icon": "img/sets/rex.svg"
     },
     "rfin": {
         "code": "rfin",
-        "fullName": "Final Fantasy Regional Promos",
+        "fullName": "RFIN-最终幻想地区纪念牌",
         "icon": "img/sets/rfin.svg"
     },
     "rin": {
         "code": "rin",
-        "fullName": "Rinascimento",
+        "fullName": "RIN-意大利文文艺复兴",
         "icon": "img/sets/rin.svg"
     },
     "rix": {
         "code": "rix",
-        "fullName": "Rivals of Ixalan",
+        "fullName": "RIX-决胜依夏兰",
         "block": "Ixalan",
         "icon": "img/sets/rix.svg"
     },
     "rna": {
         "code": "rna",
-        "fullName": "Ravnica Allegiance",
+        "fullName": "RNA-效忠拉尼卡",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/rna.svg"
     },
     "roe": {
         "code": "roe",
-        "fullName": "Rise of the Eldrazi",
+        "fullName": "ROE-奥札奇再起",
         "block": "Zendikar",
         "icon": "img/sets/roe.svg"
     },
     "rqs": {
         "code": "rqs",
-        "fullName": "Rivals Quick Start Set",
+        "fullName": "RQS-对抗快速上手系列",
         "icon": "img/sets/rqs.svg"
     },
     "rtr": {
         "code": "rtr",
-        "fullName": "Return to Ravnica",
+        "fullName": "RTR-再访拉尼卡",
         "block": "Return to Ravnica",
         "icon": "img/sets/rtr.svg"
     },
     "rvr": {
         "code": "rvr",
-        "fullName": "Ravnica Remastered",
+        "fullName": "RVR-拉尼卡：重制版",
         "icon": "img/sets/rvr.svg"
     },
     "s00": {
         "code": "s00",
-        "fullName": "Starter 2000",
+        "fullName": "S00-入门版2000",
         "icon": "img/sets/s00.svg"
     },
     "s99": {
         "code": "s99",
-        "fullName": "Starter 1999",
+        "fullName": "S99-入门版1999",
         "icon": "img/sets/s99.svg"
     },
     "sbro": {
         "code": "sbro",
-        "fullName": "The Brothers' War Substitute Cards",
+        "fullName": "SBRO-兄弟之战辅助牌",
         "icon": "img/sets/sbro.svg"
     },
     "scd": {
         "code": "scd",
-        "fullName": "Starter Commander Decks",
+        "fullName": "SCD-初阶指挥官套牌",
         "block": "Commander",
         "icon": "img/sets/scd.svg"
     },
     "scg": {
         "code": "scg",
-        "fullName": "Scourge",
+        "fullName": "SCG-劫运降临",
         "block": "Onslaught",
         "icon": "img/sets/scg.svg"
     },
     "sch": {
         "code": "sch",
-        "fullName": "Store Championships",
+        "fullName": "SCH-店家冠军赛",
         "icon": "img/sets/sch.svg"
     },
     "sds": {
         "code": "sds",
-        "fullName": "Stardates"
+        "fullName": "SDS-星历重现"
     },
     "shm": {
         "code": "shm",
-        "fullName": "Shadowmoor",
+        "fullName": "SHM-暗影荒原",
         "block": "Shadowmoor",
         "icon": "img/sets/shm.svg"
     },
     "sir": {
         "code": "sir",
-        "fullName": "Shadows over Innistrad Remastered",
+        "fullName": "SIR-依尼翠暗影重制版",
         "icon": "img/sets/sir.svg"
     },
     "sis": {
         "code": "sis",
-        "fullName": "Shadows of the Past",
+        "fullName": "SIS-往昔阴影",
         "icon": "img/sets/sis.svg"
     },
     "skhm": {
         "code": "skhm",
-        "fullName": "Kaldheim Substitute Cards",
+        "fullName": "SKHM-凯德海姆辅助牌",
         "icon": "img/sets/skhm.svg"
     },
     "slc": {
         "code": "slc",
-        "fullName": "Secret Lair Countdown",
+        "fullName": "SLC-秘室珍品——30周年倒计时套件",
         "icon": "img/sets/slc.svg"
     },
     "slci": {
         "code": "slci",
-        "fullName": "The Lost Caverns of Ixalan Substitute Cards",
+        "fullName": "SLCI-依夏兰迷窟辅助牌",
         "icon": "img/sets/slci.svg"
     },
     "sld": {
         "code": "sld",
-        "fullName": "Secret Lair Drop",
+        "fullName": "SLD-秘室珍品",
         "icon": "img/sets/sld.svg"
     },
     "slp": {
         "code": "slp",
-        "fullName": "Secret Lair Promo",
+        "fullName": "SLP-秘室珍品对决",
         "icon": "img/sets/slp.svg"
     },
     "slu": {
         "code": "slu",
-        "fullName": "Secret Lair: Ultimate Edition",
+        "fullName": "SLU-秘室珍品：终极版",
         "icon": "img/sets/slu.svg"
     },
     "slx": {
         "code": "slx",
-        "fullName": "Universes Within",
+        "fullName": "SLX-宇宙之内",
         "icon": "img/sets/slx.svg"
     },
     "smh3": {
         "code": "smh3",
-        "fullName": "Modern Horizons 3 Substitute Cards",
+        "fullName": "SMH3-摩登新篇3辅助牌",
         "icon": "img/sets/smh3.svg"
     },
     "smid": {
         "code": "smid",
-        "fullName": "Innistrad: Midnight Hunt Substitute Cards",
+        "fullName": "SMID-依尼翠：黯夜猎踪辅助牌",
         "block": "Innistrad: Double Feature",
         "icon": "img/sets/smid.svg"
     },
     "smom": {
         "code": "smom",
-        "fullName": "March of the Machine Substitute Cards",
+        "fullName": "SMOM-邪军压境辅助牌",
         "icon": "img/sets/smom.svg"
     },
     "snc": {
         "code": "snc",
-        "fullName": "Streets of New Capenna",
+        "fullName": "SNC-新卡佩纳：喧嚣黑街",
         "icon": "img/sets/snc.svg"
     },
     "sneo": {
         "code": "sneo",
-        "fullName": "Kamigawa: Neon Dynasty Substitute Cards",
+        "fullName": "SNEO-神河霓朝纪辅助牌",
         "icon": "img/sets/sneo.svg"
     },
     "soa": {
         "code": "soa",
-        "fullName": "Secrets of Strixhaven Mystical Archive",
+        "fullName": "SOA-斯翠海文的秘密秘典",
         "icon": "img/sets/soa.svg"
     },
     "soc": {
         "code": "soc",
-        "fullName": "Secrets of Strixhaven Commander",
+        "fullName": "SOC-斯翠海文的秘密指挥官",
         "block": "Commander",
         "icon": "img/sets/soc.svg"
     },
     "soi": {
         "code": "soi",
-        "fullName": "Shadows over Innistrad",
+        "fullName": "SOI-依尼翠暗影",
         "block": "Shadows over Innistrad",
         "icon": "img/sets/soi.svg"
     },
     "sok": {
         "code": "sok",
-        "fullName": "Saviors of Kamigawa",
+        "fullName": "SOK-神河任侠传",
         "block": "Kamigawa",
         "icon": "img/sets/sok.svg"
     },
     "som": {
         "code": "som",
-        "fullName": "Scars of Mirrodin",
+        "fullName": "SOM-秘罗地创痕",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/som.svg"
     },
     "sos": {
         "code": "sos",
-        "fullName": "Secrets of Strixhaven",
+        "fullName": "SOS-斯翠海文的秘密",
         "icon": "img/sets/sos.svg"
     },
     "spe": {
         "code": "spe",
-        "fullName": "Marvel's Spider-Man Eternal",
+        "fullName": "SPE-漫威的蜘蛛侠永恒系列",
         "icon": "img/sets/spe.svg"
     },
     "spg": {
         "code": "spg",
-        "fullName": "Special Guests",
+        "fullName": "SPG-特别登场",
         "icon": "img/sets/spg.svg"
     },
     "spm": {
         "code": "spm",
-        "fullName": "Marvel's Spider-Man",
+        "fullName": "SPM-漫威的蜘蛛侠",
         "icon": "img/sets/spm.svg"
     },
     "ss1": {
         "code": "ss1",
-        "fullName": "Signature Spellbook: Jace",
+        "fullName": "SS1-签名咒语书：杰斯",
         "icon": "img/sets/ss1.svg"
     },
     "ss2": {
         "code": "ss2",
-        "fullName": "Signature Spellbook: Gideon",
+        "fullName": "SS2-签名咒语书：基定",
         "icon": "img/sets/ss2.svg"
     },
     "ss3": {
         "code": "ss3",
-        "fullName": "Signature Spellbook: Chandra",
+        "fullName": "SS3-签名咒语书：茜卓",
         "icon": "img/sets/ss3.svg"
     },
     "sstx": {
         "code": "sstx",
-        "fullName": "Strixhaven: School of Mages Substitute Cards",
+        "fullName": "SSTX-斯翠海文：魔法学校辅助牌",
         "icon": "img/sets/sstx.svg"
     },
     "sta": {
         "code": "sta",
-        "fullName": "Strixhaven Mystical Archive",
+        "fullName": "STA-斯翠海文秘典",
         "icon": "img/sets/sta.svg"
     },
     "sth": {
         "code": "sth",
-        "fullName": "Stronghold",
+        "fullName": "STH-天罗城塞",
         "block": "Tempest",
         "icon": "img/sets/sth.svg"
     },
     "stx": {
         "code": "stx",
-        "fullName": "Strixhaven: School of Mages",
+        "fullName": "STX-斯翠海文：魔法学校",
         "icon": "img/sets/stx.svg"
     },
     "sum": {
         "code": "sum",
-        "fullName": "Summer Magic / Edgar",
+        "fullName": "SUM-夏版第三版",
         "block": "Core Set",
         "icon": "img/sets/sum.svg"
     },
     "sunf": {
         "code": "sunf",
-        "fullName": "Unfinity Sticker Sheets",
+        "fullName": "SUNF-Unfinity贴纸卡",
         "icon": "img/sets/sunf.svg"
     },
     "svow": {
         "code": "svow",
-        "fullName": "Innistrad: Crimson Vow Substitute Cards",
+        "fullName": "SVOW-依尼翠：腥红婚誓辅助牌",
         "icon": "img/sets/svow.svg"
     },
     "sznr": {
         "code": "sznr",
-        "fullName": "Zendikar Rising Substitute Cards",
+        "fullName": "SZNR-赞迪卡再起辅助牌",
         "icon": "img/sets/sznr.svg"
     },
     "tafr": {
         "code": "tafr",
-        "fullName": "Adventures in the Forgotten Realms Tokens",
+        "fullName": "TAFR-被遗忘国度战记衍生物",
         "icon": "img/sets/tafr.svg"
     },
     "tblc": {
         "code": "tblc",
-        "fullName": "Bloomburrow Commander Tokens",
+        "fullName": "TBLC-斑隆洛指挥官衍生物",
         "icon": "img/sets/tblc.svg"
     },
     "tbth": {
         "code": "tbth",
-        "fullName": "Battle the Horde",
+        "fullName": "TBTH-勇战蛮群",
         "block": "Theros",
         "icon": "img/sets/tbth.svg"
     },
     "tc15": {
         "code": "tc15",
-        "fullName": "Commander 2015 Tokens",
+        "fullName": "TC15-指挥官2015衍生物",
         "block": "Commander",
         "icon": "img/sets/tc15.svg"
     },
     "tclb": {
         "code": "tclb",
-        "fullName": "Battle for Baldur's Gate Tokens",
+        "fullName": "TCLB-指挥官传奇：争战博德之门衍生物",
         "icon": "img/sets/tclb.svg"
     },
     "tcm2": {
         "code": "tcm2",
-        "fullName": "Commander Anthology Volume II Tokens",
+        "fullName": "TCM2-指挥官合集2衍生物",
         "block": "Commander",
         "icon": "img/sets/tcm2.svg"
     },
     "tcma": {
         "code": "tcma",
-        "fullName": "Commander Anthology Tokens",
+        "fullName": "TCMA-指挥官合集衍生物",
         "block": "Commander",
         "icon": "img/sets/tcma.svg"
     },
     "td0": {
         "code": "td0",
-        "fullName": "Magic Online Theme Decks",
+        "fullName": "TD0-万智牌在线版主题套牌",
         "icon": "img/sets/td0.svg"
     },
     "td2": {
         "code": "td2",
-        "fullName": "Duel Decks: Mirrodin Pure vs. New Phyrexia",
+        "fullName": "TD2-对决套牌：纯净秘罗地对新非瑞克西亚",
         "icon": "img/sets/td2.svg"
     },
     "tdag": {
         "code": "tdag",
-        "fullName": "Defeat a God",
+        "fullName": "TDAG-勇战天神",
         "block": "Theros",
         "icon": "img/sets/tdag.svg"
     },
     "tdc": {
         "code": "tdc",
-        "fullName": "Tarkir: Dragonstorm Commander",
+        "fullName": "TDC-鞑契龙岚录指挥官",
         "block": "Commander",
         "icon": "img/sets/tdc.svg"
     },
     "tdm": {
         "code": "tdm",
-        "fullName": "Tarkir: Dragonstorm",
+        "fullName": "TDM-鞑契龙岚录",
         "icon": "img/sets/tdm.svg"
     },
     "tecc": {
         "code": "tecc",
-        "fullName": "Lorwyn Eclipsed Commander Tokens",
+        "fullName": "TECC-洛温：暗影笼罩指挥官衍生物",
         "icon": "img/sets/tecc.svg"
     },
     "tfth": {
         "code": "tfth",
-        "fullName": "Face the Hydra",
+        "fullName": "TFTH-勇战多头龙",
         "block": "Theros",
         "icon": "img/sets/tfth.svg"
     },
     "thb": {
         "code": "thb",
-        "fullName": "Theros Beyond Death",
+        "fullName": "THB-塞洛斯：冥途求生",
         "icon": "img/sets/thb.svg"
     },
     "thp1": {
         "code": "thp1",
-        "fullName": "Theros Hero's Path",
+        "fullName": "THP1-塞洛斯英雄之路",
         "block": "Theros",
         "icon": "img/sets/thp1.svg"
     },
     "thp2": {
         "code": "thp2",
-        "fullName": "Born of the Gods Hero's Path",
+        "fullName": "THP2-天神创生英雄之路",
         "block": "Theros",
         "icon": "img/sets/thp2.svg"
     },
     "thp3": {
         "code": "thp3",
-        "fullName": "Journey into Nyx Hero's Path",
+        "fullName": "THP3-尼兹之旅英雄之路",
         "block": "Theros",
         "icon": "img/sets/thp3.svg"
     },
     "ths": {
         "code": "ths",
-        "fullName": "Theros",
+        "fullName": "THS-塞洛斯",
         "block": "Theros",
         "icon": "img/sets/ths.svg"
     },
     "tla": {
         "code": "tla",
-        "fullName": "Avatar: The Last Airbender",
+        "fullName": "TLA-降世神通：最后的气宗",
         "icon": "img/sets/tla.svg"
     },
     "tle": {
         "code": "tle",
-        "fullName": "Avatar: The Last Airbender Eternal",
+        "fullName": "TLE-降世神通：最后的气宗永恒系列",
         "icon": "img/sets/tle.svg"
     },
     "tmbs": {
         "code": "tmbs",
-        "fullName": "Mirrodin Besieged Tokens",
+        "fullName": "TMBS-围攻秘罗地衍生物",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/tmbs.svg"
     },
     "tmc": {
         "code": "tmc",
-        "fullName": "Teenage Mutant Ninja Turtles Eternal",
+        "fullName": "TMC-忍者神龟永恒系列",
         "block": "Commander",
         "icon": "img/sets/tmc.svg"
     },
     "tmp": {
         "code": "tmp",
-        "fullName": "Tempest",
+        "fullName": "TMP-暴风雨",
         "block": "Tempest",
         "icon": "img/sets/tmp.svg"
     },
     "tmt": {
         "code": "tmt",
-        "fullName": "Teenage Mutant Ninja Turtles",
+        "fullName": "TMT-忍者神龟",
         "icon": "img/sets/tmt.svg"
     },
     "tnph": {
         "code": "tnph",
-        "fullName": "New Phyrexia Tokens",
+        "fullName": "TNPH-新非瑞克西亚衍生物",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/tnph.svg"
     },
     "tone": {
         "code": "tone",
-        "fullName": "Phyrexia: All Will Be One Tokens",
+        "fullName": "TONE-非瑞克西亚：万界归一衍生物",
         "icon": "img/sets/tone.svg"
     },
     "tor": {
         "code": "tor",
-        "fullName": "Torment",
+        "fullName": "TOR-绝境",
         "block": "Odyssey",
         "icon": "img/sets/tor.svg"
     },
     "tpr": {
         "code": "tpr",
-        "fullName": "Tempest Remastered",
+        "fullName": "TPR-暴风雨重制版",
         "icon": "img/sets/tpr.svg"
     },
     "trc": {
         "code": "trc",
-        "fullName": "Star Trek Commander",
+        "fullName": "TRC-星际迷航指挥官",
         "block": "Commander",
         "icon": "img/sets/trc.svg"
     },
     "trk": {
         "code": "trk",
-        "fullName": "Star Trek"
+        "fullName": "TRK-星际迷航"
     },
     "tsb": {
         "code": "tsb",
-        "fullName": "Time Spiral Timeshifted",
+        "fullName": "TSB-时间漩涡时间转移牌",
         "block": "Time Spiral",
         "icon": "img/sets/tsb.svg"
     },
     "tsom": {
         "code": "tsom",
-        "fullName": "Scars of Mirrodin Tokens",
+        "fullName": "TSOM-秘罗地创痕衍生物",
         "block": "Scars of Mirrodin",
         "icon": "img/sets/tsom.svg"
     },
     "tsp": {
         "code": "tsp",
-        "fullName": "Time Spiral",
+        "fullName": "TSP-时间漩涡",
         "block": "Time Spiral",
         "icon": "img/sets/tsp.svg"
     },
     "tsr": {
         "code": "tsr",
-        "fullName": "Time Spiral Remastered",
+        "fullName": "TSR-时间漩涡重制版",
         "icon": "img/sets/tsr.svg"
     },
     "ttdc": {
         "code": "ttdc",
-        "fullName": "Tarkir: Dragonstorm Commander Tokens",
+        "fullName": "TTDC-鞑契龙岚录指挥官衍生物",
         "icon": "img/sets/ttdc.svg"
     },
     "tund": {
         "code": "tund",
-        "fullName": "Unsanctioned Tokens",
+        "fullName": "TUND-Unsanctioned衍生物",
         "icon": "img/sets/tund.svg"
     },
     "tunf": {
         "code": "tunf",
-        "fullName": "Unfinity Tokens",
+        "fullName": "TUNF-Unfinity衍生物",
         "icon": "img/sets/tunf.svg"
     },
     "twoc": {
         "code": "twoc",
-        "fullName": "Wilds of Eldraine Commander Tokens",
+        "fullName": "TWOC-艾卓仙踪指挥官衍生物",
         "icon": "img/sets/twoc.svg"
     },
     "twoe": {
         "code": "twoe",
-        "fullName": "Wilds of Eldraine Tokens",
+        "fullName": "TWOE-艾卓仙踪衍生物",
         "icon": "img/sets/twoe.svg"
     },
     "uds": {
         "code": "uds",
-        "fullName": "Urza's Destiny",
+        "fullName": "UDS-天命之战",
         "block": "Urza",
         "icon": "img/sets/uds.svg"
     },
     "ugin": {
         "code": "ugin",
-        "fullName": "Ugin's Fate",
+        "fullName": "UGIN-乌金命运",
         "block": "Khans of Tarkir",
         "icon": "img/sets/ugin.svg"
     },
     "ugl": {
         "code": "ugl",
-        "fullName": "Unglued",
+        "fullName": "UGL-鸡飞版",
         "icon": "img/sets/ugl.svg"
     },
     "ulg": {
         "code": "ulg",
-        "fullName": "Urza's Legacy",
+        "fullName": "ULG-远古遗产",
         "block": "Urza",
         "icon": "img/sets/ulg.svg"
     },
     "ulst": {
         "code": "ulst",
-        "fullName": "The List (Unfinity Foil Edition)",
+        "fullName": "ULST-精选列表（Unfinity闪卡版本）",
         "icon": "img/sets/ulst.svg"
     },
     "uma": {
         "code": "uma",
-        "fullName": "Ultimate Masters",
+        "fullName": "UMA-终极大师",
         "icon": "img/sets/uma.svg"
     },
     "und": {
         "code": "und",
-        "fullName": "Unsanctioned",
+        "fullName": "UND-Unsanctioned",
         "icon": "img/sets/und.svg"
     },
     "unf": {
         "code": "unf",
-        "fullName": "Unfinity",
+        "fullName": "UNF-Unfinity",
         "icon": "img/sets/unf.svg"
     },
     "unh": {
         "code": "unh",
-        "fullName": "Unhinged",
+        "fullName": "UNH-鸡飞2",
         "icon": "img/sets/unh.svg"
     },
     "unk": {
         "code": "unk",
-        "fullName": "Unknown Event",
+        "fullName": "UNK-探迷赛",
         "icon": "img/sets/unk.svg"
     },
     "usg": {
         "code": "usg",
-        "fullName": "Urza's Saga",
+        "fullName": "USG-克撒传",
         "block": "Urza",
         "icon": "img/sets/usg.svg"
     },
     "ust": {
         "code": "ust",
-        "fullName": "Unstable",
+        "fullName": "UST-Unstable",
         "icon": "img/sets/ust.svg"
     },
     "v09": {
         "code": "v09",
-        "fullName": "From the Vault: Exiled",
+        "fullName": "V09-来自黯窖：放逐",
         "block": "From the Vault",
         "icon": "img/sets/v09.svg"
     },
     "v10": {
         "code": "v10",
-        "fullName": "From the Vault: Relics",
+        "fullName": "V10-来自黯窖：遗宝",
         "block": "From the Vault",
         "icon": "img/sets/v10.svg"
     },
     "v11": {
         "code": "v11",
-        "fullName": "From the Vault: Legends",
+        "fullName": "V11-来自黯窖：传奇",
         "block": "From the Vault",
         "icon": "img/sets/v11.svg"
     },
     "v12": {
         "code": "v12",
-        "fullName": "From the Vault: Realms",
+        "fullName": "V12-来自黯窖：领域",
         "block": "From the Vault",
         "icon": "img/sets/v12.svg"
     },
     "v13": {
         "code": "v13",
-        "fullName": "From the Vault: Twenty",
+        "fullName": "V13-来自黯窖：二十",
         "block": "From the Vault",
         "icon": "img/sets/v13.svg"
     },
     "v14": {
         "code": "v14",
-        "fullName": "From the Vault: Annihilation",
+        "fullName": "V14-来自黯窖：歼灭",
         "block": "From the Vault",
         "icon": "img/sets/v14.svg"
     },
     "v15": {
         "code": "v15",
-        "fullName": "From the Vault: Angels",
+        "fullName": "V15-来自黯窖：天使",
         "block": "From the Vault",
         "icon": "img/sets/v15.svg"
     },
     "v16": {
         "code": "v16",
-        "fullName": "From the Vault: Lore",
+        "fullName": "V16-来自黯窖：传说",
         "block": "From the Vault",
         "icon": "img/sets/v16.svg"
     },
     "v17": {
         "code": "v17",
-        "fullName": "From the Vault: Transform",
+        "fullName": "V17-来自黯窖：转化",
         "block": "From the Vault",
         "icon": "img/sets/v17.svg"
     },
     "vis": {
         "code": "vis",
-        "fullName": "Visions",
+        "fullName": "VIS-憧憬",
         "block": "Mirage",
         "icon": "img/sets/vis.svg"
     },
     "vma": {
         "code": "vma",
-        "fullName": "Vintage Masters",
+        "fullName": "VMA-特选大师",
         "icon": "img/sets/vma.svg"
     },
     "voc": {
         "code": "voc",
-        "fullName": "Crimson Vow Commander",
+        "fullName": "VOC-腥红婚誓指挥官",
         "block": "Commander",
         "icon": "img/sets/voc.svg"
     },
     "vow": {
         "code": "vow",
-        "fullName": "Innistrad: Crimson Vow",
+        "fullName": "VOW-依尼翠：腥红婚誓",
         "block": "Innistrad: Double Feature",
         "icon": "img/sets/vow.svg"
     },
     "w16": {
         "code": "w16",
-        "fullName": "Welcome Deck 2016",
+        "fullName": "W16-欢迎套牌2016",
         "icon": "img/sets/w16.svg"
     },
     "w17": {
         "code": "w17",
-        "fullName": "Welcome Deck 2017",
+        "fullName": "W17-欢迎套牌2017",
         "icon": "img/sets/w17.svg"
     },
     "war": {
         "code": "war",
-        "fullName": "War of the Spark",
+        "fullName": "WAR-火花之战",
         "block": "Guilds of Ravnica",
         "icon": "img/sets/war.svg"
     },
     "wc00": {
         "code": "wc00",
-        "fullName": "World Championship Decks 2000",
+        "fullName": "WC00-世界冠军赛套牌2000",
         "icon": "img/sets/wc00.svg"
     },
     "wc01": {
         "code": "wc01",
-        "fullName": "World Championship Decks 2001",
+        "fullName": "WC01-世界冠军赛套牌2001",
         "icon": "img/sets/wc01.svg"
     },
     "wc02": {
         "code": "wc02",
-        "fullName": "World Championship Decks 2002",
+        "fullName": "WC02-世界冠军赛套牌2002",
         "icon": "img/sets/wc02.svg"
     },
     "wc03": {
         "code": "wc03",
-        "fullName": "World Championship Decks 2003",
+        "fullName": "WC03-世界冠军赛套牌2003",
         "icon": "img/sets/wc03.svg"
     },
     "wc04": {
         "code": "wc04",
-        "fullName": "World Championship Decks 2004",
+        "fullName": "WC04-世界冠军赛套牌2004",
         "icon": "img/sets/wc04.svg"
     },
     "wc97": {
         "code": "wc97",
-        "fullName": "World Championship Decks 1997",
+        "fullName": "WC97-世界冠军赛套牌1997",
         "icon": "img/sets/wc97.svg"
     },
     "wc98": {
         "code": "wc98",
-        "fullName": "World Championship Decks 1998",
+        "fullName": "WC98-世界冠军赛套牌1998",
         "icon": "img/sets/wc98.svg"
     },
     "wc99": {
         "code": "wc99",
-        "fullName": "World Championship Decks 1999",
+        "fullName": "WC99-世界冠军赛套牌1999",
         "icon": "img/sets/wc99.svg"
     },
     "who": {
         "code": "who",
-        "fullName": "Doctor Who",
+        "fullName": "WHO-神秘博士",
         "block": "Commander",
         "icon": "img/sets/who.svg"
     },
     "wmc": {
         "code": "wmc",
-        "fullName": "World Magic Cup Qualifiers",
+        "fullName": "WMC-万智牌世界杯资格赛",
         "icon": "img/sets/wmc.svg"
     },
     "woc": {
         "code": "woc",
-        "fullName": "Wilds of Eldraine Commander",
+        "fullName": "WOC-艾卓仙踪指挥官",
         "block": "Commander",
         "icon": "img/sets/woc.svg"
     },
     "woe": {
         "code": "woe",
-        "fullName": "Wilds of Eldraine",
+        "fullName": "WOE-艾卓仙踪",
         "icon": "img/sets/woe.svg"
     },
     "wot": {
         "code": "wot",
-        "fullName": "Wilds of Eldraine: Enchanting Tales",
+        "fullName": "WOT-艾卓仙踪魅附奇谭",
         "icon": "img/sets/wot.svg"
     },
     "wth": {
         "code": "wth",
-        "fullName": "Weatherlight",
+        "fullName": "WTH-晴空号传说",
         "block": "Mirage",
         "icon": "img/sets/wth.svg"
     },
     "wwk": {
         "code": "wwk",
-        "fullName": "Worldwake",
+        "fullName": "WWK-天地醒转",
         "block": "Zendikar",
         "icon": "img/sets/wwk.svg"
     },
     "xana": {
         "code": "xana",
-        "fullName": "Arena New Player Experience Extras",
+        "fullName": "XANA-竞技场新手教程额外用牌",
         "icon": "img/sets/xana.svg"
     },
     "xln": {
         "code": "xln",
-        "fullName": "Ixalan",
+        "fullName": "XLN-依夏兰",
         "block": "Ixalan",
         "icon": "img/sets/xln.svg"
     },
     "yblb": {
         "code": "yblb",
-        "fullName": "Alchemy: Bloomburrow",
+        "fullName": "YBLB-炼金：斑隆洛",
         "block": "Alchemy 2025",
         "icon": "img/sets/yblb.svg"
     },
     "ybro": {
         "code": "ybro",
-        "fullName": "Alchemy: The Brothers' War",
+        "fullName": "YBRO-炼金：兄弟之战",
         "block": "Alchemy 2023",
         "icon": "img/sets/ybro.svg"
     },
     "ydft": {
         "code": "ydft",
-        "fullName": "Alchemy: Aetherdrift",
+        "fullName": "YDFT-炼金：乙太飘移",
         "icon": "img/sets/ydft.svg"
     },
     "ydmu": {
         "code": "ydmu",
-        "fullName": "Alchemy: Dominaria",
+        "fullName": "YDMU-炼金：多明纳里亚",
         "block": "Alchemy 2023",
         "icon": "img/sets/ydmu.svg"
     },
     "ydsk": {
         "code": "ydsk",
-        "fullName": "Alchemy: Duskmourn",
+        "fullName": "YDSK-炼金：暮悲邸",
         "icon": "img/sets/ydsk.svg"
     },
     "yecl": {
         "code": "yecl",
-        "fullName": "Alchemy: Lorwyn Eclipsed",
+        "fullName": "YECL-炼金：洛温暗影笼罩",
         "icon": "img/sets/yecl.svg"
     },
     "yeoe": {
         "code": "yeoe",
-        "fullName": "Alchemy: Edge of Eternities",
+        "fullName": "YEOE-炼金：虚空边域",
         "icon": "img/sets/yeoe.svg"
     },
     "ylci": {
         "code": "ylci",
-        "fullName": "Alchemy: Ixalan",
+        "fullName": "YLCI-炼金：依夏兰",
         "block": "Alchemy 2024",
         "icon": "img/sets/ylci.svg"
     },
     "ymid": {
         "code": "ymid",
-        "fullName": "Alchemy: Innistrad",
+        "fullName": "YMID-炼金：依尼翠",
         "block": "Alchemy 2022",
         "icon": "img/sets/ymid.svg"
     },
     "ymkm": {
         "code": "ymkm",
-        "fullName": "Alchemy: Murders at Karlov Manor ",
+        "fullName": "YMKM-炼金：卡洛夫庄园谋杀案",
         "block": "Alchemy 2024",
         "icon": "img/sets/ymkm.svg"
     },
     "yneo": {
         "code": "yneo",
-        "fullName": "Alchemy: Kamigawa",
+        "fullName": "YNEO-炼金：神河",
         "block": "Alchemy 2022",
         "icon": "img/sets/yneo.svg"
     },
     "yone": {
         "code": "yone",
-        "fullName": "Alchemy: Phyrexia",
+        "fullName": "YONE-炼金：非瑞克西亚",
         "block": "Alchemy 2023",
         "icon": "img/sets/yone.svg"
     },
     "yotj": {
         "code": "yotj",
-        "fullName": "Alchemy: Outlaws of Thunder Junction",
+        "fullName": "YOTJ-炼金：光雷驿镖客",
         "block": "Alchemy 2024",
         "icon": "img/sets/yotj.svg"
     },
     "ysnc": {
         "code": "ysnc",
-        "fullName": "Alchemy: New Capenna",
+        "fullName": "YSNC-炼金：新卡佩纳",
         "block": "Alchemy 2022",
         "icon": "img/sets/ysnc.svg"
     },
     "ysos": {
         "code": "ysos",
-        "fullName": "Alchemy: Secrets of Strixhaven",
+        "fullName": "YSOS-炼金：斯翠海文的秘密",
         "icon": "img/sets/ysos.svg"
     },
     "ytdm": {
         "code": "ytdm",
-        "fullName": "Alchemy: Tarkir",
+        "fullName": "YTDM-炼金：鞑契",
         "icon": "img/sets/ytdm.svg"
     },
     "ywoe": {
         "code": "ywoe",
-        "fullName": "Alchemy: Wilds of Eldraine",
+        "fullName": "YWOE-炼金：艾卓仙踪",
         "block": "Alchemy 2024",
         "icon": "img/sets/ywoe.svg"
     },
     "zen": {
         "code": "zen",
-        "fullName": "Zendikar",
+        "fullName": "ZEN-赞迪卡",
         "block": "Zendikar",
         "icon": "img/sets/zen.svg"
     },
     "znc": {
         "code": "znc",
-        "fullName": "Zendikar Rising Commander",
+        "fullName": "ZNC-赞迪卡再起指挥官",
         "block": "Commander",
         "icon": "img/sets/znc.svg"
     },
     "zne": {
         "code": "zne",
-        "fullName": "Zendikar Rising Expeditions",
+        "fullName": "ZNE-赞迪卡再起远探",
         "icon": "img/sets/zne.svg"
     },
     "znr": {
         "code": "znr",
-        "fullName": "Zendikar Rising",
+        "fullName": "ZNR-赞迪卡再起",
         "icon": "img/sets/znr.svg"
     },
     "planeshifted_snc": {
