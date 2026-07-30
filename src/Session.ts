@@ -2922,16 +2922,26 @@ export class Session implements IIndexable {
 			return;
 		}
 
+		// 按座位次序收集真人玩家（供机器人写 XMage "Draft Tournament Swiss" 配对座次文件）。
+		// getSortedHumanPlayerData() 按 userOrder（绕桌座次）返回，已处理断线/名字解析。
+		const players = Object.values(this.getSortedHumanPlayerData()).map((u, seat) => ({
+			id: u.userID,
+			user_name: u.userName,
+			is_bot: u.isBot,
+			seat,
+		}));
+
 		try {
 			await axios.post(
 				"http://localhost:8080/webhook/draft-ended",
 				{
 					session_id: this.id,
 					ended_at: new Date().toISOString(),
+					players,
 				},
 				{ timeout: 5000 }
 			);
-			console.log(`✅ 已通知 KOOK 机器人: ${this.id}`);
+			console.log(`✅ 已通知 KOOK 机器人: ${this.id} (${players.length} 位玩家)`);
 		} catch (error) {
 			console.error(`❌ 通知 KOOK 机器人失败: ${(error as Error).message}`);
 		}
