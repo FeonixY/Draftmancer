@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Grid Draft is a draft variant for two to four players mostly used for drafting cubes.</p>
+				<p>{{ $t("ui.grid_draft_is_a_draft_variant_for_two_to_four_play") }}</p>
 				<p>
 					Players alternatively chooses a row or a column of a 3x3 grid of cards, resulting in 2 or 3 cards
 					being picked. The remaining cards are discarded.
@@ -30,7 +30,7 @@
 							min="6"
 							max="32"
 							step="1"
-							placeholder="Booster count"
+							:placeholder="$t('ui.booster_count')"
 							class="small-number-input"
 							v-model.number="boosterCount"
 						/>
@@ -39,7 +39,7 @@
 					<label for="booster-type"> Booster Type </label>
 					<div>
 						<select id="booster-type" v-model="regularBoosters">
-							<option :value="true">Regular</option>
+							<option :value="true">{{ $t("ui.regular") }}</option>
 							<option :value="false">{{ $t("draft.gridSize") }}</option>
 						</select>
 					</div>

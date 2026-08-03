@@ -38,8 +38,8 @@
 						type="image"
 						src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
 						name="submit"
-						title="PayPal - The safer, easier way to pay online!"
-						alt="Donate with PayPal button"
+						:title="$t('ui.paypal_the_safer_easier_way_to_pay_online')"
+						:alt="$t('ui.donate_with_paypal_button')"
 					/>
 				</form>
 			</div>

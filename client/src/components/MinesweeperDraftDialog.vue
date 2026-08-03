@@ -18,7 +18,7 @@
 							min="1"
 							max="99"
 							step="1"
-							placeholder="Grid Count"
+							:placeholder="$t('ui.grid_count')"
 							class="small-number-input"
 							v-model.number="gridCount"
 						/>
@@ -33,7 +33,7 @@
 							max="40"
 							step="1"
 							class="small-number-input"
-							placeholder="Grid Width"
+							:placeholder="$t('ui.grid_width')"
 						/>
 						x
 						<input
@@ -43,7 +43,7 @@
 							max="40"
 							step="1"
 							class="small-number-input"
-							placeholder="Grid Height"
+							:placeholder="$t('ui.grid_height')"
 						/>
 						<font-awesome-icon
 							icon="fa-solid fa-undo-alt"

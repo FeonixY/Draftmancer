@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Rotisserie is a draft variant where each player chooses cards from a common pool.</p>
+				<p>{{ $t("ui.rotisserie_is_a_draft_variant_where_each_player_ch") }}</p>
 				<p>
 					Traditionally the card pool is composed of a single copy of each card from one or multiple sets
 					('singleton' mode), but a 'standard' collation it also available where the final card pool is
@@ -26,7 +26,7 @@
 								min="1"
 								step="1"
 								id="cards-per-player"
-								placeholder="Cards per Player"
+								:placeholder="$t('ui.cards_per_player')"
 								class="small-number-input"
 								v-model.number="cardsPerPlayer"
 							/>
@@ -41,7 +41,7 @@
 						<input type="checkbox" id="exact-card-count" v-model.number="exactCardCount" />
 					</template>
 					<template v-if="collationType === 'standard'">
-						<label for="boosters-per-player">Boosters per Player</label>
+						<label for="boosters-per-player">{{ $t("ui.boosters_per_player") }}</label>
 						<div>
 							<input
 								type="number"

@@ -92,7 +92,7 @@
 			games afterwards. However, if you do want to challenge other players in your pod, a chat will be available
 			during and right after the draft!
 		</p>
-		<p>To reduce wait times during slow periods, some bots might join after a while.</p>
+		<p>{{ $t("ui.to_reduce_wait_times_during_slow_periods_some_bots") }}</p>
 		<p>
 			Want to organize your own customized drafts? Check out the
 			<a href="/">{{ $t("misc.fullApp") }}</a

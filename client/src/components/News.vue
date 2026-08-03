@@ -37,7 +37,7 @@
 		</div>
 		<div class="news">
 			<em>November 21, 2025</em>
-			<p>Improved Cube Cobra integration to better support Custom Cards.</p>
+			<p>{{ $t("ui.improved_cube_cobra_integration_to_better_support_") }}</p>
 			<p>{{ $t("news.cubeCobraSupport") }}</p>
 		</div>
 		<div class="news">

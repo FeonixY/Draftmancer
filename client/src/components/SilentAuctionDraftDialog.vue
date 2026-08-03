@@ -18,7 +18,7 @@
 							min="1"
 							max="128"
 							step="1"
-							placeholder="Pack count"
+							:placeholder="$t('ui.pack_count')"
 							v-model.number="boosterCount"
 						/>
 						<ResetButton v-model="boosterCount" :default-value="defaultBoosterCount" />
@@ -30,7 +30,7 @@
 							type="number"
 							min="1"
 							step="1"
-							placeholder="Starting Funds"
+							:placeholder="$t('ui.starting_funds')"
 							v-model.number="startingFunds"
 						/>
 						<ResetButton v-model="startingFunds" :default-value="defaultStartingFunds" />
@@ -42,7 +42,7 @@
 							type="number"
 							min="0"
 							step="1"
-							placeholder="Reserve Price"
+							:placeholder="$t('ui.reserve_price')"
 							v-model.number="reservePrice"
 						/>
 						<ResetButton v-model="reservePrice" :default-value="defaultReservePrice" />

@@ -219,7 +219,7 @@
 						"
 						style="margin-right: 0.25em"
 					>
-						<label for="session-id">Session</label>
+						<label for="session-id">{{ $t("ui.session") }}</label>
 						<delayed-input
 							v-model="sessionID"
 							autocomplete="off"
@@ -419,7 +419,7 @@
 						<template v-slot:handle> Other Game Modes </template>
 						<template v-slot:dropdown>
 							<div class="game-modes-cat">
-								<span class="game-modes-cat-title">Draft</span>
+								<span class="game-modes-cat-title">{{ $t("ui.draft") }}</span>
 								<div
 									v-tooltip.left="
 										'Starts a Winston Draft. This is a draft variant intended for two players, but playable at any number.'
@@ -813,7 +813,7 @@
 											<input
 												type="button"
 												@click="pickCard()"
-												value="Confirm Pick"
+												:value="$t('ui.confirm_pick')"
 												v-if="
 													selectedCards.length === cardsToPick &&
 													burningCards.length === cardsToBurnThisRound
@@ -1104,7 +1104,7 @@
 										<input
 											type="button"
 											@click="pickCard()"
-											value="Confirm Pick"
+											:value="$t('ui.confirm_pick')"
 											v-if="selectedCards.length === cardsToPick"
 										/>
 									</span>
@@ -1455,7 +1455,7 @@
 											'Quick search for English card names and types in your deck/sideboard.'
 										"
 									>
-										<input type="text" placeholder="Search..." v-model="deckFilter" /><span
+										<input type="text" :placeholder="$t('ui.search')" v-model="deckFilter" /><span
 											@click="deckFilter = ''"
 										>
 											<font-awesome-icon icon="fa-solid fa-times-circle" />
@@ -1489,7 +1489,7 @@
 								</template>
 								<template v-slot:empty>
 									<h3>{{ $t("cards.deckEmpty") }}</h3>
-									<p>Click on cards in your sideboard to move them here.</p>
+									<p>{{ $t("ui.click_on_cards_in_your_sideboard_to_move_them_here") }}</p>
 								</template>
 							</card-pool>
 						</div>
@@ -1587,7 +1587,7 @@
 							</template>
 							<template v-slot:empty>
 								<h3>{{ $t("cards.sideboardEmpty") }}</h3>
-								<p>Click on cards in your deck to move them here.</p>
+								<p>{{ $t("ui.click_on_cards_in_your_deck_to_move_them_here") }}</p>
 							</template>
 						</card-pool>
 					</div>
@@ -1618,7 +1618,7 @@
 								<div class="draft-queue-banner">
 									<img
 										src="./assets/img/draft_queue_banner_msh.webp"
-										alt="Practice Marvel Super Heroes with human players right now in the Draft Queue!"
+										:alt="$t('ui.practice_marvel_super_heroes_with_human_players_ri')"
 										width="500"
 										height="260"
 									/>
@@ -1643,8 +1643,8 @@
 											>Start</span
 										>" on top of the page.
 									</li>
-									<li>Join one of the featured communities and participate in events.</li>
-									<li>Tinker with the settings and organize your own events!</li>
+									<li>{{ $t('ui.join_one_of_the_featured_communities_and_participa') }}</li>
+									<li>{{ $t('ui.tinker_with_the_settings_and_organize_your_own_eve') }}</li>
 								</ul>
 							</div>
 						-->
@@ -1675,7 +1675,7 @@
 					<div class="welcome-sections">
 						<div class="container" style="grid-area: News">
 							<div class="section-title">
-								<h2>News</h2>
+								<h2>{{ $t("ui.news") }}</h2>
 							</div>
 							<news class="welcome-section" @more-sets="displayedModal = 'setRestriction'" />
 						</div>
@@ -1768,7 +1768,7 @@
 						</div>
 						<div class="container" style="grid-area: Tools">
 							<div class="section-title">
-								<h2>Tools</h2>
+								<h2>{{ $t("ui.tools") }}</h2>
 							</div>
 							<div class="welcome-section welcome-alt">
 								<div style="display: flex; flex-wrap: wrap; justify-content: space-between">
@@ -1807,7 +1807,7 @@
 									style="flex-grow: 1"
 									v-model="description"
 									type="text"
-									placeholder="Enter a description for your session"
+									:placeholder="$t('ui.enter_a_description_for_your_session')"
 									:maxlength="70"
 								/>
 							</div>
@@ -1820,9 +1820,9 @@
 									<tr>
 										<th>ID</th>
 										<th>{{ $t("misc.sets") }}</th>
-										<th>Players</th>
-										<th>Description</th>
-										<th>Join</th>
+										<th>{{ $t("ui.players") }}</th>
+										<th>{{ $t("ui.description") }}</th>
+										<th>{{ $t("ui.join") }}</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -1841,7 +1841,7 @@
 											<template v-else-if="s.sets.length === 1">
 												<img :src="setsInfos[s.sets[0]].icon" class="set-icon" />
 											</template>
-											<template v-else-if="s.sets.length === 0">All</template>
+											<template v-else-if="s.sets.length === 0">{{ $t("ui.all") }}</template>
 											<template v-else>[{{ s.sets.length }}]</template>
 										</td>
 										<td>{{ s.players }} / {{ s.maxPlayers }}</td>
@@ -1904,7 +1904,7 @@
 					<form @submit.prevent="importDeck">
 						<div>
 							<textarea
-								placeholder="Paste or drop a card list here... Any list MTGA accepts should work."
+								:placeholder="$t('ui.paste_or_drop_a_card_list_here_any_list_mtga_accep')"
 								rows="15"
 								cols="40"
 								id="decklist-text"
@@ -1923,7 +1923,7 @@
 							<button type="button" onclick="document.querySelector('#decklist-file-input').click()">
 								Browse
 							</button>
-							<button type="submit">Import</button>
+							<button type="submit">{{ $t("ui.import") }}</button>
 						</div>
 					</form>
 				</div>
@@ -1944,13 +1944,15 @@
 								suitable for your settings.
 							</div>
 							<textarea
-								placeholder="Paste cards here..."
+								:placeholder="$t('ui.paste_cards_here')"
 								rows="15"
 								cols="40"
 								id="upload-booster-text"
 							></textarea>
 						</div>
-						<div><button type="submit">Upload</button></div>
+						<div>
+							<button type="submit">{{ $t("ui.upload") }}</button>
+						</div>
 					</form>
 				</div>
 			</template>
@@ -2013,16 +2015,16 @@
 			<template v-slot:body>
 				<div class="session-options-container" :class="{ disabled: userID != sessionOwner }">
 					<div class="option-column option-column-left">
-						<h4>Session</h4>
+						<h4>{{ $t("ui.session") }}</h4>
 						<div
 							class="line"
 							v-tooltip.left="{
 								popperClass: 'option-tooltip',
-								content: '<p>Display this session on the front page, allowing any visitor to join.</p>',
+								content: '<p>' + $t('ui.display_this_session_on_the_front_page_allowing_an') + '</p>',
 								html: true,
 							}"
 						>
-							<label for="is-public">Public</label>
+							<label for="is-public">{{ $t("ui.public") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="isPublic" id="is-public" />
 							</div>
@@ -2036,13 +2038,13 @@
 								html: true,
 							}"
 						>
-							<label for="session-desc">Description</label>
+							<label for="session-desc">{{ $t("ui.description") }}</label>
 							<div class="right">
 								<delayed-input
 									id="session-desc"
 									v-model="description"
 									type="text"
-									placeholder="Session public description"
+									:placeholder="$t('ui.session_public_description')"
 									:maxlength="70"
 									style="width: 90%"
 								/>
@@ -2116,8 +2118,7 @@
 							class="line"
 							v-tooltip.left="{
 								popperClass: 'option-tooltip',
-								content:
-									'<p>If set, the system will attempt to smooth out the color distribution in each pack, as opposed to being completely random.</p>',
+								content: '<p>' + $t('ui.if_set_the_system_will_attempt_to_smooth_out_the_c') + '</p>',
 								html: true,
 							}"
 							:class="{ disabled: usePredeterminedBoosters }"
@@ -2152,7 +2153,7 @@
 								html: true,
 							}"
 						>
-							<label for="option-foil">Foil</label>
+							<label for="option-foil">{{ $t("ui.foil") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="foil" id="option-foil" />
 							</div>
@@ -2187,11 +2188,11 @@
 								content: `<p>Lets you customize the exact content of your boosters.</p>
 									<p><strong>Bonus</strong>: Controls the number of cards from a set-specific bonus sheet, they generally replace commons (and thus do not increase booster size). This setting only affect the following sets: 
 										<ul>
-											<li>March of the Machine (Multiverse Legends)</li> 
-											<li>Shadows over Innistrad Remastered (Shadow of the Past)</li> 
-											<li>The Brothers' War (Retro Artifact - These do NOT replace commons)</li> 
-											<li>Strixhaven (Mystical Archives)</li> 
-											<li>Timespiral Remastered (Timeshifted - These do NOT replace commons)</li> 
+											<li>{{ $t('ui.march_of_the_machine_multiverse_legends') }}</li> 
+											<li>{{ $t('ui.shadows_over_innistrad_remastered_shadow_of_the_pa') }}</li> 
+											<li>{{ $t('ui.the_brothers_war_retro_artifact_these_do_not_repla') }}</li> 
+											<li>{{ $t('ui.strixhaven_mystical_archives') }}</li> 
+											<li>{{ $t('ui.timespiral_remastered_timeshifted_these_do_not_rep') }}</li> 
 											<li>Modern Horizons 2 (New-to-Modern - These do NOT replace commons)</li> 
 										</ul>
 									</p>
@@ -2294,8 +2295,7 @@
 							class="line"
 							v-tooltip.left="{
 								popperClass: 'option-tooltip',
-								content:
-									'<p>If enabled, players will receive a log of their own draft, regardless of the full game log settings.</p>',
+								content: '<p>' + $t('ui.if_enabled_players_will_receive_a_log_of_their_own') + '</p>',
 								html: true,
 							}"
 						>
@@ -2336,7 +2336,7 @@
 							<label for="draft-log-unlock-timer">{{ $t("settings.autoUnlockTimer") }}</label>
 							<div class="right">
 								<select v-model="draftLogUnlockTimer" id="draft-log-unlock-timer">
-									<option :value="0">Never</option>
+									<option :value="0">{{ $t("ui.never") }}</option>
 									<option :value="60">1h</option>
 									<option :value="120">2h</option>
 									<option :value="180">3h</option>
@@ -2501,7 +2501,7 @@
 							class="line"
 							v-tooltip.right="{
 								popperClass: 'option-tooltip',
-								content: '<p>Discard (burn) the remaining N cards of each packs automatically.</p>',
+								content: '<p>' + $t('ui.discard_burn_the_remaining_n_cards_of_each_packs_a') + '</p>',
 								html: true,
 							}"
 						>
@@ -2529,8 +2529,7 @@
 							class="line"
 							v-tooltip.right="{
 								popperClass: 'option-tooltip',
-								content:
-									'<p>Disable the bot suggestions mechanism for every player in the session. Useful for tournaments for example.</p>',
+								content: '<p>' + $t('ui.disable_the_bot_suggestions_mechanism_for_every_pl') + '</p>',
 								html: true,
 							}"
 						>
@@ -2578,7 +2577,7 @@
 							class="line"
 							v-tooltip.right="{
 								popperClass: 'option-tooltip',
-								content: '<p>Hide picks during the draft, outside of the review phase.</p>',
+								content: '<p>' + $t('ui.hide_picks_during_the_draft_outside_of_the_review_') + '</p>',
 								html: true,
 							}"
 						>
@@ -2663,7 +2662,9 @@
 									v-tooltip.up="{
 										popperClass: 'option-tooltip',
 										content:
-											'<p>When enabled, duplicates of the exact same card in a booster will be avoided as much as possible.</p>',
+											'<p>' +
+											$t('ui.when_enabled_duplicates_of_the_exact_same_card_in_') +
+											'</p>',
 										html: true,
 									}"
 								>
@@ -2753,7 +2754,7 @@
 							class="option-cube-select"
 							v-tooltip.left="{
 								popperClass: 'option-tooltip',
-								content: '<p>Load a pre-built cube from a curated list.</p>',
+								content: '<p>' + $t('ui.load_a_prebuilt_cube_from_a_curated_list') + '</p>',
 								html: true,
 							}"
 						>
@@ -2804,7 +2805,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'bracket'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>Bracket</h2>
+				<h2>{{ $t("ui.bracket") }}</h2>
 			</template>
 			<template v-slot:body>
 				<bracket-component

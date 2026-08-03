@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Winchester Draft is a draft variant similar to Winston and Rochester draft.</p>
+				<p>{{ $t("ui.winchester_draft_is_a_draft_variant_similar_to_win") }}</p>
 				<p>Players alternatively pick one of 4 face-up piles of cards, then add one card to each pile.</p>
 				<div class="dialog-settings">
 					<label for="boosters-per-player-input">Boosters per Player</label>

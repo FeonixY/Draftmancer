@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Housman Draft is a draft variant with hidden information suited for two players and more.</p>
+				<p>{{ $t("ui.housman_draft_is_a_draft_variant_with_hidden_infor") }}</p>
 				<p>
 					Each player is dealt a hand of <strong>{{ handSize }}</strong> cards and
 					<strong>{{ revealedCardsCount }}</strong> cards are placed face up at the center of the table.
@@ -23,7 +23,7 @@
 							min="1"
 							max="24"
 							step="1"
-							placeholder="Hand Size"
+							:placeholder="$t('ui.hand_size')"
 							class="small-number-input"
 							v-model.number="handSize"
 						/>
@@ -37,7 +37,7 @@
 							min="1"
 							max="24"
 							step="1"
-							placeholder="Revealed Cards"
+							:placeholder="$t('ui.revealed_cards')"
 							class="small-number-input"
 							v-model.number="revealedCardsCount"
 						/>
@@ -65,7 +65,7 @@
 							min="1"
 							max="24"
 							step="1"
-							placeholder="Rounds"
+							:placeholder="$t('ui.rounds')"
 							class="small-number-input"
 							v-model.number="roundCount"
 						/>

@@ -23,7 +23,7 @@
 		</template>
 		<template v-slot:dropdown>
 			<span class="header">
-				<checkbox :value="autoland" @toggle="$emit('update:autoland', !autoland)" label="Auto. Land" />
+				<checkbox :value="autoland" @toggle="$emit('update:autoland', !autoland)" :label="$t('ui.auto_land')" />
 			</span>
 			<div class="land-input" v-for="c in CardColor" :key="c">
 				<font-awesome-icon

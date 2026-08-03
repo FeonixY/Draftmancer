@@ -60,12 +60,12 @@
 							<checkbox
 								:value="options.layout === 'TwoRows'"
 								@toggle="toggleTwoRowsLayout"
-								label="Two Rows"
+								:label="$t('ui.two_rows')"
 							/>
 							<checkbox
 								:value="options.displayHeaders"
 								@toggle="toggleDisplayHeaders"
-								label="Column Headers"
+								:label="$t('ui.column_headers')"
 							/>
 						</div>
 						<div class="section">

@@ -34,7 +34,7 @@
 							type="number"
 							min="1"
 							step="1"
-							placeholder="Burned cards per pick"
+							:placeholder="$t('ui.burned_cards_per_pick')"
 							class="small-number-input"
 							v-model.number="burnedCardsPerRound"
 						/>

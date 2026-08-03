@@ -24,7 +24,7 @@
 							type="number"
 							min="1"
 							step="1"
-							placeholder="Booster Count"
+							:placeholder="$t('ui.booster_count')"
 							class="small-number-input"
 							v-model.number="boosterCount"
 						/>
@@ -38,7 +38,7 @@
 							min="2"
 							max="8"
 							step="1"
-							placeholder="Piles Count"
+							:placeholder="$t('ui.piles_count')"
 							class="small-number-input"
 							v-model.number="pileCount"
 						/>

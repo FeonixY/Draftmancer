@@ -16,7 +16,7 @@
 					Join the desired session by entering its Session ID in the top left, or by following the link shared
 					by the session owner.
 				</p>
-				<p>You can also enter an arbitrary Session ID at any point to create your own session.</p>
+				<p>{{ $t("ui.you_can_also_enter_an_arbitrary_session_id_at_any_") }}</p>
 			</div>
 		</div>
 		<div>
@@ -54,7 +54,7 @@
 						<font-awesome-icon icon="fa-solid fa-user-check" />
 						).
 					</li>
-					<li>Once all confirmed, the session owner launches the desired game mode.</li>
+					<li>{{ $t("ui.once_all_confirmed_the_session_owner_launches_the_") }}</li>
 				</ol>
 			</div>
 		</div>

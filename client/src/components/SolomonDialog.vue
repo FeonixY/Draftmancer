@@ -5,7 +5,7 @@
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
-				<p>Solomon Draft is a draft variant for two players that will appeal to 'Fact or Fiction' enjoyers!</p>
+				<p>{{ $t("ui.solomon_draft_is_a_draft_variant_for_two_players_t") }}</p>
 				<p>
 					In this game mode, a player splits an <strong>{{ cardCount }}</strong
 					>-card pack into two face-up piles, with no restrictions on the size of each pile. The second player
@@ -21,7 +21,7 @@
 							min="1"
 							max="24"
 							step="1"
-							placeholder="Card Count"
+							:placeholder="$t('ui.card_count')"
 							class="small-number-input"
 							v-model.number="cardCount"
 						/>
@@ -36,7 +36,7 @@
 							min="1"
 							max="24"
 							step="1"
-							placeholder="Rounds"
+							:placeholder="$t('ui.rounds')"
 							class="small-number-input"
 							v-model.number="roundCount"
 						/>

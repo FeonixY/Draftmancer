@@ -9,13 +9,15 @@
 				<div class="set-list">
 					<button @click="start('tla')">
 						<img src="../../public/img/sets/tle.svg" class="set-icon" alt="TLE" />
-						<div>Avatar Jumpstart</div>
+						<div>{{ $t("ui.avatar_jumpstart") }}</div>
 					</button>
 					<button @click="start('j25')">
 						<img src="../../public/img/sets/j25.svg" class="set-icon" alt="J25" />
-						<div>Foundations Jumpstart</div>
+						<div>{{ $t("ui.foundations_jumpstart") }}</div>
 					</button>
-					<button @click="start('super')"><div>Super Jump</div></button>
+					<button @click="start('super')">
+						<div>{{ $t("ui.super_jump") }}</div>
+					</button>
 					<button @click="start('j22')">
 						<img src="../../public/img/sets/j22.svg" class="set-icon" alt="J22" />
 						<div>Jumpstart 2022</div>

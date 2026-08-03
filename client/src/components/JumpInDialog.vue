@@ -1,15 +1,15 @@
 <template>
 	<modal @close="cancel">
 		<template v-slot:header>
-			<h2>Jump In!</h2>
+			<h2>{{ $t("ui.jump_in") }}</h2>
 		</template>
 		<template v-slot:body>
 			<div class="dialog">
 				<div>{{ $t("draft.selectSets") }}</div>
 				<div style="display: flex; justify-content: space-evenly">
-					<button @click="all">All</button>
+					<button @click="all">{{ $t("ui.all") }}</button>
 					<button @click="current">{{ $t("misc.current") }}</button>
-					<button @click="jumpIntoMiddleEarth">Jump into Middle-Earth</button>
+					<button @click="jumpIntoMiddleEarth">{{ $t("ui.jump_into_middleearth") }}</button>
 					<button @click="firstRotation">{{ $t("draft.firstRotation") }}</button>
 					<button @click="initial">{{ $t("misc.initial") }}</button>
 					<button @click="none">{{ $t("misc.none") }}</button>

@@ -16,7 +16,7 @@
 							min="6"
 							max="64"
 							step="1"
-							placeholder="Booster count"
+							:placeholder="$t('ui.booster_count')"
 							class="small-number-input"
 							v-model.number="boosterCount"
 						/>
@@ -32,7 +32,7 @@
 							min="1"
 							max="64"
 							step="1"
-							placeholder="Pick count"
+							:placeholder="$t('ui.pick_count')"
 							class="small-number-input"
 							v-model.number="pickedCardsPerRound"
 						/>

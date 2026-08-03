@@ -10,7 +10,7 @@
 					</span>
 				</div>
 			</div>
-			<div>Click on cards to add them to your deck or return them to the common pool.</div>
+			<div>{{ $t("ui.click_on_cards_to_add_them_to_your_deck_or_return_") }}</div>
 		</div>
 		<card-pool
 			:language="language"
