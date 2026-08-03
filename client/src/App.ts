@@ -78,19 +78,6 @@ import Dropdown from "./components/Dropdown.vue";
 import Modal from "./components/Modal.vue";
 import SetSelect from "./components/SetSelect.vue";
 
-const SupremeDialog = defineAsyncComponent(() => import("./components/SupremeDraftDialog.vue"));
-const GlimpseDialog = defineAsyncComponent(() => import("./components/GlimpseDraftDialog.vue"));
-const JumpInDialog = defineAsyncComponent(() => import("./components/JumpInDialog.vue"));
-const JumpstartDialog = defineAsyncComponent(() => import("./components/JumpstartDialog.vue"));
-const GridDialog = defineAsyncComponent(() => import("./components/GridDraftDialog.vue"));
-const HousmanDialog = defineAsyncComponent(() => import("./components/HousmanDialog.vue"));
-const MinesweeperDialog = defineAsyncComponent(() => import("./components/MinesweeperDraftDialog.vue"));
-const RotisserieDraftDialog = defineAsyncComponent(() => import("./components/RotisserieDraftDialog.vue"));
-const SolomonDialog = defineAsyncComponent(() => import("./components/SolomonDialog.vue"));
-const SilentAuctionDraftDialog = defineAsyncComponent(() => import("./components/SilentAuctionDraftDialog.vue"));
-const WinchesterDialog = defineAsyncComponent(() => import("./components/WinchesterDraftDialog.vue"));
-const WinstonDialog = defineAsyncComponent(() => import("./components/WinstonDraftDialog.vue"));
-const SealedDialog = defineAsyncComponent(() => import("./components/SealedDialog.vue"));
 const SealedPresentation = defineAsyncComponent(() => import("./components/SealedPresentation.vue"));
 
 // Preload Carback
@@ -2061,32 +2048,6 @@ export default defineComponent({
 		setWinstonDraftState(state: WinstonDraftSyncData) {
 			this.winstonDraftState = state;
 		},
-		startWinstonDraft() {
-			if (this.userID != this.sessionOwner || this.drafting) return;
-			if (!this.ownerIsPlayer) {
-				Alert.fire({
-					icon: "error",
-					title: "Spectator mode not supported",
-					text: "Non-playing owner is not supported in Winston Draft. The 'Spectate as Session Owner' option must be disabled.",
-				});
-			} else {
-				this.spawnDialog(WinstonDialog, {
-					onStart: (boosterCount: number, pileCount: number, removeBasicLands: boolean) => {
-						this.socket.emit(
-							"startWinstonDraft",
-							boosterCount,
-							pileCount,
-							removeBasicLands,
-							(answer: SocketAck) => {
-								if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
-							}
-						);
-					},
-					defaultBoosterCount: 3 * this.sessionUsers.length,
-					defaultPileCount: 3,
-				});
-			}
-		},
 		winstonDraftTakePile() {
 			if (!this.winstonDraftState) return;
 			const cards = this.winstonDraftState.piles[this.winstonDraftState.currentPile] as UniqueCard[];
@@ -2102,29 +2063,6 @@ export default defineComponent({
 					console.error(answer);
 				}
 			});
-		},
-		startWinchesterDraft: async function () {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-			if (!this.ownerIsPlayer) {
-				Alert.fire({
-					icon: "error",
-					title: "Spectator mode not supported",
-					text: "Non-playing owner is not supported in Winchester Draft. The 'Spectate as Session Owner' option must be disabled.",
-				});
-			} else {
-				this.spawnDialog(WinchesterDialog, {
-					onStart: (boostersPerPlayer: number, removeBasicLands: boolean) => {
-						this.socket.emit(
-							"startWinchesterDraft",
-							boostersPerPlayer,
-							removeBasicLands,
-							(answer: SocketAck) => {
-								if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
-							}
-						);
-					},
-				});
-			}
 		},
 		winchesterDraftPick(index: number) {
 			if (!this.winchesterDraftState) return;
@@ -2149,70 +2087,11 @@ export default defineComponent({
 			}
 			this.gridDraftState.booster = booster;
 		},
-		startHousmanDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			this.spawnDialog(HousmanDialog, {
-				onStart: (
-					handSize: number,
-					revealedCardsCount: number,
-					exchangeCount: number,
-					roundCount: number,
-					removeBasicLands: boolean,
-					turnOrder: "classic" | "snake"
-				) => {
-					this.deckWarning(
-						(
-							handSize: number,
-							revealedCardsCount: number,
-							exchangeCount: number,
-							roundCount: number,
-							removeBasicLands: boolean,
-							turnOrder: "classic" | "snake"
-						) => {
-							this.socket.emit(
-								"startHousmanDraft",
-								handSize,
-								revealedCardsCount,
-								exchangeCount,
-								roundCount,
-								removeBasicLands,
-								turnOrder,
-								(answer: SocketAck) => {
-									if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
-								}
-							);
-						},
-						handSize,
-						revealedCardsCount,
-						exchangeCount,
-						roundCount,
-						removeBasicLands,
-						turnOrder
-					);
-				},
-			});
-		},
 		housmanDraftEnd() {
 			this.drafting = false;
 			this.housmanDraftState = null;
 			this.gameState = GameState.Brewing;
 			fireToast("success", "Done drafting!");
-		},
-		startSolomonDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			const start = (cardCount: number, roundCount: number, removeBasicLands: boolean) => {
-				this.socket.emit("startSolomonDraft", cardCount, roundCount, removeBasicLands, (answer: SocketAck) => {
-					if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
-				});
-			};
-
-			this.spawnDialog(SolomonDialog, {
-				onStart: (cardCount: number, roundCount: number, removeBasicLands: boolean) => {
-					this.deckWarning(start, cardCount, roundCount, removeBasicLands);
-				},
-			});
 		},
 		solomonDraftEnd() {
 			this.drafting = false;
@@ -2225,31 +2104,6 @@ export default defineComponent({
 			this.silentAuctionDraftState = null;
 			this.gameState = GameState.Brewing;
 			fireToast("success", "Done drafting!");
-		},
-		startGridDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			if (!this.ownerIsPlayer) {
-				Alert.fire({
-					icon: "error",
-					title: "Owner has to play",
-					text: "Non-playing owner is not supported in Grid Draft for now. The 'Session owner is playing' option needs to be active.",
-				});
-			} else {
-				this.spawnDialog(GridDialog, {
-					onStart: (boosterCount: number, twoPicksPerGrid: boolean, regularBoosters: boolean) => {
-						this.socket.emit(
-							"startGridDraft",
-							boosterCount,
-							twoPicksPerGrid,
-							regularBoosters,
-							(answer: SocketAck) => {
-								if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
-							}
-						);
-					},
-				});
-			}
 		},
 		gridDraftPick(choice: number) {
 			if (!this.gridDraftState) return;
@@ -2292,27 +2146,6 @@ export default defineComponent({
 				if (answer.code !== 0 && answer.error) Alert.fire(answer.error);
 			});
 		},
-		startRotisserieDraft() {
-			if (this.userID != this.sessionOwner || this.drafting) return;
-			if (!this.ownerIsPlayer) {
-				Alert.fire({
-					icon: "error",
-					title: "Owner has to play",
-					text: "Non-playing owner is not supported in Rotisserie Draft for now. The 'Session owner is playing' option needs to be active.",
-				});
-				return;
-			}
-			this.spawnDialog(RotisserieDraftDialog, {
-				defaultBoostersPerPlayer: this.boostersPerPlayer,
-				onStart: (options: RotisserieDraftStartOptions) => {
-					this.deckWarning((options) => {
-						this.socket.emit("startRotisserieDraft", options, (r) => {
-							if (r.code !== 0 && r.error) Alert.fire(r.error);
-						});
-					}, options);
-				},
-			});
-		},
 		rotisserieDraftPick(
 			uniqueCardID: UniqueCardID,
 			options: { toSideboard?: boolean; event?: MouseEvent } | undefined = undefined // Used to support pick by drag & drop
@@ -2346,54 +2179,6 @@ export default defineComponent({
 				this.notifyTurn();
 			}
 		},
-		startMinesweeperDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			this.spawnDialog(MinesweeperDialog, {
-				onStart: (
-					gridCount: number,
-					gridWidth: number,
-					gridHeight: number,
-					picksPerPlayerPerGrid: number,
-					revealCenter: boolean,
-					revealCorners: boolean,
-					revealBorders: boolean
-				) => {
-					this.deckWarning(
-						(
-							gridCount: number,
-							gridWidth: number,
-							gridHeight: number,
-							picksPerPlayerPerGrid: number,
-							revealCenter: boolean,
-							revealCorners: boolean,
-							revealBorders: boolean
-						) => {
-							this.socket.emit(
-								"startMinesweeperDraft",
-								gridCount,
-								gridWidth,
-								gridHeight,
-								this.sessionUsers.length * picksPerPlayerPerGrid,
-								revealCenter,
-								revealCorners,
-								revealBorders,
-								(response: SocketAck) => {
-									if (response?.error) Alert.fire(response.error);
-								}
-							);
-						},
-						gridCount,
-						gridWidth,
-						gridHeight,
-						picksPerPlayerPerGrid,
-						revealCenter,
-						revealCorners,
-						revealBorders
-					);
-				},
-			});
-		},
 		minesweeperDraftPick(row: number, col: number) {
 			if (!this.minesweeperDraftState) return;
 			const card = this.minesweeperDraftState.grid[row][col].card;
@@ -2417,70 +2202,6 @@ export default defineComponent({
 			});
 		},
 		// This is just a shortcut to set burnedCardsPerTurn and boostersPerPlayers to suitable values.
-		startGlimpseDraft: async function () {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			let boostersPerPlayer = 9;
-			if (this.boostersPerPlayer !== 3) boostersPerPlayer = this.boostersPerPlayer;
-			let burnedCardsPerRound = 2;
-			if (this.burnedCardsPerRound > 0) burnedCardsPerRound = this.burnedCardsPerRound;
-
-			this.spawnDialog(GlimpseDialog, {
-				defaultBoostersPerPlayer: boostersPerPlayer,
-				defaultBurnedCardsPerRound: burnedCardsPerRound,
-				onStart: (boostersPerPlayer: number, burnedCardsPerRound: number) => {
-					this.socket.emit("startGlimpseDraft", boostersPerPlayer, burnedCardsPerRound, (response) => {
-						if (response?.error) Alert.fire(response.error);
-					});
-				},
-			});
-		},
-		startSupremeDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			this.spawnDialog(SupremeDialog, {
-				onStart: (boostersPerPlayer: number, pickedCardsPerRound: number) => {
-					this.socket.emit("startSupremeDraft", boostersPerPlayer, pickedCardsPerRound, (response) => {
-						if (response?.error) Alert.fire(response.error);
-					});
-				},
-			});
-		},
-		startSilentAuctionDraft() {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			this.spawnDialog(SilentAuctionDraftDialog, {
-				defaultBoosterCount: 3 * this.sessionUsers.length,
-				onStart: (
-					boosterCount: number,
-					startingFunds: number,
-					pricePaid: "first" | "second",
-					reservePrice: number,
-					tiebreakers: Tiebreaker[]
-				) => {
-					this.socket.emit(
-						"startSilentAuctionDraft",
-						boosterCount,
-						startingFunds,
-						pricePaid,
-						reservePrice,
-						tiebreakers,
-						(response) => {
-							if (response?.error) Alert.fire(response.error);
-						}
-					);
-				},
-			});
-		},
-		startJumpIn: async function () {
-			if (this.userID !== this.sessionOwner || this.drafting) return;
-
-			this.spawnDialog(JumpInDialog, {
-				onStart: (set: string) => {
-					this.deckWarning(() => this.distributeJumpstart(set));
-				},
-			});
-		},
 		// Collection management
 		setCollection(json: PlainCollection) {
 			if (this.collection == json) return;
@@ -3157,22 +2878,6 @@ export default defineComponent({
 			sortableUpdate(e, this.userOrder);
 			this.socket.emit("setSeating", this.userOrder);
 		},
-		async sealedDialog(teamSealed = false) {
-			if (this.userID != this.sessionOwner) return;
-
-			this.spawnDialog(SealedDialog, {
-				users: this.sessionUsers,
-				teamSealed: teamSealed,
-				onDistribute: (boostersPerPlayer: number, customBoosters: SetCode[], teams: UserID[][]) => {
-					this.deckWarning(
-						teamSealed ? this.startTeamSealed : this.distributeSealed,
-						boostersPerPlayer,
-						customBoosters,
-						teams
-					);
-				},
-			});
-		},
 		deckWarning<T extends unknown[]>(call: (...args: T) => void, ...options: T) {
 			if (this.deck.length > 0) {
 				Alert.fire({
@@ -3210,14 +2915,6 @@ export default defineComponent({
 		teamSealedPick(uniqueCardID: UniqueCardID) {
 			this.socket.emit("teamSealedPick", uniqueCardID, (r) => {
 				if (r.error) Alert.fire(r.error);
-			});
-		},
-		jumpstartDialog() {
-			if (this.userID !== this.sessionOwner) return;
-			this.spawnDialog(JumpstartDialog, {
-				onStart: (set: string) => {
-					this.deckWarning(() => this.distributeJumpstart(set));
-				},
 			});
 		},
 		distributeJumpstart(set: string) {
