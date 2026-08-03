@@ -91,7 +91,7 @@ const communities = ref([
 		icon: "cube_gathering.webp",
 		tags: ["中文", "轮抽", "Cube", "XMage", "Draftmancer"],
 		links: {
-			website: "http://101.42.14.179:3000",
+			website: "https://draft.magicdraftcommunity.cn",
 		},
 	},
 ]);
