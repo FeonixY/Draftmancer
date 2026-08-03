@@ -1449,42 +1449,6 @@
 						with them, in pod!
 					</p>
 					<div class="welcome-top">
-						<div>
-							<a href="/draftqueue">
-								<div class="draft-queue-banner">
-									<img
-										src="./assets/img/draft_queue_banner_msh.webp"
-										:alt="$t('ui.practice_marvel_super_heroes_with_human_players_ri')"
-										width="500"
-										height="260"
-									/>
-								</div>
-							</a>
-							<!--
-							<div class="section-title">
-								<h2>{{ $t("misc.quickStart") }}</h2>
-							</div>
-							<div class="welcome-section welcome-alt">
-								There are multiple ways to get started with Draftmancer:
-								<ul class="quick-start-list">
-									<li>
-										Pratice the latest sets with other players in the
-										<a href="/draftqueue">{{ $t("menu.draftQueue") }}</a>!
-									</li>
-									<li>
-										Draft with bots by selecting a set and clicking "<span
-											@click="startDraft"
-											:class="{ link: userID === sessionOwner }"
-											style="font-variant: small-caps"
-											>Start</span
-										>" on top of the page.
-									</li>
-									<li>{{ $t('ui.join_one_of_the_featured_communities_and_participa') }}</li>
-									<li>{{ $t('ui.tinker_with_the_settings_and_organize_your_own_eve') }}</li>
-								</ul>
-							</div>
-						-->
-						</div>
 						<div class="container" style="grid-area: Communities">
 							<div class="section-title">
 								<h2>加入 KOOK 频道</h2>
