@@ -69,7 +69,6 @@ import type CardPool from "./components/CardPool.vue";
 
 import LoadingComponent from "./components/LoadingComponent.vue";
 import SessionUser from "./components/SessionUser.vue";
-import News from "./components/News.vue";
 import Communities from "./components/Communities.vue";
 import BoosterCard from "./components/BoosterCard.vue";
 import CardComponent from "./components/Card.vue";
@@ -176,7 +175,6 @@ const ChoosePlayerComponent = defineAsyncComponent(() => import("./components/Ch
 
 export default defineComponent({
 	components: {
-		About: defineAsyncComponent(() => import("./components/About.vue")),
 		BoosterCard,
 		BracketComponent: defineAsyncComponent(() => import("./components/Bracket.vue")),
 		Card: defineAsyncComponent(() => import("./components/Card.vue")),
@@ -186,11 +184,6 @@ export default defineComponent({
 		CardPopup: defineAsyncComponent(() => import("./components/CardPopup.vue")),
 		CardStats: defineAsyncComponent(() => import("./components/CardStats.vue")),
 		ChatHistory: defineAsyncComponent(() => import("./components/ChatHistory.vue")),
-		CollectionComponent: defineAsyncComponent({
-			loader: () => import("./components/Collection.vue"),
-			loadingComponent: LoadingComponent,
-		}),
-		CollectionImportHelp: defineAsyncComponent(() => import("./components/CollectionImportHelp.vue")),
 		DelayedInput,
 		DraftEffectDropdown: defineAsyncComponent(() => import("./components/DraftEffectDropdown.vue")),
 		DraftLog: defineAsyncComponent(() => import("./components/DraftLog.vue")),
@@ -200,14 +193,11 @@ export default defineComponent({
 		Dropdown,
 		ExportDropdown: defineAsyncComponent(() => import("./components/ExportDropdown.vue")),
 		SampleHandGenerator: defineAsyncComponent(() => import("./components/SampleHandGenerator.vue")),
-		GettingStarted: defineAsyncComponent(() => import("./components/GettingStarted.vue")),
 		GridDraft: defineAsyncComponent(() => import("./components/GridDraft.vue")),
-		HelpModal: defineAsyncComponent(() => import("./components/HelpModal.vue")),
 		HousmanDraft: defineAsyncComponent(() => import("./components/HousmanDraft.vue")),
 		LandControl: defineAsyncComponent(() => import("./components/LandControl.vue")),
 		MinesweeperDraft: defineAsyncComponent(() => import("./components/MinesweeperDraft.vue")),
 		Modal,
-		News,
 		Communities,
 		PickSummary: defineAsyncComponent(() => import("./components/PickSummary.vue")),
 		Player: defineAsyncComponent(() => import("./components/Player.vue")),
@@ -220,7 +210,6 @@ export default defineComponent({
 		SolomonDraft: defineAsyncComponent(() => import("./components/SolomonDraft.vue")),
 		SilentAuctionDraft: defineAsyncComponent(() => import("./components/SilentAuctionDraft.vue")),
 		Sortable,
-		SponsorModal: defineAsyncComponent(() => import("./components/SponsorModal.vue")),
 		TeamSealed: defineAsyncComponent(() => import("./components/TeamSealed.vue")),
 		WinchesterDraft: defineAsyncComponent(() => import("./components/WinchesterDraft.vue")),
 		WinstonDraft: defineAsyncComponent(() => import("./components/WinstonDraft.vue")),
