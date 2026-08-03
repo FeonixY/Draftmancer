@@ -43,3 +43,13 @@ Sealed / Jumpstart / Jump In)已从 UI 与入口移除,但**底层引擎代码�
 ## 为什么不在本次/线上直接做
 类型检查只能抓符号错误,抓不到 socket 协议层的运行时破坏;线上一旦弄坏标准轮抽,
 损失远大于"少几百行失效源码"的收益。等有测试环境、能跑真实对局验证时再做。
+
+---
+
+## 追加(fc8ff22 之后):Draft Queue 服务端 + managed 托管会话
+Draft Queue 客户端入口已删(页面分支 / DraftQueue 组件 / 路由 validPages / 人数不足弹窗去排队选项)。**残留待清**:
+- 服务端(src/):排队/匹配逻辑、Session 队列字段、queue 相关 socket 事件。
+- managed 托管会话残余:
+  - client/src/App.vue:Brewing 界面 `<template v-if="managed">` 里的 "Back to Draft Queue"(`<a href="/draftqueue">`)。
+  - client/src/App.ts:`managed` 相关分支(managed 会话本由队列创建,无队列则不触发)。
+同样建议有测试环境、能跑通标准轮抽后再逐步删。
