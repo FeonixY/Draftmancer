@@ -621,14 +621,10 @@ div:where(.swal2-container) .swal2-checkbox {
 @media (orientation: landscape) {
 	.welcome-sections {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto auto auto;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 		gap: 0 1em;
-		grid-template-areas:
-			"News News Help"
-			"News News Support"
-			"News News Tools"
-			"PublicSessions PublicSessions PublicSessions";
+		grid-template-areas: "Tools";
 	}
 }
 

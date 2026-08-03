@@ -34,80 +34,6 @@
 					</option>
 				</select>
 			</div>
-			<span v-if="sessionID && !managed">
-				<label class="clickable" @click="displayedModal = hasCollection ? 'collection' : 'collectionHelp'">
-					<font-awesome-layers
-						v-tooltip="
-							hasCollection
-								? useCollection
-									? 'Collection uploaded.'
-									: 'Collection uploaded, but not used.'
-								: 'No collection uploaded.'
-						"
-					>
-						<font-awesome-icon
-							icon="fa-solid fa-book"
-							:class="{
-								faded: !hasCollection,
-								green: hasCollection && useCollection,
-								yellow: hasCollection && !useCollection,
-							}"
-						/>
-					</font-awesome-layers>
-					MTGA Collection
-				</label>
-				<span
-					style="
-						display: inline-flex;
-						gap: 0.75em;
-						align-items: center;
-						margin-right: 0.25em;
-						vertical-align: middle;
-					"
-				>
-					<font-awesome-icon
-						icon="fa-solid fa-question-circle"
-						class="clickable"
-						@click="displayedModal = 'collectionHelp'"
-						v-tooltip="$t('tooltips.collectionImportHelp')"
-					/>
-					<input
-						type="file"
-						id="collection-file-input"
-						@change="uploadCardListAsCollection"
-						style="display: none"
-						accept=".txt,.csv,.log"
-					/>
-					<span v-tooltip="$t('tooltips.importCollection')">
-						<font-awesome-icon @click="uploadMTGALogs" icon="fa-solid fa-file-upload" class="clickable" />
-					</span>
-					<font-awesome-icon
-						icon="fa-solid fa-chart-bar"
-						class="clickable"
-						v-if="hasCollection"
-						v-tooltip="$t('tooltips.collectionStats')"
-						@click="displayedModal = 'collection'"
-					/>
-					<div
-						v-show="hasCollection"
-						class="inline"
-						v-tooltip="{
-							html: true,
-							content: `Restrict to Collection: <strong>${
-								useCollection ? 'Enabled' : 'Disabled'
-							}</strong><br />
-							If enabled, your collection will be used to restrict the card pool, making sure you'll only draft with cards you already own. (Ignored when using a Custom Card List)${
-								ignoreCollections
-									? '<p><strong>Warning:</strong> The session setting \'Restrict card pool to Player Collections\' is disabled, your collection is currently ignored.</p>'
-									: ''
-							}`,
-						}"
-					>
-						<input type="checkbox" v-model="useCollection" id="useCollection" />
-						<label for="useCollection">{{ $t("cards.restrictToCollection") }}</label>
-					</div>
-				</span>
-			</span>
 			<div>
 				<button @click="displayedModal = 'draftLogs'" class="flat" v-tooltip="$t('tooltips.gameLogs')">
 					<font-awesome-icon icon="fa-solid fa-list" /> {{ $t("menu.gameLogs") }}
@@ -413,96 +339,6 @@
 							{{ $t("common.start") }}
 						</button>
 					</span>
-				</span>
-				<span v-show="userID === sessionOwner">
-					<dropdown :class="{ disabled: sessionOwner != userID }">
-						<template v-slot:handle> Other Game Modes </template>
-						<template v-slot:dropdown>
-							<div class="game-modes-cat">
-								<span class="game-modes-cat-title">{{ $t("ui.draft") }}</span>
-								<div
-									v-tooltip.left="
-										'Starts a Winston Draft. This is a draft variant intended for two players, but playable at any number.'
-									"
-								>
-									<button @click="startWinstonDraft()">{{ $t("modes.winston") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Starts a Winchester Draft. This is a draft variant similar to Winston and Rochester draft.'
-									"
-								>
-									<button @click="startWinchesterDraft()">{{ $t("modes.winchester") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startHousman')">
-									<button @click="startHousmanDraft()">{{ $t("modes.housman") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startSolomon')">
-									<button @click="startSolomonDraft()">{{ $t("modes.solomonPlayers") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Starts a Grid Draft. This is a draft variant for two to four players.'
-									"
-								>
-									<button @click="startGridDraft()">{{ $t("modes.gridPlayers") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Starts a Glimpse Draft. Players also remove cards from the draft each pick.'
-									"
-								>
-									<button @click="startGlimpseDraft()">{{ $t("modes.glimpseBurn") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Starts a Rochester Draft. Every players pick from a single booster.'
-									"
-								>
-									<button @click="startRochesterDraft()">{{ $t("modes.rochester") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Starts a Rotisserie Draft. Each player picks from a single card pool one after the other.'
-									"
-								>
-									<button @click="startRotisserieDraft()">{{ $t("modes.rotisserie") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startMinesweeper')">
-									<button @click="startMinesweeperDraft()">{{ $t("modes.minesweeper") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startSupreme')">
-									<button @click="startSupremeDraft()">{{ $t("modes.supremePlayers") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startSilentAuction')">
-									<button @click="startSilentAuctionDraft()">{{ $t("modes.silentAuction") }}</button>
-								</div>
-							</div>
-							<div class="game-modes-cat">
-								<span class="game-modes-cat-title">{{ $t("modes.sealed") }}</span>
-								<div v-tooltip.left="$t('tooltips.startSealed')">
-									<button @click="sealedDialog(false)">{{ $t("modes.sealed") }}</button>
-								</div>
-								<div v-tooltip.left="$t('tooltips.startTeamSealed')">
-									<button @click="sealedDialog(true)">{{ $t("modes.teamSealed") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Distributes two Jumpstart boosters to everyone. Multiple sets are available.'
-									"
-								>
-									<button @click="jumpstartDialog">{{ $t("modes.jumpstart") }}</button>
-								</div>
-								<div
-									v-tooltip.left="
-										'Distributes two Jump In! boosters to everyone. Multiple sets are available.'
-									"
-								>
-									<button @click="startJumpIn">{{ $t("modes.jumpIn") }}</button>
-								</div>
-							</div>
-						</template>
-					</dropdown>
 				</span>
 				<button
 					v-tooltip="$t('tooltips.moreSessionSettings')"
@@ -1673,99 +1509,6 @@
 						</div>
 					</div>
 					<div class="welcome-sections">
-						<div class="container" style="grid-area: News">
-							<div class="section-title">
-								<h2>{{ $t("ui.news") }}</h2>
-							</div>
-							<news class="welcome-section" @more-sets="displayedModal = 'setRestriction'" />
-						</div>
-						<div class="container" style="grid-area: Help">
-							<div class="section-title">
-								<h2>{{ $t("menu.help") }}</h2>
-							</div>
-							<div class="welcome-section welcome-alt">
-								<div style="display: flex; justify-content: space-between">
-									<div>
-										<span class="link" @click="displayedModal = 'gettingStarted'">
-											<font-awesome-icon icon="fa-solid fa-rocket" /> Get Started
-										</span>
-										guide
-									</div>
-									<div>
-										<span class="link" @click="displayedModal = 'help'">
-											<font-awesome-icon icon="fa-solid fa-info-circle" /> FAQ / Settings
-											Description
-										</span>
-									</div>
-								</div>
-								<br />
-								For any question/bug report/feature request you can email to
-								<a href="mailto:dev@draftmancer.com">dev@draftmancer.com</a>
-								or join the
-								<a href="https://discord.gg/XscXXNw">
-									<font-awesome-icon icon="fa-brands fa-discord" /> Draftmancer Discord </a
-								>.
-							</div>
-						</div>
-						<div class="container" style="grid-area: Support">
-							<div class="section-title">
-								<h2>
-									<font-awesome-icon icon="fa-solid fa-mug-hot" aria-hidden="true" />
-									Buy me a Coffee
-								</h2>
-							</div>
-							<div class="welcome-section welcome-alt">
-								<div>
-									Hello there!<br />
-									I hope you're enjoying using Draftmancer!<br />
-									If you find it useful, please consider supporting it with a small donation using one
-									of these platforms:
-									<div
-										style="
-											display: flex;
-											gap: 1em;
-											justify-content: center;
-											align-items: center;
-											text-align: center;
-											margin: 0.25em;
-											margin-bottom: 0.8em;
-										"
-									>
-										<div style="position: relative">
-											<a href="https://github.com/sponsors/Senryoku" target="_blank">
-												<font-awesome-icon icon="fa-brands fa-github" size="2x" />
-												<div>{{ $t("misc.sponsor") }}</div>
-											</a>
-											<div
-												style="
-													font-size: 0.7em;
-													color: #aaa;
-													position: absolute;
-													bottom: -0.8rem;
-													left: 50%;
-													transform: translateX(-50%);
-												"
-											>
-												(No fees!)
-											</div>
-										</div>
-										<div>or</div>
-										<div>
-											<a
-												href="https://www.paypal.com/donate/?hosted_button_id=6L2CUS6DH82DL"
-												target="_blank"
-											>
-												<font-awesome-icon icon="fa-brands fa-paypal" size="2x" />
-												<div>PayPal</div>
-											</a>
-										</div>
-									</div>
-									Your support will help keep the project online, updated, and will motivate me to add
-									new features.<br />
-									<div style="text-align: right">Thank you! — Sen</div>
-								</div>
-							</div>
-						</div>
 						<div class="container" style="grid-area: Tools">
 							<div class="section-title">
 								<h2>{{ $t("ui.tools") }}</h2>
@@ -1866,35 +1609,6 @@
 			</div>
 		</div>
 
-		<modal :displayed="displayedModal === 'help'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("menu.help") }}</h2>
-			</template>
-			<template v-slot:body>
-				<help-modal @openSettings="displayedModal = 'sessionOptions'" />
-			</template>
-		</modal>
-		<modal :displayed="displayedModal === 'gettingStarted'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("menu.gettingStarted") }}</h2>
-			</template>
-			<template v-slot:body>
-				<getting-started
-					:isSessionOwner="userID === sessionOwner"
-					:sessionOwnerName="sessionOwner ? userByID[sessionOwner].userName : 'Unknown'"
-					@openSettings="displayedModal = 'sessionOptions'"
-					@sessionURLToClipboard="sessionURLToClipboard"
-				/>
-			</template>
-		</modal>
-		<modal :displayed="displayedModal === 'collectionHelp'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("export.collectionImportHelp") }}</h2>
-			</template>
-			<template v-slot:body>
-				<CollectionImportHelp @uploadlogs="uploadMTGALogs" @clipboard="toClipboard" />
-			</template>
-		</modal>
 		<modal :displayed="displayedModal === 'importdeck'" @close="displayedModal = ''">
 			<template v-slot:header>
 				<h2>{{ $t("cards.cardListImporter") }}</h2>
@@ -1981,20 +1695,6 @@
 					@importMTGOLog="importMTGOLog"
 					@reloadBoosters="(str: string) => setBoosters(str)"
 				></draft-log-history>
-			</template>
-		</modal>
-		<modal :displayed="displayedModal === 'collection'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("stats.collectionStats") }}</h2>
-			</template>
-			<template v-slot:body>
-				<collection-component
-					:collection="collection"
-					:collectionInfos="collectionInfos"
-					:language="language"
-					:displaycollectionstatus="displayCollectionStatus"
-					@display-collection-status="displayCollectionStatus = $event"
-				></collection-component>
 			</template>
 		</modal>
 		<modal :displayed="displayedModal === 'sessionOptions'" @close="displayedModal = ''">
@@ -2156,28 +1856,6 @@
 							<label for="option-foil">{{ $t("ui.foil") }}</label>
 							<div class="right">
 								<input type="checkbox" v-model="foil" id="option-foil" />
-							</div>
-						</div>
-						<div
-							class="line"
-							v-bind:class="{ disabled: usePredeterminedBoosters }"
-							v-tooltip.left="{
-								popperClass: 'option-tooltip',
-								content: `Restrict card pool to Player Collections: <strong>${
-									ignoreCollections ? 'Disabled' : 'Enabled'
-								}</strong>
-									<p>If enabled, card pool will be limited to cards present in all player collections.</p>`,
-								html: true,
-							}"
-						>
-							<label for="restrict-to-collections">{{ $t("session.restrictPoolToCollections") }}</label>
-							<div class="right">
-								<input
-									type="checkbox"
-									:checked="!ignoreCollections"
-									id="restrict-to-collections"
-									@change="ignoreCollections = !($event.target! as HTMLInputElement).checked"
-								/>
 							</div>
 						</div>
 						<div
@@ -2848,36 +2526,11 @@
 				<card-list :cardlist="customCardList" :language="language" :collection="collection"></card-list>
 			</template>
 		</modal>
-		<modal :displayed="displayedModal === 'About'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("menu.about") }}</h2>
-			</template>
-			<template v-slot:body>
-				<About />
-			</template>
-		</modal>
-		<modal :displayed="displayedModal === 'donation'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>{{ $t("misc.support") }}</h2>
-			</template>
-			<template v-slot:body>
-				<sponsor-modal />
-			</template>
-		</modal>
 		<CardPopup :language="language" :customCards="customCardList?.customCards" ref="cardPopup" />
 		<footer>
-			<span @click="displayedModal = 'About'" class="clickable">
-				<span class="link">{{ $t("menu.about") }}</span>
-			</span>
 			<span>
 				Made by
 				<a href="https://github.com/sponsors/Senryoku" target="_blank" rel="noopener nofollow">Senryoku</a>
-			</span>
-			<span>
-				<span class="link" @click="displayedModal = 'donation'">
-					Buy me a Coffee
-					<font-awesome-icon icon="fa-solid fa-mug-hot" aria-hidden="true" />
-				</span>
 			</span>
 			<span>
 				<a href="mailto:dev@draftmancer.com" title="Email">
