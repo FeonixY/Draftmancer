@@ -2,7 +2,6 @@
   "common": {
     "start": "Start",
     "join": "Join",
-    "cancel": "Cancel",
     "close": "Close",
     "next": "Next",
     "loading": "Loading...",
@@ -104,7 +103,6 @@
   },
   "menu": {
     "gameLogs": "Game Logs",
-    "draftQueue": "Draft Queue",
     "personalLogs": "Personal Logs"
   },
   "settings": {
@@ -225,14 +223,12 @@
     "everyoneOnApproval": "Everyone, on owner approval",
     "noOne": "No-one",
     "ownerOnly": "Owner only",
-    "quickStart": "Quick Start",
     "sets": "Set(s)",
     "welcome": "Welcome to Draftmancer.com!",
     "format": "Format:",
     "notImplemented": "Not Implemented",
     "allCards": "All Cards",
-    "noSetRestriction": "No set restriction (All cards)",
-    "fullApp": "full application"
+    "noSetRestriction": "No set restriction (All cards)"
   },
   "deck": {
     "addedBasics": "Added basics:"
@@ -267,9 +263,6 @@
     "singleElim": "Single Elimination",
     "upperBracket": "Upper Bracket"
   },
-  "nav": {
-    "draftQueueTitle": "Draftmancer / Draft Queue"
-  },
   "ui": {
     "session": "Session",
     "search": "Search...",
@@ -286,8 +279,6 @@
     "confirm_pick": "Confirm Pick",
     "click_on_cards_in_your_sideboard_to_move_them_here": "Click on cards in your sideboard to move them here.",
     "click_on_cards_in_your_deck_to_move_them_here": "Click on cards in your deck to move them here.",
-    "join_one_of_the_featured_communities_and_participa": "Join one of the featured communities and participate in events.",
-    "tinker_with_the_settings_and_organize_your_own_eve": "Tinker with the settings and organize your own events!",
     "all": "All",
     "paste_or_drop_a_card_list_here_any_list_mtga_accep": "Paste or drop a card list here... Any list MTGA accepts should work.",
     "paste_cards_here": "Paste cards here...",
@@ -307,7 +298,6 @@
     "when_enabled_duplicates_of_the_exact_same_card_in_": "When enabled, duplicates of the exact same card in a booster will be avoided as much as possible.",
     "load_a_prebuilt_cube_from_a_curated_list": "Load a pre-built cube from a curated list.",
     "click_on_cards_to_add_them_to_your_deck_or_return_": "Click on cards to add them to your deck or return them to the common pool.",
-    "to_reduce_wait_times_during_slow_periods_some_bots": "To reduce wait times during slow periods, some bots might join after a while.",
     "two_rows": "Two Rows",
     "column_headers": "Column Headers",
     "auto_land": "Auto. Land"

@@ -2,7 +2,6 @@
   "common": {
     "start": "开始",
     "join": "加入",
-    "cancel": "取消",
     "close": "关闭",
     "next": "下一步",
     "loading": "加载中……",
@@ -104,7 +103,6 @@
   },
   "menu": {
     "gameLogs": "游戏日志",
-    "draftQueue": "轮抽队列",
     "personalLogs": "个人日志"
   },
   "settings": {
@@ -225,14 +223,12 @@
     "everyoneOnApproval": "所有人（需房主批准）",
     "noOne": "无人",
     "ownerOnly": "仅房主",
-    "quickStart": "快速开始",
     "sets": "系列",
     "welcome": "欢迎来到 Draftmancer.com！",
     "format": "格式：",
     "notImplemented": "尚未实现",
     "allCards": "全部卡牌",
-    "noSetRestriction": "无系列限制（全部卡牌）",
-    "fullApp": "完整应用"
+    "noSetRestriction": "无系列限制（全部卡牌）"
   },
   "deck": {
     "addedBasics": "已添加基本地："
@@ -267,17 +263,12 @@
     "singleElim": "单败淘汰",
     "upperBracket": "胜者组"
   },
-  "nav": {
-    "draftQueueTitle": "Draftmancer / 轮抽队列"
-  },
   "ui": {
     "session": "房间",
     "confirm_pick": "确认选牌",
     "search": "搜索...",
     "click_on_cards_in_your_sideboard_to_move_them_here": "点击备牌中的卡牌将其移到这里。",
     "click_on_cards_in_your_deck_to_move_them_here": "点击套牌中的卡牌将其移到这里。",
-    "join_one_of_the_featured_communities_and_participa": "加入精选社区之一，参与各种活动。",
-    "tinker_with_the_settings_and_organize_your_own_eve": "调整设置，组织你自己的活动！",
     "tools": "工具",
     "enter_a_description_for_your_session": "输入房间描述",
     "players": "玩家",
@@ -309,7 +300,6 @@
     "auto_land": "自动地牌",
     "click_on_cards_to_add_them_to_your_deck_or_return_": "点击卡牌将其添加到你的套牌或返回公共池。",
     "two_rows": "两行",
-    "column_headers": "列标题",
-    "to_reduce_wait_times_during_slow_periods_some_bots": "为减少低峰期的等待时间，一段时间后可能会有机器人加入。"
+    "column_headers": "列标题"
   }
 }

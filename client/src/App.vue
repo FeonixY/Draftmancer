@@ -1431,145 +1431,134 @@
 			</div>
 
 			<div class="welcome" v-if="gameState === GameState.None">
-				<template v-if="page === 'draftqueue'">
-					<DraftQueue :socket="socket"></DraftQueue>
-				</template>
-				<template v-else>
-					<button
-						v-if="previousDeck"
-						@click="loadPreviousDeck"
-						class="reload-deck-button"
-						v-tooltip="`Reload deck of the last played session from your game logs.`"
-					>
-						<font-awesome-icon :icon="['fas', 'rotate-left']" /> Reload last deck
-					</button>
-					<h1>{{ $t("misc.welcome") }}</h1>
-					<p class="important">
-						Draft with other players and export your resulting deck to Magic: The Gathering Arena to play
-						with them, in pod!
-					</p>
-					<div class="welcome-top">
-						<div class="container" style="grid-area: Communities">
-							<div class="section-title">
-								<h2>加入 KOOK 频道</h2>
+				<button
+					v-if="previousDeck"
+					@click="loadPreviousDeck"
+					class="reload-deck-button"
+					v-tooltip="`Reload deck of the last played session from your game logs.`"
+				>
+					<font-awesome-icon :icon="['fas', 'rotate-left']" /> Reload last deck
+				</button>
+				<h1>{{ $t("misc.welcome") }}</h1>
+				<p class="important">
+					Draft with other players and export your resulting deck to Magic: The Gathering Arena to play with
+					them, in pod!
+				</p>
+				<div class="welcome-top">
+					<div class="container" style="grid-area: Communities">
+						<div class="section-title">
+							<h2>加入 KOOK 频道</h2>
+						</div>
+						<div class="kook-channel-card">
+							<div class="kook-icon">
+								<font-awesome-icon :icon="['fas', 'comments']" size="3x" />
 							</div>
-							<div class="kook-channel-card">
-								<div class="kook-icon">
-									<font-awesome-icon :icon="['fas', 'comments']" size="3x" />
+							<h3>轮抽社区</h3>
+							<p>
+								中文 MTG 轮抽与 Cube 社区。提供 Draftmancer 轮抽服务、XMage
+								对局平台，以及丰富的卡表资源与活动。
+							</p>
+							<a href="https://kook.top/placeholder" target="_blank" class="btn-primary kook-join-btn">
+								<font-awesome-icon :icon="['fas', 'external-link-alt']" /> 加入频道
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="welcome-sections">
+					<div class="container" style="grid-area: Tools">
+						<div class="section-title">
+							<h2>{{ $t("ui.tools") }}</h2>
+						</div>
+						<div class="welcome-section welcome-alt">
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-between">
+								<div @click="displayedModal = 'importdeck'" class="link">
+									<font-awesome-icon icon="fa-solid fa-file-export" />
+									Card List Importer
 								</div>
-								<h3>轮抽社区</h3>
-								<p>
-									中文 MTG 轮抽与 Cube 社区。提供 Draftmancer 轮抽服务、XMage
-									对局平台，以及丰富的卡表资源与活动。
-								</p>
-								<a
-									href="https://kook.top/placeholder"
-									target="_blank"
-									class="btn-primary kook-join-btn"
+								<div
+									v-if="sessionID"
+									v-tooltip="
+										'Download the intersection of the collections of players in the session in text format.'
+									"
 								>
-									<font-awesome-icon :icon="['fas', 'external-link-alt']" /> 加入频道
-								</a>
+									<a
+										:href="`/getCollectionPlainText/${encodeURIComponent(sessionID)}`"
+										target="_blank"
+									>
+										<font-awesome-icon icon="fa-solid fa-file-download" />
+										Download Session Collection
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="welcome-sections">
-						<div class="container" style="grid-area: Tools">
-							<div class="section-title">
-								<h2>{{ $t("ui.tools") }}</h2>
-							</div>
-							<div class="welcome-section welcome-alt">
-								<div style="display: flex; flex-wrap: wrap; justify-content: space-between">
-									<div @click="displayedModal = 'importdeck'" class="link">
-										<font-awesome-icon icon="fa-solid fa-file-export" />
-										Card List Importer
-									</div>
-									<div
-										v-if="sessionID"
+				</div>
+				<div class="container" style="grid-area: PublicSessions">
+					<div class="section-title">
+						<h2>{{ $t("session.publicSessions") }}</h2>
+					</div>
+					<div class="welcome-section">
+						<div v-if="userID === sessionOwner" style="display: flex">
+							<button @click="isPublic = !isPublic">
+								Set session as {{ isPublic ? "Private" : "Public" }}
+							</button>
+							<delayed-input
+								style="flex-grow: 1"
+								v-model="description"
+								type="text"
+								:placeholder="$t('ui.enter_a_description_for_your_session')"
+								:maxlength="70"
+							/>
+						</div>
+
+						<p v-if="publicSessions.length === 0" style="text-align: center">
+							{{ $t("session.noPublicSessions") }}
+						</p>
+						<table v-else class="public-sessions">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>{{ $t("misc.sets") }}</th>
+									<th>{{ $t("ui.players") }}</th>
+									<th>{{ $t("ui.description") }}</th>
+									<th>{{ $t("ui.join") }}</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="s in publicSessions" :key="s.id">
+									<td :title="s.id" class="id">{{ s.id }}</td>
+									<td
 										v-tooltip="
-											'Download the intersection of the collections of players in the session in text format.'
+											s.cube ? 'Cube' : s.sets.map((code) => setsInfos[code].fullName).join(', ')
 										"
 									>
-										<a
-											:href="`/getCollectionPlainText/${encodeURIComponent(sessionID)}`"
-											target="_blank"
-										>
-											<font-awesome-icon icon="fa-solid fa-file-download" />
-											Download Session Collection
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+										<template v-if="s.cube">
+											<img src="./assets/img/cube.png" class="set-icon" />
+										</template>
+										<template v-else-if="s.sets.length === 1">
+											<img :src="setsInfos[s.sets[0]].icon" class="set-icon" />
+										</template>
+										<template v-else-if="s.sets.length === 0">{{ $t("ui.all") }}</template>
+										<template v-else>[{{ s.sets.length }}]</template>
+									</td>
+									<td>{{ s.players }} / {{ s.maxPlayers }}</td>
+									<td class="desc">{{ s.description }}</td>
+									<td>
+										<button v-if="s.id !== sessionID" @click="sessionID = s.id">
+											{{ $t("common.join") }}
+										</button>
+										<font-awesome-icon
+											icon="fa-solid fa-check"
+											class="green"
+											v-tooltip="`You are in this session!`"
+											v-else
+										/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="container" style="grid-area: PublicSessions">
-						<div class="section-title">
-							<h2>{{ $t("session.publicSessions") }}</h2>
-						</div>
-						<div class="welcome-section">
-							<div v-if="userID === sessionOwner" style="display: flex">
-								<button @click="isPublic = !isPublic">
-									Set session as {{ isPublic ? "Private" : "Public" }}
-								</button>
-								<delayed-input
-									style="flex-grow: 1"
-									v-model="description"
-									type="text"
-									:placeholder="$t('ui.enter_a_description_for_your_session')"
-									:maxlength="70"
-								/>
-							</div>
-
-							<p v-if="publicSessions.length === 0" style="text-align: center">
-								{{ $t("session.noPublicSessions") }}
-							</p>
-							<table v-else class="public-sessions">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>{{ $t("misc.sets") }}</th>
-										<th>{{ $t("ui.players") }}</th>
-										<th>{{ $t("ui.description") }}</th>
-										<th>{{ $t("ui.join") }}</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr v-for="s in publicSessions" :key="s.id">
-										<td :title="s.id" class="id">{{ s.id }}</td>
-										<td
-											v-tooltip="
-												s.cube
-													? 'Cube'
-													: s.sets.map((code) => setsInfos[code].fullName).join(', ')
-											"
-										>
-											<template v-if="s.cube">
-												<img src="./assets/img/cube.png" class="set-icon" />
-											</template>
-											<template v-else-if="s.sets.length === 1">
-												<img :src="setsInfos[s.sets[0]].icon" class="set-icon" />
-											</template>
-											<template v-else-if="s.sets.length === 0">{{ $t("ui.all") }}</template>
-											<template v-else>[{{ s.sets.length }}]</template>
-										</td>
-										<td>{{ s.players }} / {{ s.maxPlayers }}</td>
-										<td class="desc">{{ s.description }}</td>
-										<td>
-											<button v-if="s.id !== sessionID" @click="sessionID = s.id">
-												{{ $t("common.join") }}
-											</button>
-											<font-awesome-icon
-												icon="fa-solid fa-check"
-												class="green"
-												v-tooltip="`You are in this session!`"
-												v-else
-											/>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</template>
+				</div>
 			</div>
 		</div>
 

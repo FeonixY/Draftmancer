@@ -188,7 +188,6 @@ export default defineComponent({
 		Communities,
 		PickSummary: defineAsyncComponent(() => import("./components/PickSummary.vue")),
 		Player: defineAsyncComponent(() => import("./components/Player.vue")),
-		DraftQueue: defineAsyncComponent(() => import("./components/DraftQueue.vue")),
 		RotisserieDraft: defineAsyncComponent(() => import("./components/RotisserieDraft.vue")),
 		ScaleSlider: defineAsyncComponent(() => import("./components/ScaleSlider.vue")),
 		SessionUser,
@@ -204,7 +203,7 @@ export default defineComponent({
 	data: () => {
 		const path = window.location.pathname.substring(1).split("/");
 		const urlParams = getURLParameters();
-		const validPages = ["", "draftqueue"];
+		const validPages = [""];
 		const page = validPages.includes(path[0]) ? path[0] : "";
 
 		// We'll first generate default User and Session IDs, then try to load previously used
@@ -1618,19 +1617,16 @@ export default defineComponent({
 				const ret = await Alert.fire({
 					icon: "info",
 					title: "Not enough players",
-					html: `At least 2 players, including bots, are required to start a draft. Add bots, or join a <a href="/draftqueue">Draft queue</a> to be automatically matched with other players.`,
+					html: `At least 2 players, including bots, are required to start a draft. Add bots to draft.`,
 					showDenyButton: true,
 					showCancelButton: true,
+					showConfirmButton: false,
 					denyButtonColor: "darkgreen",
 					denyButtonText: `Draft alone with ${proposedBots} bots`,
-					confirmButtonText: `Go to Draft Queues`,
 				});
 				if (ret.isDenied) {
 					this.bots = proposedBots;
 					await this.$nextTick();
-				} else if (ret.isConfirmed) {
-					window.location.href = "/draftqueue";
-					return false;
 				} else return false;
 			}
 
