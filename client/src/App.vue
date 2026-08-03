@@ -1475,20 +1475,6 @@
 									<font-awesome-icon icon="fa-solid fa-file-export" />
 									Card List Importer
 								</div>
-								<div
-									v-if="sessionID"
-									v-tooltip="
-										'Download the intersection of the collections of players in the session in text format.'
-									"
-								>
-									<a
-										:href="`/getCollectionPlainText/${encodeURIComponent(sessionID)}`"
-										target="_blank"
-									>
-										<font-awesome-icon icon="fa-solid fa-file-download" />
-										Download Session Collection
-									</a>
-								</div>
 							</div>
 						</div>
 					</div>
