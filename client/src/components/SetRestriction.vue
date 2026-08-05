@@ -83,67 +83,22 @@ const emit = defineEmits<{
 	"update:modelValue": [sets: SetCode[]];
 }>();
 
-const FilteredBlocks = ["Innistrad: Double Feature", "Shadows over Innistrad Remastered"];
-const PreCycleSets = ["arn", "atq", "leg", "drk", "fem", "ice", "hml", "all"];
-
-const blocks = [
-	{ name: "MtG: Arena", sets: constants.MTGASets.map((s) => SetsInfos[s]).reverse() },
-	{ name: "Alchemy", sets: constants.AlchemySets.map((s) => SetsInfos[s]).reverse() },
-	{ name: "Un-sets", sets: ["unf", "und", "ust", "unh", "ugl"].map((s) => SetsInfos[s]) },
-	{
-		name: "Shadows over Innistrad Remastered",
-		sets: ["sir0", "sir1", "sir2", "sir3"].map((s) => SetsInfos[s]),
-	}, // Manually added to hoist it
-	{
-		name: "Pioneer Masters",
-		sets: ["pio0", "pio1", "pio2"].map((s) => SetsInfos[s]),
-	},
-	{
-		name: "Masters",
-		sets: [
-			"tsr",
-			"2xm",
-			"uma",
-			"a25",
-			"ima",
-			"mm3",
-			"ema",
-			"mm2",
-			"tpr",
-			"vma",
-			"mma",
-			"me4",
-			"me3",
-			"me2",
-			"me1", // Is 'med' in MTGA and MTGO
-		].map((s) => SetsInfos[s]),
-	},
-];
-
-const assigned = blocks
-	.map((b) => b.sets)
-	.flat()
-	.map((s) => s.code)
-	.concat(PreCycleSets);
-
-let unsortedBlocks: { [code: SetCode]: SetInfo[] } = {};
-for (let s of constants.PrimarySets.map((s) => SetsInfos[s])) {
-	let b = s.block;
-	if (b && FilteredBlocks.includes(b)) continue;
-	if ((!b || s.code === "ydmu" || s.code === "hbg") && assigned.includes(s.code)) continue;
-	if (!b) b = "Others";
+// MDC: 选集只从支持轮抽的系列(constants.PrimarySets = set_catalog 122 个)构建;
+// 去掉上游硬编码的 MtG:Arena / Alchemy / Un-sets / 变体 / Masters / Pre-Cycle 等块。
+const blocks: { name: string; sets: SetInfo[] }[] = [];
+const unsortedBlocks: { [code: string]: SetInfo[] } = { Others: [] };
+for (const s of constants.PrimarySets.map((c) => SetsInfos[c])) {
+	const b = s.block ?? "Others";
 	if (!(b in unsortedBlocks)) unsortedBlocks[b] = [];
 	unsortedBlocks[b].push(s);
 }
-for (let b in unsortedBlocks) {
-	if (unsortedBlocks[b].length === 1) {
+for (const b in unsortedBlocks) {
+	if (b !== "Others" && unsortedBlocks[b].length === 1) {
 		unsortedBlocks["Others"].push(unsortedBlocks[b][0]);
 		delete unsortedBlocks[b];
 	}
 }
-for (let b in unsortedBlocks) blocks.push({ name: b, sets: unsortedBlocks[b] });
-
-blocks.push({ name: "Pre-Cycle", sets: PreCycleSets.map((s) => SetsInfos[s]) });
+for (const b in unsortedBlocks) if (unsortedBlocks[b].length) blocks.push({ name: b, sets: unsortedBlocks[b] });
 
 function update(newVal: SetCode[]) {
 	emit("update:modelValue", newVal);
