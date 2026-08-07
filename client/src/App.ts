@@ -285,6 +285,14 @@ export default defineComponent({
 			}
 		}
 
+		// MDC: setRestriction 只保留支持轮抽的系列(PrimarySets),清掉持久化残留的非支持系列(如旧默认的漫威);空则回退
+		{
+			const _sr = Array.isArray(storedSessionSettings.setRestriction)
+				? storedSessionSettings.setRestriction.filter((c) => Constants.PrimarySets.includes(c))
+				: [];
+			storedSessionSettings.setRestriction = _sr.length ? _sr : [Constants.PrimarySets[0]];
+		}
+
 		const query: Record<string, string> = {
 			userID: userID,
 			userName: userName,
