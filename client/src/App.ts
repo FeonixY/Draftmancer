@@ -261,7 +261,7 @@ export default defineComponent({
 			storedSessionSettings.cubeCobraID = cubeCobraID;
 			const cubeCobraName = urlParams.get("cubeCobraName");
 			if (cubeCobraName) storedSessionSettings.cubeCobraName = cubeCobraName;
-			sessionID = "CC_" + shortguid(); // NOTE: Setting the sessionID here to avoid having it visually set to a wrong value client-side until we hear back from the server.
+			if (!urlParamSession) sessionID = "CC_" + shortguid(); // MDC: 保留 bot 的 ?session=,只有无 session 的 CubeCobra 跳转才另起 CC_ // NOTE: Setting the sessionID here to avoid having it visually set to a wrong value client-side until we hear back from the server.
 			//                                        The server will have the last word on the actually used ID (making sure we're in a fresh session).
 		}
 
